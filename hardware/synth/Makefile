@@ -1,10 +1,13 @@
 SHELL=/bin/bash -o pipefail
 .SHELLFLAGS += -e
 
+FSDB2SAIF_START = $(shell head -n1 ../sim/sim/time.txt)
+FSDB2SAIF_END   = $(shell tail -n1 ../sim/sim/time.txt)
+
 export PKG_SRCS = $(PWD)/../pkg/types.sv
 export HDL_SRCS = $(shell find $(PWD)/../hdl -name '*.sv')
-export SRAM_LIB = $(shell find $(PWD)/../sram/output/ -name "*.db")
-export DESIGN_TOP = bp
+export SRAM_LIB =
+export DESIGN_TOP = cpu
 
 export STD_CELL_LIB=$(FREEPDK45)/stdcells.db
 export STD_CELL_ALIB=$(FREEPDK45)/alib
