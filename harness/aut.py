@@ -3,6 +3,7 @@ from tqdm import tqdm
 import math
 import matplotlib.pyplot as plt
 import pdb
+import random
 
 def uniform_sample(dataset):
     return dataset[np.random.randint(0, dataset.shape[0])]
@@ -15,12 +16,14 @@ class Aut:
     sample_d: sampling function for dataset (dataset) -> sample
     sample_i: sampling function for image (w, h, n) -> [indices]
     '''
-    def __init__(self, dataset, compress, decompress, sample_d=uniform_sample, sample_i=None, name=""):
+    def __init__(self, dataset, compress, decompress, random_access, sample_d=uniform_sample, sample_i=None, name=""):
         self.dataset = dataset
         self.compress = compress
         self.decompress = decompress
         self.sample_d = sample_d
         self.name = name
+        self.cr = None
+        self.random_access = random_access
 
     def validate(self, image, height, width):
         assert np.array_equal(self.decompress(self.compress(image, height, width), height, width), image), f"AUT: {self.name} not lossless"
@@ -157,6 +160,7 @@ def intel_iGPU_compress(image, height, width):
             blk = image_pad[:, y:y+4, x:x+8]  # Extract 4x8 block
             compressed_blk, flag = compress_4x8(blk)
             compressed_data.append((flag, compressed_blk))
+            cr[(y // 4, x // 8)] = flag
     return compressed_data
 
     '''
@@ -249,8 +253,41 @@ def intel_iGPU_decompress(compressed_data, height, width):
 
     return image_reconstructed
 
-dataset = np.random.randint(0, 5, (10**3, 4, 32, 32), dtype=np.uint8)
+def intel_iGPU_random_access(x, y, cr):
+    flag = cr[(y // 4, x // 8)]
+    if flag == 0: return 64
+    else: return 32
 
-igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, name="intel iGPU")
+def intel_iGPU_random_cr_benchmark(samples, cr):
+    total = 0
+    for s in samples:
+        bytes_transferred = intel_iGPU_random_access(s[0], s[1], cr)
+        total += bytes_transferred
+    return total / len(samples)
 
-igpu.formal_validate()
+random_list = [(random.randint(0, 128), random.randint(0, 64)) for _ in range(1000)]
+
+# dataset = np.random.randint(0, 10, (10, 4, 4, 8), dtype=np.uint8)
+cr = {}
+
+from PIL import Image
+
+width, height = 512, 512
+
+r = np.tile(((np.linspace(0, 255, width) ** 6 / (255 / 6)) ** 0.5).astype(np.uint8), (height, 1))  # Exponential Red scaling
+g = np.tile((np.sin(np.linspace(0, np.pi, height)) * 200).astype(np.uint8).reshape(height, 1), (1, width))  # Sinusoidal Green
+b = np.tile((np.linspace(0, 255, width) ** 0.5 / 255 ** 0.5 * 255).astype(np.uint8), (height, 1))  # Log-like Blue scaling
+a = np.tile((np.cos(np.linspace(0, np.pi, height)) * 255).astype(np.uint8).reshape(height, 1), (1, width))  # Cosine Alpha fading
+
+gradient_image = np.stack([r, g, b, a], axis=0)  # (4, 512, 512)
+
+image = Image.fromarray(np.moveaxis(gradient_image, 0, -1), mode="RGBA")
+image.save("gradient_alpha_fixed.png")
+
+dataset = np.array([gradient_image])
+igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, intel_iGPU_random_access, name="intel iGPU")
+
+igpu.compress(dataset[0], 512, 512)
+print(intel_iGPU_random_cr_benchmark(random_list, cr))
+
+image.show()
