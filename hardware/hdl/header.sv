@@ -1,45 +1,83 @@
 module header
 import types::*;
 (
-  input logic clk,
-  input logic [3:0][7:0] pixels [31:0],
-  output logic compressable,
-  output logic [47:0] h
+ input logic clk,
+ input logic rst,
+ input types::pixels_t pixels,
+ output types::header_residual_reg hr_reg
  );
 
-  // header[47:44] are skip bits
-  logic [7:0] min_r, min_g, min_b, min_a;
+  logic [3:0] [7:0] mins;
+  logic [5:0] [3:0] [7:0] imms;
 
   always_comb begin
-    min_r = 8'hFF;
-    min_g = 8'hFF;
-    min_b = 8'hFF;
-    min_a = 8'hFF;
-    h = '0;
-    compressable = 1'b0;
-
-    for (int i = 0; i < 32; i++) begin
-      if (min_r > pixels[i][0]) begin
-        min_r = pixels[i][0];
+    imms[0] = '1;
+    for (int i = 0; i < 8; i++) begin
+      for (int j = 0; j < 4; j++) begin
+        if (pixels.pixels[i][j] < imms[0][j]) imms[0][j] = pixels.pixels[i][j];
         end
-
-      if (min_g > pixels[i][1]) begin
-        min_g = pixels[i][1];
       end
-
-      if (min_b > pixels[i][2]) begin
-        min_b = pixels[i][2];
-      end
-
-      if (min_a > pixels[i][3]) begin
-        min_a = pixels[i][3];
+    end
+  always_comb begin
+    imms[1] = '1;
+    for (int i = 8; i < 16; i++) begin
+      for (int j = 0; j < 4; j++) begin
+        if (pixels.pixels[i][j] < imms[1][j]) imms[1][j] = pixels.pixels[i][j];
+        end
       end
     end
 
-    h[43:36] = min_r;
-    h[35:28] = min_g;
-    h[27:20] = min_b;
-    h[19:12] = min_a;
-  end
+  always_comb begin
+    imms[2] = '1;
+    for (int i = 16; i < 24; i++) begin
+      for (int j = 0; j < 4; j++) begin
+        if (pixels.pixels[i][j] < imms[2][j]) imms[2][j] = pixels.pixels[i][j];
+        end
+      end
+    end
+
+  always_comb begin
+    imms[3] = '1;
+    for (int i = 24; i < 32; i++) begin
+      for (int j = 0; j < 4; j++) begin
+        if (pixels.pixels[i][j] < imms[3][j]) imms[3][j] = pixels.pixels[i][j];
+        end
+      end
+    end
+
+  always_comb begin
+    for (int j = 0; j < 4; j++) begin
+      imms[4][j] = (imms[0][j] < imms[1][j]) ? imms[0][j] : imms[1][j];
+      end
+    end
+
+  always_comb begin
+    for (int j = 0; j < 4; j++) begin
+      imms[5][j] = (imms[2][j] < imms[3][j]) ? imms[2][j] : imms[3][j];
+      end
+    end
+
+  always_ff @(posedge clk) begin
+    hr_reg.pixels = pixels;
+    if (rst) begin
+      hr_reg.compressable = 1'b0;
+      hr_reg.header.raw = '0;
+      end else begin
+
+      hr_reg.compressable = 1'b1;
+
+      if (imms[4][0] < imms[5][0]) hr_reg.header.min_values.r_min = imms[4][0];
+      else hr_reg.header.min_values.r_min = imms[5][0];
+
+      if (imms[4][1] < imms[5][1]) hr_reg.header.min_values.g_min = imms[4][1];
+      else hr_reg.header.min_values.g_min = imms[5][1];
+
+      if (imms[4][2] < imms[5][2]) hr_reg.header.min_values.b_min = imms[4][2];
+      else hr_reg.header.min_values.b_min = imms[5][2];
+
+      if (imms[4][3] < imms[5][3]) hr_reg.header.min_values.a_min = imms[4][3];
+      else hr_reg.header.min_values.a_min = imms[5][3];
+      end
+    end
 
   endmodule : header

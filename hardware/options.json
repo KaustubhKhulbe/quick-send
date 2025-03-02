@@ -1,5 +1,5 @@
 {
-    "clock"       : 20000,
+    "clock"       : 5000,
     "synth": {
         "compile_ultra" : true,
         "ungroup"       : true,
