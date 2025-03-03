@@ -50,4 +50,14 @@ package types;
     logic compressable;
     } residual_compress_reg;
 
+  typedef struct {
+    logic compressable;
+    header_t header;
+    logic [1:0] flag;
+    struct packed {
+      logic [31:0] l1;
+      logic [31:0] l2;
+    } lines;
+  } compress_commit_reg;
+
 endpackage
