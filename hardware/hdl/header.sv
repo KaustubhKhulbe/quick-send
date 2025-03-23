@@ -81,7 +81,7 @@ import types::*;
   always_ff @(posedge clk) begin
     hr_reg.compressable <= 1'b1;
     hr_reg.pixels <= pixels;
-    hr_reg.header.min_values.pad <= '0;
+    hr_reg.header.min_values.bits_required <= '0;
     hr_reg.header.min_values.skip_r <= 1'b0;
     hr_reg.header.min_values.skip_g <= 1'b0;
     hr_reg.header.min_values.skip_b <= 1'b0;
