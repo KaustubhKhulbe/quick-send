@@ -17,7 +17,7 @@ package types;
       logic [7:0] g_min;
       logic [7:0] b_min;
       logic [7:0] a_min;
-      logic [11:0] pad; // todo: change to real name
+      logic [11:0] bits_required; // todo: change to real name
       } min_values;
     } header_t;
 
@@ -31,6 +31,15 @@ package types;
 
     logic [31:0] [3:0] [7:0] pixels;
   } pixels_t;
+
+  typedef union packed {
+    logic [64 * 8 - 1 : 0] raw;
+    struct packed {
+      header_t h;
+      logic [0:31][13:0] pix;
+      logic [15:0]       pad;
+    } l;
+    } line_t;
 
   typedef struct {
     pixels_t pixels;
@@ -52,11 +61,9 @@ package types;
 
   typedef struct {
     logic compressable;
-    header_t header;
     logic [1:0] flag;
     struct packed {
-      logic [31:0] l1;
-      logic [31:0] l2;
+      line_t l1;
     } lines;
   } compress_commit_reg;
 

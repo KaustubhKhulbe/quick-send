@@ -1,0 +1,121 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : igpu
+Version: W-2024.09
+Date   : Sun Mar 23 12:02:36 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: enclosed
+
+  Startpoint: pixels[274]
+              (input port clocked by my_clk)
+  Endpoint: hr_reg_reg_header__20_
+            (rising edge-triggered flip-flop clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  igpu               5K_hvratio_1_1        NangateOpenCellLibrary
+  header             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clk (rise edge)                            0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                1.300000   1.300000 r
+  pixels[274] (in)                                    0.000000   1.300000 r
+  header_inst/pixels[274] (header)                    0.000000   1.300000 r
+  header_inst/U31/Z (BUF_X2)                          0.037042   1.337042 r
+  header_inst/U5902/ZN (NAND2_X1)                     0.032472   1.369514 f
+  header_inst/U5905/ZN (OAI211_X1)                    0.032513   1.402026 r
+  header_inst/U2685/ZN (NAND4_X1)                     0.040674   1.442700 f
+  header_inst/U2330/ZN (AND3_X1)                      0.044588   1.487289 f
+  header_inst/U3639/ZN (OAI211_X2)                    0.088409   1.575698 r
+  header_inst/U2256/Z (BUF_X1)                        0.074782   1.650480 r
+  header_inst/U9027/Z (MUX2_X1)                       0.090912   1.741392 f
+  header_inst/U3869/ZN (AND2_X1)                      0.042008   1.783400 f
+  header_inst/U2067/ZN (OR2_X1)                       0.054162   1.837562 f
+  header_inst/U2008/ZN (AND2_X1)                      0.038347   1.875910 f
+  header_inst/U1960/ZN (OAI21_X1)                     0.113461   1.989371 r
+  header_inst/U2697/Z (MUX2_X1)                       0.095022   2.084393 f
+  header_inst/U9036/ZN (NAND2_X1)                     0.032153   2.116545 r
+  header_inst/U9037/ZN (AOI22_X1)                     0.035341   2.151886 f
+  header_inst/U9038/ZN (OR2_X1)                       0.061071   2.212958 f
+  header_inst/U4221/ZN (NAND2_X1)                     0.026464   2.239422 r
+  header_inst/U1752/ZN (NAND4_X1)                     0.032950   2.272372 f
+  header_inst/U1717/ZN (AND3_X1)                      0.044616   2.316988 f
+  header_inst/U275/ZN (OAI211_X1)                     0.048427   2.365415 r
+  header_inst/U1649/ZN (NAND2_X1)                     0.059350   2.424765 f
+  header_inst/U3579/Z (MUX2_X1)                       0.096984   2.521749 r
+  header_inst/U2692/ZN (NAND2_X1)                     0.032610   2.554359 f
+  header_inst/U2693/ZN (NAND2_X1)                     0.028938   2.583297 r
+  header_inst/U2694/ZN (NAND3_X1)                     0.033385   2.616682 f
+  header_inst/U2695/ZN (NAND2_X1)                     0.025654   2.642336 r
+  header_inst/U1452/ZN (AND2_X1)                      0.039617   2.681953 r
+  header_inst/U1424/ZN (OAI21_X1)                     0.027708   2.709661 f
+  header_inst/U1390/ZN (OAI211_X1)                    0.084693   2.794354 r
+  header_inst/U250/Z (CLKBUF_X1)                      0.079860   2.874213 r
+  header_inst/U9070/Z (MUX2_X1)                       0.086701   2.960914 f
+  header_inst/U4790/ZN (OAI211_X1)                    0.036945   2.997859 r
+  header_inst/U4231/ZN (NAND3_X1)                     0.035700   3.033560 f
+  header_inst/U4228/ZN (NAND2_X1)                     0.027804   3.061364 r
+  header_inst/U2680/ZN (NAND2_X1)                     0.024770   3.086134 f
+  header_inst/U2677/ZN (AND4_X1)                      0.038837   3.124971 f
+  header_inst/U1118/ZN (OAI21_X1)                     0.119264   3.244235 r
+  header_inst/U3562/Z (MUX2_X1)                       0.084167   3.328401 r
+  header_inst/U9081/ZN (AOI21_X1)                     0.031062   3.359463 f
+  header_inst/U2710/ZN (OR2_X1)                       0.057390   3.416853 f
+  header_inst/U1005/ZN (OAI211_X1)                    0.047153   3.464005 r
+  header_inst/U939/ZN (AOI21_X1)                      0.029813   3.493818 f
+  header_inst/U904/ZN (OAI21_X1)                      0.120346   3.614165 r
+  header_inst/U3865/Z (MUX2_X1)                       0.082164   3.696329 r
+  header_inst/U9104/ZN (NAND2_X1)                     0.031040   3.727369 f
+  header_inst/U9110/ZN (NAND3_X1)                     0.027946   3.755315 r
+  header_inst/U9113/ZN (NAND3_X1)                     0.030474   3.785789 f
+  header_inst/U9119/ZN (AOI21_X1)                     0.038634   3.824423 r
+  header_inst/U776/ZN (OAI21_X1)                      0.032188   3.856612 f
+  header_inst/U750/ZN (OAI21_X1)                      0.078337   3.934949 r
+  header_inst/U723/Z (BUF_X1)                         0.060767   3.995716 r
+  header_inst/U2698/Z (MUX2_X1)                       0.086668   4.082383 f
+  header_inst/U2700/ZN (OR2_X1)                       0.062913   4.145296 f
+  header_inst/U566/ZN (AND2_X1)                       0.037997   4.183293 f
+  header_inst/U3942/ZN (NAND2_X1)                     0.025096   4.208389 r
+  header_inst/U2701/ZN (NAND2_X1)                     0.028380   4.236770 f
+  header_inst/U2703/ZN (OR2_X1)                       0.058808   4.295578 f
+  header_inst/U2702/ZN (OAI211_X1)                    0.040092   4.335669 r
+  header_inst/U2705/ZN (NAND3_X1)                     0.039801   4.375470 f
+  header_inst/U175/ZN (AND3_X2)                       0.058005   4.433475 f
+  header_inst/U3587/Z (MUX2_X1)                       0.078003   4.511478 f
+  header_inst/U3586/ZN (OR2_X1)                       0.059834   4.571312 f
+  header_inst/U9270/ZN (AND2_X1)                      0.035881   4.607193 f
+  header_inst/U4366/ZN (OAI21_X1)                     0.038050   4.645244 r
+  header_inst/U3262/ZN (OAI21_X1)                     0.033710   4.678954 f
+  header_inst/U3261/ZN (OAI211_X1)                    0.033945   4.712898 r
+  header_inst/U351/ZN (AND2_X1)                       0.046065   4.758963 r
+  header_inst/U3260/ZN (OAI211_X2)                    0.059240   4.818203 f
+  header_inst/U9289/Z (MUX2_X1)                       0.082286   4.900489 r
+  header_inst/hr_reg[53] (header)                     0.000000   4.900489 r
+  hr_reg_reg_header__20_/SE (SDFFR_X1)                0.014408   4.914897 r
+  data arrival time                                              4.914897
+
+  clock my_clk (rise edge)                            5.000000   5.000000
+  clock network delay (ideal)                         0.000000   5.000000
+  hr_reg_reg_header__20_/CK (SDFFR_X1)                0.000000   5.000000 r
+  library setup time                                  -0.084746  4.915254
+  data required time                                             4.915254
+  --------------------------------------------------------------------------
+  data required time                                             4.915254
+  data arrival time                                              -4.914897
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000357
+
+
+1

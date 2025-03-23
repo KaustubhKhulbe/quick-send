@@ -1,8 +1,6 @@
 module residual
 import types::*;
 (
-  input logic clk,
-  input logic rst,
   input types::header_residual_reg hr_reg,
   output types::residual_compress_reg cr_reg
  );
@@ -68,23 +66,20 @@ import types::*;
     header.min_values.g_min = hr_reg.header.min_values.g_min;
     header.min_values.b_min = hr_reg.header.min_values.b_min;
     header.min_values.a_min = hr_reg.header.min_values.a_min;
-  end
+    header.min_values.bits_required[11:9] = (r_diff != '0) ? 3'(rgba_logs[0] - 1) : 3'b0;
+    header.min_values.bits_required[8:6]  = (g_diff != '0) ? 3'(rgba_logs[1] - 1) : 3'b0;
+    header.min_values.bits_required[5:3]  = (b_diff != '0) ? 3'(rgba_logs[2] - 1) : 3'b0;
+    header.min_values.bits_required[2:0]  = (a_diff != '0) ? 3'(rgba_logs[3] - 1) : 3'b0;
 
-
-  always_comb begin
     for (int i = 0; i < 32; i++) begin
       sub_pixels.pixels[i][0] = hr_reg.pixels.pixels[i][0] - hr_reg.header.min_values.r_min;
       sub_pixels.pixels[i][1] = hr_reg.pixels.pixels[i][1] - hr_reg.header.min_values.g_min;
       sub_pixels.pixels[i][2] = hr_reg.pixels.pixels[i][2] - hr_reg.header.min_values.b_min;
       sub_pixels.pixels[i][3] = hr_reg.pixels.pixels[i][3] - hr_reg.header.min_values.a_min;
     end
-  end
-
-
-  always_ff @(posedge clk) begin
-    cr_reg.compressable <= ((rgba_logs[0] + rgba_logs[1] + rgba_logs[2] + rgba_logs[3]) <= 14) ? 1'b1 : 1'b0;
-    cr_reg.residuals <= sub_pixels;
-    cr_reg.header <= header;
+    cr_reg.compressable = ((rgba_logs[0] + rgba_logs[1] + rgba_logs[2] + rgba_logs[3]) <= 14) ? 1'b1 : 1'b0;
+    cr_reg.residuals = sub_pixels;
+    cr_reg.header = header;
   end
 
   endmodule : residual

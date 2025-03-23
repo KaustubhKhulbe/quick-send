@@ -1,0 +1,59 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : igpu
+Version: W-2024.09
+Date   : Sun Mar 23 12:05:14 2025
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /class/ece411/freepdk-45nm/stdcells.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+igpu                   5K_hvratio_1_1    NangateOpenCellLibrary
+header                 5K_hvratio_1_1    NangateOpenCellLibrary
+residual               5K_hvratio_1_1    NangateOpenCellLibrary
+compress               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   4.3778 mW   (73%)
+  Net Switching Power  =   1.5799 mW   (27%)
+                         ---------
+Total Dynamic Power    =   5.9576 mW  (100%)
+
+Cell Leakage Power     = 882.9249 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.5368e+03            0.0000            0.0000        2.5368e+03  (  37.08%)  i
+register         580.8704          264.5448        2.7769e+05        1.1231e+03  (  16.42%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.2601e+03        1.3153e+03        6.0524e+05        3.1806e+03  (  46.50%)
+--------------------------------------------------------------------------------------------------
+Total          4.3777e+03 uW     1.5799e+03 uW     8.8292e+05 nW     6.8405e+03 uW

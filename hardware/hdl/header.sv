@@ -1,8 +1,6 @@
 module header
 import types::*;
 (
- input logic clk,
- input logic rst,
  input types::pixels_t pixels,
  output types::header_residual_reg hr_reg
  );
@@ -78,32 +76,25 @@ import types::*;
 
   end
 
-  always_ff @(posedge clk) begin
-    hr_reg.compressable <= 1'b1;
-    hr_reg.pixels <= pixels;
-    hr_reg.header.min_values.pad <= '0;
-    hr_reg.header.min_values.skip_r <= 1'b0;
-    hr_reg.header.min_values.skip_g <= 1'b0;
-    hr_reg.header.min_values.skip_b <= 1'b0;
-    hr_reg.header.min_values.skip_a <= 1'b0;
+  always_comb begin
+    hr_reg.compressable = 1'b1;
+    hr_reg.pixels = pixels;
+    hr_reg.header.min_values.bits_required = '0;
+    hr_reg.header.min_values.skip_r = 1'b0;
+    hr_reg.header.min_values.skip_g = 1'b0;
+    hr_reg.header.min_values.skip_b = 1'b0;
+    hr_reg.header.min_values.skip_a = 1'b0;
 
-    if (rst) begin
-      hr_reg.compressable <= 1'b0;
-      hr_reg.pixels.channels.r_channel <= '0;
-      hr_reg.pixels.channels.g_channel <= '0;
-      hr_reg.pixels.channels.b_channel <= '0;
-      hr_reg.pixels.channels.a_channel <= '0;
-    end else begin
-      hr_reg.header.min_values.r_min <= mins[0];
-      hr_reg.header.min_values.g_min <= mins[1];
-      hr_reg.header.min_values.b_min <= mins[2];
-      hr_reg.header.min_values.a_min <= mins[3];
+    hr_reg.header.min_values.r_min = mins[0];
+    hr_reg.header.min_values.g_min = mins[1];
+    hr_reg.header.min_values.b_min = mins[2];
+    hr_reg.header.min_values.a_min = mins[3];
 
-      hr_reg.max_pixels.r_max <= maxes[0];
-      hr_reg.max_pixels.g_max <= maxes[1];
-      hr_reg.max_pixels.b_max <= maxes[2];
-      hr_reg.max_pixels.a_max <= maxes[3];
-    end
+    hr_reg.max_pixels.r_max = maxes[0];
+    hr_reg.max_pixels.g_max = maxes[1];
+    hr_reg.max_pixels.b_max = maxes[2];
+    hr_reg.max_pixels.a_max = maxes[3];
+
   end
 
   endmodule : header
