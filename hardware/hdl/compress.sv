@@ -1,7 +1,5 @@
 module compress
 (
- input logic clk,
- input logic rst,
  input types::residual_compress_reg cr_reg,
  output types::compress_commit_reg cc_reg
  );
@@ -96,10 +94,8 @@ module compress
     cc_reg.compressable = cr_reg.compressable;
     cc_reg.flag = '0;
     cc_reg.lines.l1 = '0;
-    cc_reg.lines.l2 = '0;
     if (cr_reg.compressable) begin
         cc_reg.lines.l1 = l1;
-        cc_reg.lines.l2.raw = '0;
         cc_reg.flag = 2'b01;
     end
     end

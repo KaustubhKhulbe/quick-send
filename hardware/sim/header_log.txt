@@ -1,0 +1,3000 @@
+Expected: R_MIN=0b, G_MIN=00, B_MIN=01, A_MIN=12
+Recieved: R_MIN=0b, G_MIN=00, B_MIN=01, A_MIN=12
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=0c, A_MIN=10
+Recieved: R_MIN=02, G_MIN=03, B_MIN=0c, A_MIN=10
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=01, A_MIN=04
+Recieved: R_MIN=02, G_MIN=04, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=06, B_MIN=0e, A_MIN=00
+Recieved: R_MIN=03, G_MIN=06, B_MIN=0e, A_MIN=00
+
+Expected: R_MIN=14, G_MIN=09, B_MIN=05, A_MIN=11
+Recieved: R_MIN=14, G_MIN=09, B_MIN=05, A_MIN=11
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=0e, A_MIN=11
+Recieved: R_MIN=05, G_MIN=03, B_MIN=0e, A_MIN=11
+
+Expected: R_MIN=10, G_MIN=0a, B_MIN=0d, A_MIN=04
+Recieved: R_MIN=10, G_MIN=0a, B_MIN=0d, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=02, B_MIN=01, A_MIN=19
+Recieved: R_MIN=02, G_MIN=02, B_MIN=01, A_MIN=19
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=0b, A_MIN=01
+Recieved: R_MIN=01, G_MIN=01, B_MIN=0b, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=04, A_MIN=0d
+Recieved: R_MIN=00, G_MIN=03, B_MIN=04, A_MIN=0d
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=09, A_MIN=00
+Recieved: R_MIN=01, G_MIN=02, B_MIN=09, A_MIN=00
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=0b, A_MIN=0e
+Recieved: R_MIN=09, G_MIN=03, B_MIN=0b, A_MIN=0e
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=08, A_MIN=03
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=08, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=03, A_MIN=07
+Recieved: R_MIN=00, G_MIN=05, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=0e, G_MIN=01, B_MIN=0d, A_MIN=0a
+Recieved: R_MIN=0e, G_MIN=01, B_MIN=0d, A_MIN=0a
+
+Expected: R_MIN=05, G_MIN=0d, B_MIN=0a, A_MIN=0a
+Recieved: R_MIN=05, G_MIN=0d, B_MIN=0a, A_MIN=0a
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=37, A_MIN=04
+Recieved: R_MIN=03, G_MIN=09, B_MIN=37, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=05, A_MIN=0a
+Recieved: R_MIN=02, G_MIN=06, B_MIN=05, A_MIN=0a
+
+Expected: R_MIN=16, G_MIN=07, B_MIN=00, A_MIN=17
+Recieved: R_MIN=16, G_MIN=07, B_MIN=00, A_MIN=17
+
+Expected: R_MIN=0c, G_MIN=04, B_MIN=02, A_MIN=0a
+Recieved: R_MIN=0c, G_MIN=04, B_MIN=02, A_MIN=0a
+
+Expected: R_MIN=03, G_MIN=08, B_MIN=00, A_MIN=04
+Recieved: R_MIN=03, G_MIN=08, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=0b, A_MIN=00
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=0b, A_MIN=00
+
+Expected: R_MIN=0b, G_MIN=05, B_MIN=09, A_MIN=0b
+Recieved: R_MIN=0b, G_MIN=05, B_MIN=09, A_MIN=0b
+
+Expected: R_MIN=1a, G_MIN=08, B_MIN=01, A_MIN=01
+Recieved: R_MIN=1a, G_MIN=08, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=03, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=04, A_MIN=05
+Recieved: R_MIN=03, G_MIN=00, B_MIN=04, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=02
+Recieved: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=1c, G_MIN=06, B_MIN=03, A_MIN=02
+Recieved: R_MIN=1c, G_MIN=06, B_MIN=03, A_MIN=02
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=0b, A_MIN=01
+Recieved: R_MIN=02, G_MIN=04, B_MIN=0b, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=0f, A_MIN=07
+Recieved: R_MIN=01, G_MIN=00, B_MIN=0f, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=07, A_MIN=04
+Recieved: R_MIN=01, G_MIN=00, B_MIN=07, A_MIN=04
+
+Expected: R_MIN=0e, G_MIN=04, B_MIN=01, A_MIN=0d
+Recieved: R_MIN=0e, G_MIN=04, B_MIN=01, A_MIN=0d
+
+Expected: R_MIN=02, G_MIN=02, B_MIN=0f, A_MIN=00
+Recieved: R_MIN=02, G_MIN=02, B_MIN=0f, A_MIN=00
+
+Expected: R_MIN=1f, G_MIN=05, B_MIN=0a, A_MIN=05
+Recieved: R_MIN=1f, G_MIN=05, B_MIN=0a, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=0a, B_MIN=06, A_MIN=09
+Recieved: R_MIN=00, G_MIN=0a, B_MIN=06, A_MIN=09
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=1c
+Recieved: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=1c
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=06, A_MIN=0d
+Recieved: R_MIN=06, G_MIN=01, B_MIN=06, A_MIN=0d
+
+Expected: R_MIN=07, G_MIN=0a, B_MIN=07, A_MIN=07
+Recieved: R_MIN=07, G_MIN=0a, B_MIN=07, A_MIN=07
+
+Expected: R_MIN=10, G_MIN=0c, B_MIN=07, A_MIN=00
+Recieved: R_MIN=10, G_MIN=0c, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=16, G_MIN=0c, B_MIN=06, A_MIN=0e
+Recieved: R_MIN=16, G_MIN=0c, B_MIN=06, A_MIN=0e
+
+Expected: R_MIN=08, G_MIN=00, B_MIN=00, A_MIN=0c
+Recieved: R_MIN=08, G_MIN=00, B_MIN=00, A_MIN=0c
+
+Expected: R_MIN=01, G_MIN=04, B_MIN=03, A_MIN=07
+Recieved: R_MIN=01, G_MIN=04, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=06
+Recieved: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=06
+
+Expected: R_MIN=0d, G_MIN=06, B_MIN=01, A_MIN=07
+Recieved: R_MIN=0d, G_MIN=06, B_MIN=01, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=08, B_MIN=03, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=08, B_MIN=03, A_MIN=0b
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=04, A_MIN=00
+Recieved: R_MIN=03, G_MIN=09, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=0b, G_MIN=00, B_MIN=0a, A_MIN=05
+Recieved: R_MIN=0b, G_MIN=00, B_MIN=0a, A_MIN=05
+
+Expected: R_MIN=1b, G_MIN=07, B_MIN=01, A_MIN=0b
+Recieved: R_MIN=1b, G_MIN=07, B_MIN=01, A_MIN=0b
+
+Expected: R_MIN=05, G_MIN=05, B_MIN=10, A_MIN=03
+Recieved: R_MIN=05, G_MIN=05, B_MIN=10, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=0f, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=01, G_MIN=0f, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=01, G_MIN=0c, B_MIN=01, A_MIN=04
+Recieved: R_MIN=01, G_MIN=0c, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=0b, G_MIN=00, B_MIN=07, A_MIN=03
+Recieved: R_MIN=0b, G_MIN=00, B_MIN=07, A_MIN=03
+
+Expected: R_MIN=0b, G_MIN=10, B_MIN=01, A_MIN=0b
+Recieved: R_MIN=0b, G_MIN=10, B_MIN=01, A_MIN=0b
+
+Expected: R_MIN=13, G_MIN=03, B_MIN=0f, A_MIN=0c
+Recieved: R_MIN=13, G_MIN=03, B_MIN=0f, A_MIN=0c
+
+Expected: R_MIN=06, G_MIN=04, B_MIN=01, A_MIN=04
+Recieved: R_MIN=06, G_MIN=04, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=01, A_MIN=01
+Recieved: R_MIN=03, G_MIN=03, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=15, B_MIN=0a, A_MIN=0b
+Recieved: R_MIN=07, G_MIN=15, B_MIN=0a, A_MIN=0b
+
+Expected: R_MIN=07, G_MIN=03, B_MIN=05, A_MIN=1f
+Recieved: R_MIN=07, G_MIN=03, B_MIN=05, A_MIN=1f
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=10, A_MIN=19
+Recieved: R_MIN=07, G_MIN=01, B_MIN=10, A_MIN=19
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=0c, A_MIN=0f
+Recieved: R_MIN=03, G_MIN=02, B_MIN=0c, A_MIN=0f
+
+Expected: R_MIN=04, G_MIN=06, B_MIN=0f, A_MIN=03
+Recieved: R_MIN=04, G_MIN=06, B_MIN=0f, A_MIN=03
+
+Expected: R_MIN=10, G_MIN=04, B_MIN=09, A_MIN=12
+Recieved: R_MIN=10, G_MIN=04, B_MIN=09, A_MIN=12
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=0f, A_MIN=07
+Recieved: R_MIN=02, G_MIN=04, B_MIN=0f, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=05
+Recieved: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=05, G_MIN=0a, B_MIN=12, A_MIN=05
+Recieved: R_MIN=05, G_MIN=0a, B_MIN=12, A_MIN=05
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=05, A_MIN=03
+Recieved: R_MIN=03, G_MIN=01, B_MIN=05, A_MIN=03
+
+Expected: R_MIN=05, G_MIN=10, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=05, G_MIN=10, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=00, G_MIN=12, B_MIN=0d, A_MIN=07
+Recieved: R_MIN=00, G_MIN=12, B_MIN=0d, A_MIN=07
+
+Expected: R_MIN=0b, G_MIN=0c, B_MIN=02, A_MIN=0c
+Recieved: R_MIN=0b, G_MIN=0c, B_MIN=02, A_MIN=0c
+
+Expected: R_MIN=08, G_MIN=13, B_MIN=03, A_MIN=09
+Recieved: R_MIN=08, G_MIN=13, B_MIN=03, A_MIN=09
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=07, A_MIN=07
+Recieved: R_MIN=02, G_MIN=00, B_MIN=07, A_MIN=07
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=01, A_MIN=0d
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=01, A_MIN=0d
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=03
+Recieved: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=0a, B_MIN=09, A_MIN=16
+Recieved: R_MIN=02, G_MIN=0a, B_MIN=09, A_MIN=16
+
+Expected: R_MIN=05, G_MIN=0e, B_MIN=07, A_MIN=06
+Recieved: R_MIN=05, G_MIN=0e, B_MIN=07, A_MIN=06
+
+Expected: R_MIN=0d, G_MIN=02, B_MIN=0a, A_MIN=0b
+Recieved: R_MIN=0d, G_MIN=02, B_MIN=0a, A_MIN=0b
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=04, A_MIN=04
+Recieved: R_MIN=01, G_MIN=00, B_MIN=04, A_MIN=04
+
+Expected: R_MIN=0b, G_MIN=08, B_MIN=06, A_MIN=0a
+Recieved: R_MIN=0b, G_MIN=08, B_MIN=06, A_MIN=0a
+
+Expected: R_MIN=02, G_MIN=08, B_MIN=00, A_MIN=04
+Recieved: R_MIN=02, G_MIN=08, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=06, A_MIN=07
+Recieved: R_MIN=09, G_MIN=03, B_MIN=06, A_MIN=07
+
+Expected: R_MIN=02, G_MIN=0e, B_MIN=04, A_MIN=17
+Recieved: R_MIN=02, G_MIN=0e, B_MIN=04, A_MIN=17
+
+Expected: R_MIN=0d, G_MIN=0b, B_MIN=19, A_MIN=03
+Recieved: R_MIN=0d, G_MIN=0b, B_MIN=19, A_MIN=03
+
+Expected: R_MIN=0c, G_MIN=07, B_MIN=06, A_MIN=00
+Recieved: R_MIN=0c, G_MIN=07, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=01, B_MIN=33, A_MIN=14
+Recieved: R_MIN=05, G_MIN=01, B_MIN=33, A_MIN=14
+
+Expected: R_MIN=01, G_MIN=09, B_MIN=0a, A_MIN=0c
+Recieved: R_MIN=01, G_MIN=09, B_MIN=0a, A_MIN=0c
+
+Expected: R_MIN=0b, G_MIN=0f, B_MIN=01, A_MIN=0c
+Recieved: R_MIN=0b, G_MIN=0f, B_MIN=01, A_MIN=0c
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=04, A_MIN=05
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=04, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=0d, A_MIN=10
+Recieved: R_MIN=00, G_MIN=03, B_MIN=0d, A_MIN=10
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=0a, A_MIN=03
+Recieved: R_MIN=00, G_MIN=05, B_MIN=0a, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=14, B_MIN=19, A_MIN=08
+Recieved: R_MIN=00, G_MIN=14, B_MIN=19, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=15, A_MIN=05
+Recieved: R_MIN=00, G_MIN=00, B_MIN=15, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=18, A_MIN=00
+Recieved: R_MIN=02, G_MIN=05, B_MIN=18, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=05
+Recieved: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=01, A_MIN=11
+Recieved: R_MIN=00, G_MIN=00, B_MIN=01, A_MIN=11
+
+Expected: R_MIN=0b, G_MIN=02, B_MIN=10, A_MIN=00
+Recieved: R_MIN=0b, G_MIN=02, B_MIN=10, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=05, A_MIN=0b
+Recieved: R_MIN=04, G_MIN=04, B_MIN=05, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=13, B_MIN=05, A_MIN=04
+Recieved: R_MIN=02, G_MIN=13, B_MIN=05, A_MIN=04
+
+Expected: R_MIN=08, G_MIN=0a, B_MIN=01, A_MIN=00
+Recieved: R_MIN=08, G_MIN=0a, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=0b, A_MIN=01
+Recieved: R_MIN=00, G_MIN=06, B_MIN=0b, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=0c, A_MIN=12
+Recieved: R_MIN=03, G_MIN=04, B_MIN=0c, A_MIN=12
+
+Expected: R_MIN=01, G_MIN=09, B_MIN=16, A_MIN=00
+Recieved: R_MIN=01, G_MIN=09, B_MIN=16, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=0f, B_MIN=02, A_MIN=06
+Recieved: R_MIN=02, G_MIN=0f, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=0e, G_MIN=01, B_MIN=0b, A_MIN=00
+Recieved: R_MIN=0e, G_MIN=01, B_MIN=0b, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=01, A_MIN=1f
+Recieved: R_MIN=06, G_MIN=01, B_MIN=01, A_MIN=1f
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=04, A_MIN=08
+Recieved: R_MIN=00, G_MIN=00, B_MIN=04, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=02
+Recieved: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=0a, G_MIN=1c, B_MIN=00, A_MIN=04
+Recieved: R_MIN=0a, G_MIN=1c, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=0b, B_MIN=02, A_MIN=00
+Recieved: R_MIN=02, G_MIN=0b, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=19, A_MIN=02
+Recieved: R_MIN=04, G_MIN=07, B_MIN=19, A_MIN=02
+
+Expected: R_MIN=04, G_MIN=0a, B_MIN=00, A_MIN=00
+Recieved: R_MIN=04, G_MIN=0a, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=13, B_MIN=12, A_MIN=02
+Recieved: R_MIN=00, G_MIN=13, B_MIN=12, A_MIN=02
+
+Expected: R_MIN=1d, G_MIN=00, B_MIN=00, A_MIN=02
+Recieved: R_MIN=1d, G_MIN=00, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=09, B_MIN=10, A_MIN=03
+Recieved: R_MIN=00, G_MIN=09, B_MIN=10, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=0c, A_MIN=05
+Recieved: R_MIN=04, G_MIN=03, B_MIN=0c, A_MIN=05
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=07, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=07, A_MIN=08
+
+Expected: R_MIN=05, G_MIN=15, B_MIN=01, A_MIN=0c
+Recieved: R_MIN=05, G_MIN=15, B_MIN=01, A_MIN=0c
+
+Expected: R_MIN=08, G_MIN=07, B_MIN=0d, A_MIN=01
+Recieved: R_MIN=08, G_MIN=07, B_MIN=0d, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=0d, B_MIN=00, A_MIN=10
+Recieved: R_MIN=02, G_MIN=0d, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=01, G_MIN=05, B_MIN=01, A_MIN=06
+Recieved: R_MIN=01, G_MIN=05, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=10, A_MIN=06
+Recieved: R_MIN=07, G_MIN=00, B_MIN=10, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=03, A_MIN=04
+Recieved: R_MIN=01, G_MIN=00, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=04, G_MIN=05, B_MIN=0a, A_MIN=09
+Recieved: R_MIN=04, G_MIN=05, B_MIN=0a, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=02, A_MIN=0f
+Recieved: R_MIN=00, G_MIN=02, B_MIN=02, A_MIN=0f
+
+Expected: R_MIN=0b, G_MIN=07, B_MIN=00, A_MIN=28
+Recieved: R_MIN=0b, G_MIN=07, B_MIN=00, A_MIN=28
+
+Expected: R_MIN=01, G_MIN=08, B_MIN=02, A_MIN=0c
+Recieved: R_MIN=01, G_MIN=08, B_MIN=02, A_MIN=0c
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=03, G_MIN=00, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=07, G_MIN=05, B_MIN=0b, A_MIN=0c
+Recieved: R_MIN=07, G_MIN=05, B_MIN=0b, A_MIN=0c
+
+Expected: R_MIN=0e, G_MIN=0b, B_MIN=0c, A_MIN=03
+Recieved: R_MIN=0e, G_MIN=0b, B_MIN=0c, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=17, B_MIN=06, A_MIN=24
+Recieved: R_MIN=0a, G_MIN=17, B_MIN=06, A_MIN=24
+
+Expected: R_MIN=0a, G_MIN=03, B_MIN=0e, A_MIN=06
+Recieved: R_MIN=0a, G_MIN=03, B_MIN=0e, A_MIN=06
+
+Expected: R_MIN=0e, G_MIN=09, B_MIN=03, A_MIN=00
+Recieved: R_MIN=0e, G_MIN=09, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=02, B_MIN=15, A_MIN=04
+Recieved: R_MIN=04, G_MIN=02, B_MIN=15, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=04
+Recieved: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=04, G_MIN=1c, B_MIN=07, A_MIN=00
+Recieved: R_MIN=04, G_MIN=1c, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=11, B_MIN=15, A_MIN=07
+Recieved: R_MIN=05, G_MIN=11, B_MIN=15, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=0d, B_MIN=0c, A_MIN=15
+Recieved: R_MIN=03, G_MIN=0d, B_MIN=0c, A_MIN=15
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=17, A_MIN=07
+Recieved: R_MIN=05, G_MIN=00, B_MIN=17, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=01, A_MIN=00
+Recieved: R_MIN=03, G_MIN=01, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=01, A_MIN=05
+Recieved: R_MIN=00, G_MIN=04, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=05, A_MIN=06
+Recieved: R_MIN=01, G_MIN=00, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=14, G_MIN=00, B_MIN=07, A_MIN=03
+Recieved: R_MIN=14, G_MIN=00, B_MIN=07, A_MIN=03
+
+Expected: R_MIN=05, G_MIN=01, B_MIN=0c, A_MIN=13
+Recieved: R_MIN=05, G_MIN=01, B_MIN=0c, A_MIN=13
+
+Expected: R_MIN=17, G_MIN=04, B_MIN=05, A_MIN=0d
+Recieved: R_MIN=17, G_MIN=04, B_MIN=05, A_MIN=0d
+
+Expected: R_MIN=02, G_MIN=09, B_MIN=04, A_MIN=01
+Recieved: R_MIN=02, G_MIN=09, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=04, B_MIN=07, A_MIN=02
+Recieved: R_MIN=06, G_MIN=04, B_MIN=07, A_MIN=02
+
+Expected: R_MIN=15, G_MIN=09, B_MIN=05, A_MIN=11
+Recieved: R_MIN=15, G_MIN=09, B_MIN=05, A_MIN=11
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=1f, A_MIN=02
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=1f, A_MIN=02
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=01, A_MIN=05
+Recieved: R_MIN=04, G_MIN=00, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=0b, G_MIN=02, B_MIN=04, A_MIN=08
+Recieved: R_MIN=0b, G_MIN=02, B_MIN=04, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=0d, B_MIN=02, A_MIN=05
+Recieved: R_MIN=00, G_MIN=0d, B_MIN=02, A_MIN=05
+
+Expected: R_MIN=0a, G_MIN=03, B_MIN=09, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=03, B_MIN=09, A_MIN=08
+
+Expected: R_MIN=15, G_MIN=10, B_MIN=09, A_MIN=0d
+Recieved: R_MIN=15, G_MIN=10, B_MIN=09, A_MIN=0d
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=03
+Recieved: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=06, A_MIN=04
+Recieved: R_MIN=05, G_MIN=00, B_MIN=06, A_MIN=04
+
+Expected: R_MIN=0d, G_MIN=00, B_MIN=01, A_MIN=0d
+Recieved: R_MIN=0d, G_MIN=00, B_MIN=01, A_MIN=0d
+
+Expected: R_MIN=03, G_MIN=07, B_MIN=01, A_MIN=10
+Recieved: R_MIN=03, G_MIN=07, B_MIN=01, A_MIN=10
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=05, A_MIN=1b
+Recieved: R_MIN=05, G_MIN=04, B_MIN=05, A_MIN=1b
+
+Expected: R_MIN=08, G_MIN=09, B_MIN=0c, A_MIN=03
+Recieved: R_MIN=08, G_MIN=09, B_MIN=0c, A_MIN=03
+
+Expected: R_MIN=15, G_MIN=00, B_MIN=0d, A_MIN=11
+Recieved: R_MIN=15, G_MIN=00, B_MIN=0d, A_MIN=11
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=03
+Recieved: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=26, A_MIN=0b
+Recieved: R_MIN=02, G_MIN=04, B_MIN=26, A_MIN=0b
+
+Expected: R_MIN=04, G_MIN=09, B_MIN=0c, A_MIN=02
+Recieved: R_MIN=04, G_MIN=09, B_MIN=0c, A_MIN=02
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=11, A_MIN=04
+Recieved: R_MIN=04, G_MIN=04, B_MIN=11, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=14, A_MIN=03
+Recieved: R_MIN=07, G_MIN=02, B_MIN=14, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=0c, A_MIN=03
+Recieved: R_MIN=02, G_MIN=00, B_MIN=0c, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=0e, A_MIN=01
+Recieved: R_MIN=00, G_MIN=07, B_MIN=0e, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=10, B_MIN=01, A_MIN=01
+Recieved: R_MIN=07, G_MIN=10, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=0e, A_MIN=03
+Recieved: R_MIN=03, G_MIN=09, B_MIN=0e, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=00, A_MIN=06
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=08, A_MIN=01
+Recieved: R_MIN=01, G_MIN=02, B_MIN=08, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=0a, G_MIN=04, B_MIN=06, A_MIN=0c
+Recieved: R_MIN=0a, G_MIN=04, B_MIN=06, A_MIN=0c
+
+Expected: R_MIN=07, G_MIN=0b, B_MIN=15, A_MIN=07
+Recieved: R_MIN=07, G_MIN=0b, B_MIN=15, A_MIN=07
+
+Expected: R_MIN=0c, G_MIN=06, B_MIN=0c, A_MIN=0f
+Recieved: R_MIN=0c, G_MIN=06, B_MIN=0c, A_MIN=0f
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=06, A_MIN=04
+Recieved: R_MIN=03, G_MIN=01, B_MIN=06, A_MIN=04
+
+Expected: R_MIN=14, G_MIN=02, B_MIN=06, A_MIN=02
+Recieved: R_MIN=14, G_MIN=02, B_MIN=06, A_MIN=02
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=02, A_MIN=01
+Recieved: R_MIN=08, G_MIN=05, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=20, B_MIN=0a, A_MIN=06
+Recieved: R_MIN=01, G_MIN=20, B_MIN=0a, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=04, B_MIN=0a, A_MIN=03
+Recieved: R_MIN=01, G_MIN=04, B_MIN=0a, A_MIN=03
+
+Expected: R_MIN=19, G_MIN=00, B_MIN=05, A_MIN=0b
+Recieved: R_MIN=19, G_MIN=00, B_MIN=05, A_MIN=0b
+
+Expected: R_MIN=00, G_MIN=17, B_MIN=15, A_MIN=0d
+Recieved: R_MIN=00, G_MIN=17, B_MIN=15, A_MIN=0d
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=02, A_MIN=06
+Recieved: R_MIN=04, G_MIN=03, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=1e, A_MIN=02
+Recieved: R_MIN=00, G_MIN=07, B_MIN=1e, A_MIN=02
+
+Expected: R_MIN=05, G_MIN=02, B_MIN=1a, A_MIN=10
+Recieved: R_MIN=05, G_MIN=02, B_MIN=1a, A_MIN=10
+
+Expected: R_MIN=01, G_MIN=1c, B_MIN=00, A_MIN=2c
+Recieved: R_MIN=01, G_MIN=1c, B_MIN=00, A_MIN=2c
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=01, A_MIN=02
+Recieved: R_MIN=01, G_MIN=01, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=03, A_MIN=00
+Recieved: R_MIN=01, G_MIN=01, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=05, A_MIN=05
+Recieved: R_MIN=02, G_MIN=06, B_MIN=05, A_MIN=05
+
+Expected: R_MIN=08, G_MIN=08, B_MIN=08, A_MIN=04
+Recieved: R_MIN=08, G_MIN=08, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=24, G_MIN=06, B_MIN=13, A_MIN=07
+Recieved: R_MIN=24, G_MIN=06, B_MIN=13, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=02, A_MIN=09
+Recieved: R_MIN=00, G_MIN=02, B_MIN=02, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=03, A_MIN=0d
+Recieved: R_MIN=04, G_MIN=00, B_MIN=03, A_MIN=0d
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=09, A_MIN=08
+Recieved: R_MIN=04, G_MIN=04, B_MIN=09, A_MIN=08
+
+Expected: R_MIN=15, G_MIN=02, B_MIN=14, A_MIN=03
+Recieved: R_MIN=15, G_MIN=02, B_MIN=14, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=05, B_MIN=08, A_MIN=0e
+Recieved: R_MIN=06, G_MIN=05, B_MIN=08, A_MIN=0e
+
+Expected: R_MIN=07, G_MIN=17, B_MIN=1b, A_MIN=02
+Recieved: R_MIN=07, G_MIN=17, B_MIN=1b, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=10, A_MIN=07
+Recieved: R_MIN=07, G_MIN=02, B_MIN=10, A_MIN=07
+
+Expected: R_MIN=1f, G_MIN=0d, B_MIN=0e, A_MIN=15
+Recieved: R_MIN=1f, G_MIN=0d, B_MIN=0e, A_MIN=15
+
+Expected: R_MIN=00, G_MIN=0f, B_MIN=09, A_MIN=02
+Recieved: R_MIN=00, G_MIN=0f, B_MIN=09, A_MIN=02
+
+Expected: R_MIN=0b, G_MIN=00, B_MIN=07, A_MIN=00
+Recieved: R_MIN=0b, G_MIN=00, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=0f, G_MIN=0f, B_MIN=08, A_MIN=16
+Recieved: R_MIN=0f, G_MIN=0f, B_MIN=08, A_MIN=16
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=03, A_MIN=0d
+Recieved: R_MIN=08, G_MIN=05, B_MIN=03, A_MIN=0d
+
+Expected: R_MIN=06, G_MIN=06, B_MIN=05, A_MIN=01
+Recieved: R_MIN=06, G_MIN=06, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=13, G_MIN=0a, B_MIN=02, A_MIN=06
+Recieved: R_MIN=13, G_MIN=0a, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=14, G_MIN=01, B_MIN=02, A_MIN=06
+Recieved: R_MIN=14, G_MIN=01, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=01, A_MIN=04
+Recieved: R_MIN=00, G_MIN=00, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=07, A_MIN=07
+Recieved: R_MIN=02, G_MIN=03, B_MIN=07, A_MIN=07
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=09, A_MIN=1a
+Recieved: R_MIN=07, G_MIN=02, B_MIN=09, A_MIN=1a
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=04, A_MIN=02
+Recieved: R_MIN=02, G_MIN=03, B_MIN=04, A_MIN=02
+
+Expected: R_MIN=06, G_MIN=05, B_MIN=04, A_MIN=03
+Recieved: R_MIN=06, G_MIN=05, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=09, B_MIN=02, A_MIN=10
+Recieved: R_MIN=0a, G_MIN=09, B_MIN=02, A_MIN=10
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=06, A_MIN=00
+Recieved: R_MIN=08, G_MIN=05, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=03, A_MIN=0b
+Recieved: R_MIN=07, G_MIN=02, B_MIN=03, A_MIN=0b
+
+Expected: R_MIN=0a, G_MIN=04, B_MIN=01, A_MIN=01
+Recieved: R_MIN=0a, G_MIN=04, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=07, A_MIN=08
+Recieved: R_MIN=06, G_MIN=03, B_MIN=07, A_MIN=08
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=07, A_MIN=01
+Recieved: R_MIN=06, G_MIN=00, B_MIN=07, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=0e, B_MIN=0f, A_MIN=00
+Recieved: R_MIN=07, G_MIN=0e, B_MIN=0f, A_MIN=00
+
+Expected: R_MIN=09, G_MIN=00, B_MIN=05, A_MIN=03
+Recieved: R_MIN=09, G_MIN=00, B_MIN=05, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=09, B_MIN=00, A_MIN=02
+Recieved: R_MIN=07, G_MIN=09, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=09, G_MIN=05, B_MIN=03, A_MIN=11
+Recieved: R_MIN=09, G_MIN=05, B_MIN=03, A_MIN=11
+
+Expected: R_MIN=0e, G_MIN=0e, B_MIN=0a, A_MIN=09
+Recieved: R_MIN=0e, G_MIN=0e, B_MIN=0a, A_MIN=09
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=08, A_MIN=14
+Recieved: R_MIN=02, G_MIN=01, B_MIN=08, A_MIN=14
+
+Expected: R_MIN=11, G_MIN=02, B_MIN=00, A_MIN=01
+Recieved: R_MIN=11, G_MIN=02, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=11, G_MIN=09, B_MIN=03, A_MIN=00
+Recieved: R_MIN=11, G_MIN=09, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=0c, B_MIN=04, A_MIN=04
+Recieved: R_MIN=01, G_MIN=0c, B_MIN=04, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=04, A_MIN=00
+Recieved: R_MIN=00, G_MIN=02, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=02, A_MIN=00
+Recieved: R_MIN=02, G_MIN=04, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=0a, B_MIN=03, A_MIN=02
+Recieved: R_MIN=05, G_MIN=0a, B_MIN=03, A_MIN=02
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=0f
+Recieved: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=0f
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=04, A_MIN=03
+Recieved: R_MIN=03, G_MIN=04, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=16, A_MIN=02
+Recieved: R_MIN=04, G_MIN=00, B_MIN=16, A_MIN=02
+
+Expected: R_MIN=10, G_MIN=00, B_MIN=05, A_MIN=09
+Recieved: R_MIN=10, G_MIN=00, B_MIN=05, A_MIN=09
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=02, A_MIN=12
+Recieved: R_MIN=01, G_MIN=02, B_MIN=02, A_MIN=12
+
+Expected: R_MIN=17, G_MIN=07, B_MIN=04, A_MIN=0c
+Recieved: R_MIN=17, G_MIN=07, B_MIN=04, A_MIN=0c
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=04, A_MIN=09
+Recieved: R_MIN=09, G_MIN=03, B_MIN=04, A_MIN=09
+
+Expected: R_MIN=0f, G_MIN=05, B_MIN=00, A_MIN=04
+Recieved: R_MIN=0f, G_MIN=05, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=01, A_MIN=04
+Recieved: R_MIN=02, G_MIN=01, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=0a, G_MIN=18, B_MIN=05, A_MIN=02
+Recieved: R_MIN=0a, G_MIN=18, B_MIN=05, A_MIN=02
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=07, A_MIN=0a
+Recieved: R_MIN=02, G_MIN=06, B_MIN=07, A_MIN=0a
+
+Expected: R_MIN=06, G_MIN=0d, B_MIN=01, A_MIN=00
+Recieved: R_MIN=06, G_MIN=0d, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=11, B_MIN=01, A_MIN=05
+Recieved: R_MIN=06, G_MIN=11, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=0a, B_MIN=0e, A_MIN=06
+Recieved: R_MIN=02, G_MIN=0a, B_MIN=0e, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=02, A_MIN=05
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=02, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=13, A_MIN=0b
+Recieved: R_MIN=01, G_MIN=00, B_MIN=13, A_MIN=0b
+
+Expected: R_MIN=09, G_MIN=09, B_MIN=1f, A_MIN=0f
+Recieved: R_MIN=09, G_MIN=09, B_MIN=1f, A_MIN=0f
+
+Expected: R_MIN=0f, G_MIN=02, B_MIN=00, A_MIN=01
+Recieved: R_MIN=0f, G_MIN=02, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=05, G_MIN=06, B_MIN=01, A_MIN=01
+Recieved: R_MIN=05, G_MIN=06, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=14, B_MIN=0a, A_MIN=00
+Recieved: R_MIN=00, G_MIN=14, B_MIN=0a, A_MIN=00
+
+Expected: R_MIN=0c, G_MIN=05, B_MIN=03, A_MIN=20
+Recieved: R_MIN=0c, G_MIN=05, B_MIN=03, A_MIN=20
+
+Expected: R_MIN=08, G_MIN=07, B_MIN=07, A_MIN=00
+Recieved: R_MIN=08, G_MIN=07, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=05, A_MIN=0f
+Recieved: R_MIN=01, G_MIN=00, B_MIN=05, A_MIN=0f
+
+Expected: R_MIN=00, G_MIN=27, B_MIN=02, A_MIN=0d
+Recieved: R_MIN=00, G_MIN=27, B_MIN=02, A_MIN=0d
+
+Expected: R_MIN=0c, G_MIN=0e, B_MIN=00, A_MIN=00
+Recieved: R_MIN=0c, G_MIN=0e, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=0a, B_MIN=00, A_MIN=0c
+Recieved: R_MIN=08, G_MIN=0a, B_MIN=00, A_MIN=0c
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=05
+Recieved: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=16, G_MIN=08, B_MIN=00, A_MIN=07
+Recieved: R_MIN=16, G_MIN=08, B_MIN=00, A_MIN=07
+
+Expected: R_MIN=1a, G_MIN=02, B_MIN=03, A_MIN=03
+Recieved: R_MIN=1a, G_MIN=02, B_MIN=03, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=07, B_MIN=09, A_MIN=02
+Recieved: R_MIN=01, G_MIN=07, B_MIN=09, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=22, B_MIN=0d, A_MIN=16
+Recieved: R_MIN=01, G_MIN=22, B_MIN=0d, A_MIN=16
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=09, A_MIN=01
+Recieved: R_MIN=03, G_MIN=02, B_MIN=09, A_MIN=01
+
+Expected: R_MIN=18, G_MIN=03, B_MIN=07, A_MIN=05
+Recieved: R_MIN=18, G_MIN=03, B_MIN=07, A_MIN=05
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=06, A_MIN=0b
+Recieved: R_MIN=06, G_MIN=00, B_MIN=06, A_MIN=0b
+
+Expected: R_MIN=12, G_MIN=00, B_MIN=00, A_MIN=0c
+Recieved: R_MIN=12, G_MIN=00, B_MIN=00, A_MIN=0c
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=02, A_MIN=0a
+Recieved: R_MIN=07, G_MIN=06, B_MIN=02, A_MIN=0a
+
+Expected: R_MIN=0d, G_MIN=0c, B_MIN=02, A_MIN=03
+Recieved: R_MIN=0d, G_MIN=0c, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=0a, A_MIN=06
+Recieved: R_MIN=06, G_MIN=00, B_MIN=0a, A_MIN=06
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=03, A_MIN=0d
+Recieved: R_MIN=03, G_MIN=03, B_MIN=03, A_MIN=0d
+
+Expected: R_MIN=0e, G_MIN=01, B_MIN=02, A_MIN=09
+Recieved: R_MIN=0e, G_MIN=01, B_MIN=02, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=01
+Recieved: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=23, G_MIN=1e, B_MIN=10, A_MIN=04
+Recieved: R_MIN=23, G_MIN=1e, B_MIN=10, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=0e, B_MIN=0d, A_MIN=12
+Recieved: R_MIN=00, G_MIN=0e, B_MIN=0d, A_MIN=12
+
+Expected: R_MIN=01, G_MIN=0f, B_MIN=0c, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0f, B_MIN=0c, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=15, B_MIN=07, A_MIN=07
+Recieved: R_MIN=07, G_MIN=15, B_MIN=07, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=0a, B_MIN=01, A_MIN=19
+Recieved: R_MIN=00, G_MIN=0a, B_MIN=01, A_MIN=19
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=0c, A_MIN=03
+Recieved: R_MIN=00, G_MIN=01, B_MIN=0c, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=04, A_MIN=05
+Recieved: R_MIN=06, G_MIN=00, B_MIN=04, A_MIN=05
+
+Expected: R_MIN=07, G_MIN=0a, B_MIN=0a, A_MIN=02
+Recieved: R_MIN=07, G_MIN=0a, B_MIN=0a, A_MIN=02
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=01, A_MIN=02
+Recieved: R_MIN=03, G_MIN=09, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=09, G_MIN=0b, B_MIN=01, A_MIN=07
+Recieved: R_MIN=09, G_MIN=0b, B_MIN=01, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=0d, B_MIN=03, A_MIN=04
+Recieved: R_MIN=03, G_MIN=0d, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=17, G_MIN=01, B_MIN=08, A_MIN=0f
+Recieved: R_MIN=17, G_MIN=01, B_MIN=08, A_MIN=0f
+
+Expected: R_MIN=00, G_MIN=17, B_MIN=0c, A_MIN=04
+Recieved: R_MIN=00, G_MIN=17, B_MIN=0c, A_MIN=04
+
+Expected: R_MIN=04, G_MIN=1a, B_MIN=0b, A_MIN=02
+Recieved: R_MIN=04, G_MIN=1a, B_MIN=0b, A_MIN=02
+
+Expected: R_MIN=0a, G_MIN=05, B_MIN=06, A_MIN=11
+Recieved: R_MIN=0a, G_MIN=05, B_MIN=06, A_MIN=11
+
+Expected: R_MIN=0b, G_MIN=04, B_MIN=01, A_MIN=17
+Recieved: R_MIN=0b, G_MIN=04, B_MIN=01, A_MIN=17
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=0a, A_MIN=06
+Recieved: R_MIN=01, G_MIN=02, B_MIN=0a, A_MIN=06
+
+Expected: R_MIN=08, G_MIN=01, B_MIN=0e, A_MIN=00
+Recieved: R_MIN=08, G_MIN=01, B_MIN=0e, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=05, B_MIN=00, A_MIN=12
+Recieved: R_MIN=04, G_MIN=05, B_MIN=00, A_MIN=12
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=02, A_MIN=00
+Recieved: R_MIN=00, G_MIN=05, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=04, A_MIN=04
+Recieved: R_MIN=00, G_MIN=04, B_MIN=04, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=08, B_MIN=01, A_MIN=08
+Recieved: R_MIN=01, G_MIN=08, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=0d, G_MIN=09, B_MIN=01, A_MIN=02
+Recieved: R_MIN=0d, G_MIN=09, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=09, A_MIN=04
+Recieved: R_MIN=00, G_MIN=03, B_MIN=09, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=02, B_MIN=09, A_MIN=06
+Recieved: R_MIN=05, G_MIN=02, B_MIN=09, A_MIN=06
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=01, A_MIN=07
+Recieved: R_MIN=06, G_MIN=03, B_MIN=01, A_MIN=07
+
+Expected: R_MIN=15, G_MIN=05, B_MIN=0b, A_MIN=09
+Recieved: R_MIN=15, G_MIN=05, B_MIN=0b, A_MIN=09
+
+Expected: R_MIN=12, G_MIN=08, B_MIN=05, A_MIN=01
+Recieved: R_MIN=12, G_MIN=08, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=03, A_MIN=07
+Recieved: R_MIN=04, G_MIN=04, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=08, B_MIN=03, A_MIN=0d
+Recieved: R_MIN=01, G_MIN=08, B_MIN=03, A_MIN=0d
+
+Expected: R_MIN=01, G_MIN=11, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=01, G_MIN=11, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=0e, A_MIN=03
+Recieved: R_MIN=01, G_MIN=01, B_MIN=0e, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=02, A_MIN=01
+Recieved: R_MIN=04, G_MIN=07, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=08, A_MIN=0d
+Recieved: R_MIN=00, G_MIN=03, B_MIN=08, A_MIN=0d
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=06, A_MIN=01
+Recieved: R_MIN=02, G_MIN=06, B_MIN=06, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=16, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=01, G_MIN=16, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=10, G_MIN=01, B_MIN=07, A_MIN=01
+Recieved: R_MIN=10, G_MIN=01, B_MIN=07, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=0c, A_MIN=01
+Recieved: R_MIN=06, G_MIN=02, B_MIN=0c, A_MIN=01
+
+Expected: R_MIN=0a, G_MIN=07, B_MIN=07, A_MIN=00
+Recieved: R_MIN=0a, G_MIN=07, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=04, A_MIN=00
+Recieved: R_MIN=04, G_MIN=04, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=1d, G_MIN=01, B_MIN=0d, A_MIN=15
+Recieved: R_MIN=1d, G_MIN=01, B_MIN=0d, A_MIN=15
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=14, A_MIN=06
+Recieved: R_MIN=00, G_MIN=00, B_MIN=14, A_MIN=06
+
+Expected: R_MIN=22, G_MIN=07, B_MIN=22, A_MIN=02
+Recieved: R_MIN=22, G_MIN=07, B_MIN=22, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=05, B_MIN=0a, A_MIN=08
+Recieved: R_MIN=07, G_MIN=05, B_MIN=0a, A_MIN=08
+
+Expected: R_MIN=12, G_MIN=00, B_MIN=13, A_MIN=16
+Recieved: R_MIN=12, G_MIN=00, B_MIN=13, A_MIN=16
+
+Expected: R_MIN=06, G_MIN=06, B_MIN=02, A_MIN=0e
+Recieved: R_MIN=06, G_MIN=06, B_MIN=02, A_MIN=0e
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=1f, A_MIN=09
+Recieved: R_MIN=00, G_MIN=00, B_MIN=1f, A_MIN=09
+
+Expected: R_MIN=24, G_MIN=02, B_MIN=0b, A_MIN=03
+Recieved: R_MIN=24, G_MIN=02, B_MIN=0b, A_MIN=03
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=11, A_MIN=0c
+Recieved: R_MIN=03, G_MIN=02, B_MIN=11, A_MIN=0c
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=02, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=02, A_MIN=08
+
+Expected: R_MIN=0a, G_MIN=02, B_MIN=07, A_MIN=0f
+Recieved: R_MIN=0a, G_MIN=02, B_MIN=07, A_MIN=0f
+
+Expected: R_MIN=05, G_MIN=16, B_MIN=05, A_MIN=11
+Recieved: R_MIN=05, G_MIN=16, B_MIN=05, A_MIN=11
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=00, A_MIN=03
+Recieved: R_MIN=07, G_MIN=06, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=0b, G_MIN=0a, B_MIN=2c, A_MIN=16
+Recieved: R_MIN=0b, G_MIN=0a, B_MIN=2c, A_MIN=16
+
+Expected: R_MIN=0e, G_MIN=0a, B_MIN=02, A_MIN=1e
+Recieved: R_MIN=0e, G_MIN=0a, B_MIN=02, A_MIN=1e
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=0c, A_MIN=05
+Recieved: R_MIN=02, G_MIN=00, B_MIN=0c, A_MIN=05
+
+Expected: R_MIN=08, G_MIN=01, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=08, G_MIN=01, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=09, G_MIN=02, B_MIN=13, A_MIN=09
+Recieved: R_MIN=09, G_MIN=02, B_MIN=13, A_MIN=09
+
+Expected: R_MIN=1a, G_MIN=14, B_MIN=0d, A_MIN=01
+Recieved: R_MIN=1a, G_MIN=14, B_MIN=0d, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=01, A_MIN=00
+Recieved: R_MIN=02, G_MIN=01, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=02, A_MIN=0a
+Recieved: R_MIN=03, G_MIN=00, B_MIN=02, A_MIN=0a
+
+Expected: R_MIN=0b, G_MIN=00, B_MIN=03, A_MIN=09
+Recieved: R_MIN=0b, G_MIN=00, B_MIN=03, A_MIN=09
+
+Expected: R_MIN=0f, G_MIN=03, B_MIN=02, A_MIN=04
+Recieved: R_MIN=0f, G_MIN=03, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=04
+Recieved: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=09, A_MIN=03
+Recieved: R_MIN=04, G_MIN=03, B_MIN=09, A_MIN=03
+
+Expected: R_MIN=09, G_MIN=01, B_MIN=16, A_MIN=0c
+Recieved: R_MIN=09, G_MIN=01, B_MIN=16, A_MIN=0c
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=18, A_MIN=08
+Recieved: R_MIN=01, G_MIN=00, B_MIN=18, A_MIN=08
+
+Expected: R_MIN=03, G_MIN=08, B_MIN=02, A_MIN=04
+Recieved: R_MIN=03, G_MIN=08, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=0f, G_MIN=02, B_MIN=09, A_MIN=06
+Recieved: R_MIN=0f, G_MIN=02, B_MIN=09, A_MIN=06
+
+Expected: R_MIN=05, G_MIN=01, B_MIN=00, A_MIN=01
+Recieved: R_MIN=05, G_MIN=01, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=02, A_MIN=02
+Recieved: R_MIN=03, G_MIN=04, B_MIN=02, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=0c, B_MIN=00, A_MIN=06
+Recieved: R_MIN=07, G_MIN=0c, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=0e, G_MIN=00, B_MIN=01, A_MIN=01
+Recieved: R_MIN=0e, G_MIN=00, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=05, B_MIN=08, A_MIN=0d
+Recieved: R_MIN=01, G_MIN=05, B_MIN=08, A_MIN=0d
+
+Expected: R_MIN=13, G_MIN=05, B_MIN=06, A_MIN=09
+Recieved: R_MIN=13, G_MIN=05, B_MIN=06, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=0d, B_MIN=02, A_MIN=03
+Recieved: R_MIN=04, G_MIN=0d, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=09, G_MIN=08, B_MIN=0c, A_MIN=05
+Recieved: R_MIN=09, G_MIN=08, B_MIN=0c, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=11, B_MIN=05, A_MIN=01
+Recieved: R_MIN=02, G_MIN=11, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=00, A_MIN=03
+Recieved: R_MIN=05, G_MIN=00, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=0e, G_MIN=0e, B_MIN=18, A_MIN=0d
+Recieved: R_MIN=0e, G_MIN=0e, B_MIN=18, A_MIN=0d
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=0e, A_MIN=02
+Recieved: R_MIN=00, G_MIN=00, B_MIN=0e, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=03, B_MIN=04, A_MIN=0c
+Recieved: R_MIN=07, G_MIN=03, B_MIN=04, A_MIN=0c
+
+Expected: R_MIN=09, G_MIN=02, B_MIN=24, A_MIN=0c
+Recieved: R_MIN=09, G_MIN=02, B_MIN=24, A_MIN=0c
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=09, A_MIN=05
+Recieved: R_MIN=04, G_MIN=03, B_MIN=09, A_MIN=05
+
+Expected: R_MIN=03, G_MIN=07, B_MIN=04, A_MIN=04
+Recieved: R_MIN=03, G_MIN=07, B_MIN=04, A_MIN=04
+
+Expected: R_MIN=0f, G_MIN=0a, B_MIN=13, A_MIN=0c
+Recieved: R_MIN=0f, G_MIN=0a, B_MIN=13, A_MIN=0c
+
+Expected: R_MIN=10, G_MIN=00, B_MIN=00, A_MIN=00
+Recieved: R_MIN=10, G_MIN=00, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=08
+Recieved: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=08
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=06, A_MIN=00
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=0b, A_MIN=02
+Recieved: R_MIN=04, G_MIN=00, B_MIN=0b, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=07, A_MIN=03
+Recieved: R_MIN=00, G_MIN=07, B_MIN=07, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=08, A_MIN=00
+Recieved: R_MIN=04, G_MIN=00, B_MIN=08, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=09, B_MIN=02, A_MIN=0a
+Recieved: R_MIN=05, G_MIN=09, B_MIN=02, A_MIN=0a
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=11, A_MIN=0c
+Recieved: R_MIN=07, G_MIN=00, B_MIN=11, A_MIN=0c
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=03, A_MIN=01
+Recieved: R_MIN=01, G_MIN=02, B_MIN=03, A_MIN=01
+
+Expected: R_MIN=0d, G_MIN=01, B_MIN=03, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=01, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=07, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=0a, A_MIN=11
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=0a, A_MIN=11
+
+Expected: R_MIN=07, G_MIN=03, B_MIN=01, A_MIN=06
+Recieved: R_MIN=07, G_MIN=03, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=02
+Recieved: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=05, G_MIN=09, B_MIN=01, A_MIN=03
+Recieved: R_MIN=05, G_MIN=09, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=03, A_MIN=04
+Recieved: R_MIN=05, G_MIN=04, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=0a, B_MIN=00, A_MIN=05
+Recieved: R_MIN=05, G_MIN=0a, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=05, A_MIN=02
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=05, A_MIN=02
+
+Expected: R_MIN=1d, G_MIN=16, B_MIN=08, A_MIN=04
+Recieved: R_MIN=1d, G_MIN=16, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=03, A_MIN=00
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=07, B_MIN=11, A_MIN=02
+Recieved: R_MIN=07, G_MIN=07, B_MIN=11, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=0b, A_MIN=04
+Recieved: R_MIN=01, G_MIN=00, B_MIN=0b, A_MIN=04
+
+Expected: R_MIN=1e, G_MIN=02, B_MIN=0e, A_MIN=04
+Recieved: R_MIN=1e, G_MIN=02, B_MIN=0e, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=0a, A_MIN=02
+Recieved: R_MIN=03, G_MIN=02, B_MIN=0a, A_MIN=02
+
+Expected: R_MIN=0c, G_MIN=16, B_MIN=03, A_MIN=01
+Recieved: R_MIN=0c, G_MIN=16, B_MIN=03, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=19
+Recieved: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=19
+
+Expected: R_MIN=0d, G_MIN=00, B_MIN=09, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=00, B_MIN=09, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=0e, B_MIN=03, A_MIN=0c
+Recieved: R_MIN=00, G_MIN=0e, B_MIN=03, A_MIN=0c
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=02, A_MIN=00
+Recieved: R_MIN=07, G_MIN=00, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=22, A_MIN=09
+Recieved: R_MIN=02, G_MIN=05, B_MIN=22, A_MIN=09
+
+Expected: R_MIN=12, G_MIN=11, B_MIN=08, A_MIN=06
+Recieved: R_MIN=12, G_MIN=11, B_MIN=08, A_MIN=06
+
+Expected: R_MIN=0c, G_MIN=04, B_MIN=02, A_MIN=07
+Recieved: R_MIN=0c, G_MIN=04, B_MIN=02, A_MIN=07
+
+Expected: R_MIN=11, G_MIN=02, B_MIN=02, A_MIN=03
+Recieved: R_MIN=11, G_MIN=02, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=05, B_MIN=08, A_MIN=04
+Recieved: R_MIN=06, G_MIN=05, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=01, G_MIN=02, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=07, A_MIN=00
+Recieved: R_MIN=04, G_MIN=07, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=23, G_MIN=04, B_MIN=05, A_MIN=06
+Recieved: R_MIN=23, G_MIN=04, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=03, B_MIN=00, A_MIN=03
+Recieved: R_MIN=01, G_MIN=03, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=0e, G_MIN=09, B_MIN=02, A_MIN=0d
+Recieved: R_MIN=0e, G_MIN=09, B_MIN=02, A_MIN=0d
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=03, A_MIN=0e
+Recieved: R_MIN=01, G_MIN=01, B_MIN=03, A_MIN=0e
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=0a, A_MIN=05
+Recieved: R_MIN=03, G_MIN=02, B_MIN=0a, A_MIN=05
+
+Expected: R_MIN=11, G_MIN=0b, B_MIN=08, A_MIN=0f
+Recieved: R_MIN=11, G_MIN=0b, B_MIN=08, A_MIN=0f
+
+Expected: R_MIN=01, G_MIN=07, B_MIN=0d, A_MIN=00
+Recieved: R_MIN=01, G_MIN=07, B_MIN=0d, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=06
+Recieved: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=02
+Recieved: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=02
+
+Expected: R_MIN=13, G_MIN=04, B_MIN=07, A_MIN=02
+Recieved: R_MIN=13, G_MIN=04, B_MIN=07, A_MIN=02
+
+Expected: R_MIN=0f, G_MIN=09, B_MIN=05, A_MIN=03
+Recieved: R_MIN=0f, G_MIN=09, B_MIN=05, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=14, B_MIN=01, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=14, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=0f, G_MIN=0d, B_MIN=08, A_MIN=01
+Recieved: R_MIN=0f, G_MIN=0d, B_MIN=08, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=05, B_MIN=07, A_MIN=06
+Recieved: R_MIN=06, G_MIN=05, B_MIN=07, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=0f, B_MIN=08, A_MIN=04
+Recieved: R_MIN=00, G_MIN=0f, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=09, B_MIN=18, A_MIN=00
+Recieved: R_MIN=01, G_MIN=09, B_MIN=18, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=11, B_MIN=07, A_MIN=0a
+Recieved: R_MIN=03, G_MIN=11, B_MIN=07, A_MIN=0a
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=0b, A_MIN=03
+Recieved: R_MIN=02, G_MIN=06, B_MIN=0b, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=25, B_MIN=05, A_MIN=0c
+Recieved: R_MIN=01, G_MIN=25, B_MIN=05, A_MIN=0c
+
+Expected: R_MIN=00, G_MIN=11, B_MIN=03, A_MIN=1e
+Recieved: R_MIN=00, G_MIN=11, B_MIN=03, A_MIN=1e
+
+Expected: R_MIN=0d, G_MIN=00, B_MIN=0c, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=00, B_MIN=0c, A_MIN=00
+
+Expected: R_MIN=10, G_MIN=04, B_MIN=05, A_MIN=20
+Recieved: R_MIN=10, G_MIN=04, B_MIN=05, A_MIN=20
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=08, A_MIN=09
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=08, A_MIN=09
+
+Expected: R_MIN=10, G_MIN=12, B_MIN=05, A_MIN=09
+Recieved: R_MIN=10, G_MIN=12, B_MIN=05, A_MIN=09
+
+Expected: R_MIN=08, G_MIN=0a, B_MIN=03, A_MIN=20
+Recieved: R_MIN=08, G_MIN=0a, B_MIN=03, A_MIN=20
+
+Expected: R_MIN=00, G_MIN=0c, B_MIN=03, A_MIN=04
+Recieved: R_MIN=00, G_MIN=0c, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=25, G_MIN=0e, B_MIN=00, A_MIN=03
+Recieved: R_MIN=25, G_MIN=0e, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=1d, B_MIN=04, A_MIN=08
+Recieved: R_MIN=02, G_MIN=1d, B_MIN=04, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=0e, B_MIN=00, A_MIN=00
+Recieved: R_MIN=02, G_MIN=0e, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=09, B_MIN=08, A_MIN=00
+Recieved: R_MIN=00, G_MIN=09, B_MIN=08, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=0b, B_MIN=0a, A_MIN=07
+Recieved: R_MIN=00, G_MIN=0b, B_MIN=0a, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=2b, A_MIN=06
+Recieved: R_MIN=03, G_MIN=00, B_MIN=2b, A_MIN=06
+
+Expected: R_MIN=12, G_MIN=13, B_MIN=04, A_MIN=14
+Recieved: R_MIN=12, G_MIN=13, B_MIN=04, A_MIN=14
+
+Expected: R_MIN=17, G_MIN=03, B_MIN=03, A_MIN=00
+Recieved: R_MIN=17, G_MIN=03, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=0c, G_MIN=01, B_MIN=05, A_MIN=09
+Recieved: R_MIN=0c, G_MIN=01, B_MIN=05, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=07, A_MIN=02
+Recieved: R_MIN=00, G_MIN=05, B_MIN=07, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=01, A_MIN=05
+Recieved: R_MIN=00, G_MIN=03, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=20, B_MIN=0a, A_MIN=1c
+Recieved: R_MIN=02, G_MIN=20, B_MIN=0a, A_MIN=1c
+
+Expected: R_MIN=06, G_MIN=07, B_MIN=0c, A_MIN=05
+Recieved: R_MIN=06, G_MIN=07, B_MIN=0c, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=1a
+Recieved: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=1a
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=01, A_MIN=03
+Recieved: R_MIN=04, G_MIN=04, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=0a, B_MIN=14, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0a, B_MIN=14, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=1d, A_MIN=01
+Recieved: R_MIN=00, G_MIN=05, B_MIN=1d, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=0f, B_MIN=00, A_MIN=10
+Recieved: R_MIN=00, G_MIN=0f, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=12, G_MIN=1b, B_MIN=14, A_MIN=01
+Recieved: R_MIN=12, G_MIN=1b, B_MIN=14, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=09
+Recieved: R_MIN=02, G_MIN=00, B_MIN=01, A_MIN=09
+
+Expected: R_MIN=0a, G_MIN=0e, B_MIN=03, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=0e, B_MIN=03, A_MIN=08
+
+Expected: R_MIN=0a, G_MIN=03, B_MIN=01, A_MIN=04
+Recieved: R_MIN=0a, G_MIN=03, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=16, G_MIN=01, B_MIN=08, A_MIN=09
+Recieved: R_MIN=16, G_MIN=01, B_MIN=08, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=07, A_MIN=17
+Recieved: R_MIN=04, G_MIN=04, B_MIN=07, A_MIN=17
+
+Expected: R_MIN=11, G_MIN=11, B_MIN=04, A_MIN=0e
+Recieved: R_MIN=11, G_MIN=11, B_MIN=04, A_MIN=0e
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=01, A_MIN=05
+Recieved: R_MIN=02, G_MIN=04, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=10, G_MIN=05, B_MIN=07, A_MIN=04
+Recieved: R_MIN=10, G_MIN=05, B_MIN=07, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=05, A_MIN=00
+Recieved: R_MIN=03, G_MIN=03, B_MIN=05, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=09, B_MIN=03, A_MIN=01
+Recieved: R_MIN=02, G_MIN=09, B_MIN=03, A_MIN=01
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=03, A_MIN=07
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=07, A_MIN=01
+Recieved: R_MIN=02, G_MIN=04, B_MIN=07, A_MIN=01
+
+Expected: R_MIN=04, G_MIN=09, B_MIN=04, A_MIN=15
+Recieved: R_MIN=04, G_MIN=09, B_MIN=04, A_MIN=15
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=18, A_MIN=00
+Recieved: R_MIN=00, G_MIN=01, B_MIN=18, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=0f, B_MIN=04, A_MIN=01
+Recieved: R_MIN=01, G_MIN=0f, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=08, G_MIN=0e, B_MIN=00, A_MIN=16
+Recieved: R_MIN=08, G_MIN=0e, B_MIN=00, A_MIN=16
+
+Expected: R_MIN=19, G_MIN=04, B_MIN=12, A_MIN=04
+Recieved: R_MIN=19, G_MIN=04, B_MIN=12, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=2b, A_MIN=00
+Recieved: R_MIN=00, G_MIN=05, B_MIN=2b, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=05, B_MIN=01, A_MIN=00
+Recieved: R_MIN=01, G_MIN=05, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=01, B_MIN=0c, A_MIN=09
+Recieved: R_MIN=08, G_MIN=01, B_MIN=0c, A_MIN=09
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=14, A_MIN=01
+Recieved: R_MIN=03, G_MIN=09, B_MIN=14, A_MIN=01
+
+Expected: R_MIN=08, G_MIN=10, B_MIN=03, A_MIN=05
+Recieved: R_MIN=08, G_MIN=10, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=0e, A_MIN=00
+Recieved: R_MIN=04, G_MIN=07, B_MIN=0e, A_MIN=00
+
+Expected: R_MIN=1f, G_MIN=02, B_MIN=01, A_MIN=08
+Recieved: R_MIN=1f, G_MIN=02, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=05, G_MIN=1b, B_MIN=03, A_MIN=06
+Recieved: R_MIN=05, G_MIN=1b, B_MIN=03, A_MIN=06
+
+Expected: R_MIN=05, G_MIN=06, B_MIN=00, A_MIN=10
+Recieved: R_MIN=05, G_MIN=06, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=0f, G_MIN=00, B_MIN=0d, A_MIN=0a
+Recieved: R_MIN=0f, G_MIN=00, B_MIN=0d, A_MIN=0a
+
+Expected: R_MIN=06, G_MIN=07, B_MIN=0d, A_MIN=10
+Recieved: R_MIN=06, G_MIN=07, B_MIN=0d, A_MIN=10
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=0c, A_MIN=1b
+Recieved: R_MIN=00, G_MIN=03, B_MIN=0c, A_MIN=1b
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=04, A_MIN=00
+Recieved: R_MIN=06, G_MIN=01, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=18, G_MIN=00, B_MIN=1e, A_MIN=04
+Recieved: R_MIN=18, G_MIN=00, B_MIN=1e, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=0e, A_MIN=03
+Recieved: R_MIN=05, G_MIN=04, B_MIN=0e, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=08, B_MIN=04, A_MIN=03
+Recieved: R_MIN=07, G_MIN=08, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=08, G_MIN=25, B_MIN=0f, A_MIN=02
+Recieved: R_MIN=08, G_MIN=25, B_MIN=0f, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=0d, B_MIN=03, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=0d, B_MIN=03, A_MIN=0b
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=14, A_MIN=0b
+Recieved: R_MIN=03, G_MIN=03, B_MIN=14, A_MIN=0b
+
+Expected: R_MIN=12, G_MIN=03, B_MIN=08, A_MIN=1f
+Recieved: R_MIN=12, G_MIN=03, B_MIN=08, A_MIN=1f
+
+Expected: R_MIN=01, G_MIN=0d, B_MIN=05, A_MIN=06
+Recieved: R_MIN=01, G_MIN=0d, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=0e, B_MIN=07, A_MIN=02
+Recieved: R_MIN=02, G_MIN=0e, B_MIN=07, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=1d, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=1d, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=07, B_MIN=01, A_MIN=02
+Recieved: R_MIN=02, G_MIN=07, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=11, G_MIN=02, B_MIN=05, A_MIN=16
+Recieved: R_MIN=11, G_MIN=02, B_MIN=05, A_MIN=16
+
+Expected: R_MIN=01, G_MIN=0b, B_MIN=06, A_MIN=02
+Recieved: R_MIN=01, G_MIN=0b, B_MIN=06, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=0f
+Recieved: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=0f
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=06, A_MIN=0e
+Recieved: R_MIN=01, G_MIN=01, B_MIN=06, A_MIN=0e
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=04, A_MIN=00
+Recieved: R_MIN=04, G_MIN=00, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=01
+Recieved: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=11, G_MIN=06, B_MIN=16, A_MIN=01
+Recieved: R_MIN=11, G_MIN=06, B_MIN=16, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=18, B_MIN=01, A_MIN=03
+Recieved: R_MIN=03, G_MIN=18, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=0b, B_MIN=00, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0b, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=04
+Recieved: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=18, B_MIN=05, A_MIN=06
+Recieved: R_MIN=00, G_MIN=18, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=16, G_MIN=04, B_MIN=04, A_MIN=2d
+Recieved: R_MIN=16, G_MIN=04, B_MIN=04, A_MIN=2d
+
+Expected: R_MIN=0f, G_MIN=01, B_MIN=01, A_MIN=06
+Recieved: R_MIN=0f, G_MIN=01, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=04, G_MIN=06, B_MIN=01, A_MIN=03
+Recieved: R_MIN=04, G_MIN=06, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=00, A_MIN=05
+Recieved: R_MIN=07, G_MIN=06, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=04, A_MIN=00
+Recieved: R_MIN=03, G_MIN=04, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=03
+Recieved: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=0c, G_MIN=02, B_MIN=0a, A_MIN=04
+Recieved: R_MIN=0c, G_MIN=02, B_MIN=0a, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=06, B_MIN=06, A_MIN=07
+Recieved: R_MIN=09, G_MIN=06, B_MIN=06, A_MIN=07
+
+Expected: R_MIN=08, G_MIN=00, B_MIN=02, A_MIN=1b
+Recieved: R_MIN=08, G_MIN=00, B_MIN=02, A_MIN=1b
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=09, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=02, B_MIN=09, A_MIN=0b
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=07
+Recieved: R_MIN=00, G_MIN=01, B_MIN=01, A_MIN=07
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=01, A_MIN=08
+Recieved: R_MIN=06, G_MIN=00, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=05, G_MIN=05, B_MIN=03, A_MIN=0b
+Recieved: R_MIN=05, G_MIN=05, B_MIN=03, A_MIN=0b
+
+Expected: R_MIN=1a, G_MIN=10, B_MIN=0b, A_MIN=03
+Recieved: R_MIN=1a, G_MIN=10, B_MIN=0b, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=04, A_MIN=00
+Recieved: R_MIN=04, G_MIN=07, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=02, B_MIN=03, A_MIN=00
+Recieved: R_MIN=05, G_MIN=02, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=06
+Recieved: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=11, G_MIN=18, B_MIN=04, A_MIN=09
+Recieved: R_MIN=11, G_MIN=18, B_MIN=04, A_MIN=09
+
+Expected: R_MIN=06, G_MIN=06, B_MIN=13, A_MIN=01
+Recieved: R_MIN=06, G_MIN=06, B_MIN=13, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=0e, A_MIN=0d
+Recieved: R_MIN=00, G_MIN=02, B_MIN=0e, A_MIN=0d
+
+Expected: R_MIN=03, G_MIN=05, B_MIN=04, A_MIN=03
+Recieved: R_MIN=03, G_MIN=05, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=09, B_MIN=01, A_MIN=02
+Recieved: R_MIN=06, G_MIN=09, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=05, G_MIN=0a, B_MIN=00, A_MIN=06
+Recieved: R_MIN=05, G_MIN=0a, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=05, B_MIN=0e, A_MIN=00
+Recieved: R_MIN=01, G_MIN=05, B_MIN=0e, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=0c, B_MIN=02, A_MIN=02
+Recieved: R_MIN=05, G_MIN=0c, B_MIN=02, A_MIN=02
+
+Expected: R_MIN=02, G_MIN=15, B_MIN=03, A_MIN=07
+Recieved: R_MIN=02, G_MIN=15, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=05, G_MIN=29, B_MIN=13, A_MIN=00
+Recieved: R_MIN=05, G_MIN=29, B_MIN=13, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=0a, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=06, G_MIN=0a, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=06
+Recieved: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=03, A_MIN=11
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=03, A_MIN=11
+
+Expected: R_MIN=09, G_MIN=01, B_MIN=02, A_MIN=0f
+Recieved: R_MIN=09, G_MIN=01, B_MIN=02, A_MIN=0f
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=01, A_MIN=01
+Recieved: R_MIN=03, G_MIN=01, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=14, A_MIN=02
+Recieved: R_MIN=01, G_MIN=00, B_MIN=14, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=06, A_MIN=01
+Recieved: R_MIN=00, G_MIN=01, B_MIN=06, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=07
+Recieved: R_MIN=00, G_MIN=06, B_MIN=02, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=13, A_MIN=09
+Recieved: R_MIN=01, G_MIN=00, B_MIN=13, A_MIN=09
+
+Expected: R_MIN=10, G_MIN=02, B_MIN=03, A_MIN=04
+Recieved: R_MIN=10, G_MIN=02, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=07
+Recieved: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=07
+
+Expected: R_MIN=15, G_MIN=12, B_MIN=0a, A_MIN=05
+Recieved: R_MIN=15, G_MIN=12, B_MIN=0a, A_MIN=05
+
+Expected: R_MIN=05, G_MIN=10, B_MIN=08, A_MIN=07
+Recieved: R_MIN=05, G_MIN=10, B_MIN=08, A_MIN=07
+
+Expected: R_MIN=08, G_MIN=00, B_MIN=18, A_MIN=0a
+Recieved: R_MIN=08, G_MIN=00, B_MIN=18, A_MIN=0a
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=01
+Recieved: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=05, G_MIN=09, B_MIN=05, A_MIN=08
+Recieved: R_MIN=05, G_MIN=09, B_MIN=05, A_MIN=08
+
+Expected: R_MIN=01, G_MIN=13, B_MIN=14, A_MIN=06
+Recieved: R_MIN=01, G_MIN=13, B_MIN=14, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=0f, B_MIN=00, A_MIN=10
+Recieved: R_MIN=02, G_MIN=0f, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=02, G_MIN=11, B_MIN=03, A_MIN=0a
+Recieved: R_MIN=02, G_MIN=11, B_MIN=03, A_MIN=0a
+
+Expected: R_MIN=0f, G_MIN=01, B_MIN=0a, A_MIN=0d
+Recieved: R_MIN=0f, G_MIN=01, B_MIN=0a, A_MIN=0d
+
+Expected: R_MIN=10, G_MIN=0a, B_MIN=04, A_MIN=08
+Recieved: R_MIN=10, G_MIN=0a, B_MIN=04, A_MIN=08
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=02, A_MIN=04
+Recieved: R_MIN=05, G_MIN=00, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=08
+Recieved: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=00
+Recieved: R_MIN=02, G_MIN=00, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=06, A_MIN=0e
+Recieved: R_MIN=00, G_MIN=02, B_MIN=06, A_MIN=0e
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=19, A_MIN=04
+Recieved: R_MIN=06, G_MIN=03, B_MIN=19, A_MIN=04
+
+Expected: R_MIN=0a, G_MIN=04, B_MIN=0b, A_MIN=06
+Recieved: R_MIN=0a, G_MIN=04, B_MIN=0b, A_MIN=06
+
+Expected: R_MIN=0c, G_MIN=04, B_MIN=00, A_MIN=05
+Recieved: R_MIN=0c, G_MIN=04, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=0a, G_MIN=0b, B_MIN=00, A_MIN=00
+Recieved: R_MIN=0a, G_MIN=0b, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=25, B_MIN=18, A_MIN=05
+Recieved: R_MIN=08, G_MIN=25, B_MIN=18, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=08
+Recieved: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=08
+
+Expected: R_MIN=0d, G_MIN=02, B_MIN=00, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=02, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=0f, B_MIN=10, A_MIN=09
+Recieved: R_MIN=02, G_MIN=0f, B_MIN=10, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=03, A_MIN=06
+Recieved: R_MIN=00, G_MIN=06, B_MIN=03, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=08, B_MIN=09, A_MIN=10
+Recieved: R_MIN=01, G_MIN=08, B_MIN=09, A_MIN=10
+
+Expected: R_MIN=03, G_MIN=0a, B_MIN=00, A_MIN=01
+Recieved: R_MIN=03, G_MIN=0a, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=10, G_MIN=04, B_MIN=03, A_MIN=02
+Recieved: R_MIN=10, G_MIN=04, B_MIN=03, A_MIN=02
+
+Expected: R_MIN=05, G_MIN=08, B_MIN=04, A_MIN=03
+Recieved: R_MIN=05, G_MIN=08, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=16, G_MIN=16, B_MIN=0c, A_MIN=15
+Recieved: R_MIN=16, G_MIN=16, B_MIN=0c, A_MIN=15
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=0a, A_MIN=02
+Recieved: R_MIN=05, G_MIN=03, B_MIN=0a, A_MIN=02
+
+Expected: R_MIN=09, G_MIN=07, B_MIN=02, A_MIN=16
+Recieved: R_MIN=09, G_MIN=07, B_MIN=02, A_MIN=16
+
+Expected: R_MIN=0f, G_MIN=07, B_MIN=09, A_MIN=0a
+Recieved: R_MIN=0f, G_MIN=07, B_MIN=09, A_MIN=0a
+
+Expected: R_MIN=09, G_MIN=01, B_MIN=02, A_MIN=07
+Recieved: R_MIN=09, G_MIN=01, B_MIN=02, A_MIN=07
+
+Expected: R_MIN=04, G_MIN=0b, B_MIN=03, A_MIN=00
+Recieved: R_MIN=04, G_MIN=0b, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=0f, G_MIN=05, B_MIN=02, A_MIN=04
+Recieved: R_MIN=0f, G_MIN=05, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=12, G_MIN=04, B_MIN=03, A_MIN=08
+Recieved: R_MIN=12, G_MIN=04, B_MIN=03, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=10, B_MIN=15, A_MIN=01
+Recieved: R_MIN=00, G_MIN=10, B_MIN=15, A_MIN=01
+
+Expected: R_MIN=0c, G_MIN=00, B_MIN=09, A_MIN=0b
+Recieved: R_MIN=0c, G_MIN=00, B_MIN=09, A_MIN=0b
+
+Expected: R_MIN=01, G_MIN=01, B_MIN=0a, A_MIN=03
+Recieved: R_MIN=01, G_MIN=01, B_MIN=0a, A_MIN=03
+
+Expected: R_MIN=09, G_MIN=0c, B_MIN=06, A_MIN=0b
+Recieved: R_MIN=09, G_MIN=0c, B_MIN=06, A_MIN=0b
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=13
+Recieved: R_MIN=07, G_MIN=01, B_MIN=07, A_MIN=13
+
+Expected: R_MIN=0c, G_MIN=03, B_MIN=00, A_MIN=0c
+Recieved: R_MIN=0c, G_MIN=03, B_MIN=00, A_MIN=0c
+
+Expected: R_MIN=1e, G_MIN=04, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=1e, G_MIN=04, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=00
+Recieved: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=01, B_MIN=04, A_MIN=00
+Recieved: R_MIN=05, G_MIN=01, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=17, G_MIN=09, B_MIN=05, A_MIN=03
+Recieved: R_MIN=17, G_MIN=09, B_MIN=05, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=00, A_MIN=08
+Recieved: R_MIN=06, G_MIN=03, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=08, B_MIN=06, A_MIN=00
+Recieved: R_MIN=00, G_MIN=08, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=14, A_MIN=04
+Recieved: R_MIN=00, G_MIN=07, B_MIN=14, A_MIN=04
+
+Expected: R_MIN=0e, G_MIN=00, B_MIN=01, A_MIN=08
+Recieved: R_MIN=0e, G_MIN=00, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=18, A_MIN=00
+Recieved: R_MIN=03, G_MIN=03, B_MIN=18, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=06, B_MIN=1e, A_MIN=07
+Recieved: R_MIN=05, G_MIN=06, B_MIN=1e, A_MIN=07
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=0c
+Recieved: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=0c
+
+Expected: R_MIN=00, G_MIN=07, B_MIN=07, A_MIN=04
+Recieved: R_MIN=00, G_MIN=07, B_MIN=07, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=00, B_MIN=0a, A_MIN=09
+Recieved: R_MIN=09, G_MIN=00, B_MIN=0a, A_MIN=09
+
+Expected: R_MIN=03, G_MIN=07, B_MIN=01, A_MIN=09
+Recieved: R_MIN=03, G_MIN=07, B_MIN=01, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=08, B_MIN=0f, A_MIN=07
+Recieved: R_MIN=04, G_MIN=08, B_MIN=0f, A_MIN=07
+
+Expected: R_MIN=1a, G_MIN=01, B_MIN=01, A_MIN=00
+Recieved: R_MIN=1a, G_MIN=01, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=18, G_MIN=07, B_MIN=05, A_MIN=00
+Recieved: R_MIN=18, G_MIN=07, B_MIN=05, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=07, B_MIN=00, A_MIN=00
+Recieved: R_MIN=01, G_MIN=07, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=04, G_MIN=01, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=00, A_MIN=09
+Recieved: R_MIN=02, G_MIN=04, B_MIN=00, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=00, A_MIN=12
+Recieved: R_MIN=04, G_MIN=04, B_MIN=00, A_MIN=12
+
+Expected: R_MIN=03, G_MIN=09, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=03, G_MIN=09, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=02, A_MIN=0e
+Recieved: R_MIN=02, G_MIN=03, B_MIN=02, A_MIN=0e
+
+Expected: R_MIN=00, G_MIN=19, B_MIN=24, A_MIN=01
+Recieved: R_MIN=00, G_MIN=19, B_MIN=24, A_MIN=01
+
+Expected: R_MIN=1e, G_MIN=05, B_MIN=05, A_MIN=25
+Recieved: R_MIN=1e, G_MIN=05, B_MIN=05, A_MIN=25
+
+Expected: R_MIN=08, G_MIN=02, B_MIN=08, A_MIN=05
+Recieved: R_MIN=08, G_MIN=02, B_MIN=08, A_MIN=05
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=04, A_MIN=09
+Recieved: R_MIN=09, G_MIN=03, B_MIN=04, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=05, B_MIN=0d, A_MIN=04
+Recieved: R_MIN=04, G_MIN=05, B_MIN=0d, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=0d, B_MIN=02, A_MIN=04
+Recieved: R_MIN=02, G_MIN=0d, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=00, B_MIN=12, A_MIN=09
+Recieved: R_MIN=09, G_MIN=00, B_MIN=12, A_MIN=09
+
+Expected: R_MIN=05, G_MIN=0f, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=05, G_MIN=0f, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=08, G_MIN=0e, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=08, G_MIN=0e, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=04, A_MIN=06
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=04, A_MIN=06
+
+Expected: R_MIN=0d, G_MIN=0b, B_MIN=04, A_MIN=01
+Recieved: R_MIN=0d, G_MIN=0b, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=0c, A_MIN=0b
+Recieved: R_MIN=04, G_MIN=04, B_MIN=0c, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=15, B_MIN=01, A_MIN=09
+Recieved: R_MIN=02, G_MIN=15, B_MIN=01, A_MIN=09
+
+Expected: R_MIN=0f, G_MIN=09, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=0f, G_MIN=09, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=13, A_MIN=07
+Recieved: R_MIN=02, G_MIN=03, B_MIN=13, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=0f, B_MIN=01, A_MIN=04
+Recieved: R_MIN=00, G_MIN=0f, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=07, A_MIN=00
+Recieved: R_MIN=07, G_MIN=06, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=07, A_MIN=06
+Recieved: R_MIN=00, G_MIN=03, B_MIN=07, A_MIN=06
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=05, A_MIN=00
+Recieved: R_MIN=05, G_MIN=04, B_MIN=05, A_MIN=00
+
+Expected: R_MIN=0b, G_MIN=02, B_MIN=01, A_MIN=02
+Recieved: R_MIN=0b, G_MIN=02, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=1b, B_MIN=09, A_MIN=00
+Recieved: R_MIN=07, G_MIN=1b, B_MIN=09, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=03
+Recieved: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=16, G_MIN=01, B_MIN=06, A_MIN=20
+Recieved: R_MIN=16, G_MIN=01, B_MIN=06, A_MIN=20
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=06, A_MIN=11
+Recieved: R_MIN=03, G_MIN=03, B_MIN=06, A_MIN=11
+
+Expected: R_MIN=02, G_MIN=09, B_MIN=00, A_MIN=09
+Recieved: R_MIN=02, G_MIN=09, B_MIN=00, A_MIN=09
+
+Expected: R_MIN=06, G_MIN=07, B_MIN=02, A_MIN=18
+Recieved: R_MIN=06, G_MIN=07, B_MIN=02, A_MIN=18
+
+Expected: R_MIN=0e, G_MIN=00, B_MIN=00, A_MIN=08
+Recieved: R_MIN=0e, G_MIN=00, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=0b, G_MIN=0d, B_MIN=05, A_MIN=07
+Recieved: R_MIN=0b, G_MIN=0d, B_MIN=05, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=10, B_MIN=03, A_MIN=07
+Recieved: R_MIN=03, G_MIN=10, B_MIN=03, A_MIN=07
+
+Expected: R_MIN=09, G_MIN=08, B_MIN=00, A_MIN=09
+Recieved: R_MIN=09, G_MIN=08, B_MIN=00, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=0d, B_MIN=02, A_MIN=05
+Recieved: R_MIN=00, G_MIN=0d, B_MIN=02, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=22, B_MIN=09, A_MIN=05
+Recieved: R_MIN=00, G_MIN=22, B_MIN=09, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=00, G_MIN=01, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=02, B_MIN=05, A_MIN=10
+Recieved: R_MIN=02, G_MIN=02, B_MIN=05, A_MIN=10
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=0c, A_MIN=11
+Recieved: R_MIN=00, G_MIN=02, B_MIN=0c, A_MIN=11
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=01, A_MIN=06
+Recieved: R_MIN=02, G_MIN=06, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=06
+Recieved: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=09, A_MIN=05
+Recieved: R_MIN=03, G_MIN=02, B_MIN=09, A_MIN=05
+
+Expected: R_MIN=1b, G_MIN=02, B_MIN=03, A_MIN=06
+Recieved: R_MIN=1b, G_MIN=02, B_MIN=03, A_MIN=06
+
+Expected: R_MIN=0b, G_MIN=04, B_MIN=16, A_MIN=09
+Recieved: R_MIN=0b, G_MIN=04, B_MIN=16, A_MIN=09
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=10, A_MIN=05
+Recieved: R_MIN=03, G_MIN=04, B_MIN=10, A_MIN=05
+
+Expected: R_MIN=07, G_MIN=09, B_MIN=01, A_MIN=02
+Recieved: R_MIN=07, G_MIN=09, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=08, G_MIN=06, B_MIN=01, A_MIN=03
+Recieved: R_MIN=08, G_MIN=06, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=03
+Recieved: R_MIN=07, G_MIN=01, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=0c, B_MIN=07, A_MIN=05
+Recieved: R_MIN=02, G_MIN=0c, B_MIN=07, A_MIN=05
+
+Expected: R_MIN=04, G_MIN=06, B_MIN=00, A_MIN=08
+Recieved: R_MIN=04, G_MIN=06, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=0b, B_MIN=09, A_MIN=02
+Recieved: R_MIN=02, G_MIN=0b, B_MIN=09, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=17, A_MIN=06
+Recieved: R_MIN=07, G_MIN=02, B_MIN=17, A_MIN=06
+
+Expected: R_MIN=0a, G_MIN=03, B_MIN=12, A_MIN=04
+Recieved: R_MIN=0a, G_MIN=03, B_MIN=12, A_MIN=04
+
+Expected: R_MIN=0e, G_MIN=01, B_MIN=04, A_MIN=00
+Recieved: R_MIN=0e, G_MIN=01, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=07, G_MIN=10, B_MIN=0a, A_MIN=11
+Recieved: R_MIN=07, G_MIN=10, B_MIN=0a, A_MIN=11
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=00, A_MIN=15
+Recieved: R_MIN=08, G_MIN=05, B_MIN=00, A_MIN=15
+
+Expected: R_MIN=05, G_MIN=12, B_MIN=05, A_MIN=04
+Recieved: R_MIN=05, G_MIN=12, B_MIN=05, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=04, B_MIN=07, A_MIN=00
+Recieved: R_MIN=07, G_MIN=04, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=06
+Recieved: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=06
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=04, A_MIN=01
+Recieved: R_MIN=04, G_MIN=03, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=0c, B_MIN=01, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0c, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=0c, B_MIN=00, A_MIN=12
+Recieved: R_MIN=00, G_MIN=0c, B_MIN=00, A_MIN=12
+
+Expected: R_MIN=06, G_MIN=10, B_MIN=11, A_MIN=13
+Recieved: R_MIN=06, G_MIN=10, B_MIN=11, A_MIN=13
+
+Expected: R_MIN=03, G_MIN=08, B_MIN=00, A_MIN=0d
+Recieved: R_MIN=03, G_MIN=08, B_MIN=00, A_MIN=0d
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=00, A_MIN=07
+Recieved: R_MIN=00, G_MIN=03, B_MIN=00, A_MIN=07
+
+Expected: R_MIN=0a, G_MIN=0e, B_MIN=0b, A_MIN=16
+Recieved: R_MIN=0a, G_MIN=0e, B_MIN=0b, A_MIN=16
+
+Expected: R_MIN=15, G_MIN=04, B_MIN=01, A_MIN=00
+Recieved: R_MIN=15, G_MIN=04, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=00
+Recieved: R_MIN=01, G_MIN=02, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=04, A_MIN=07
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=04, A_MIN=07
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=0b, A_MIN=01
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=0b, A_MIN=01
+
+Expected: R_MIN=12, G_MIN=06, B_MIN=00, A_MIN=09
+Recieved: R_MIN=12, G_MIN=06, B_MIN=00, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=0b, B_MIN=00, A_MIN=02
+Recieved: R_MIN=00, G_MIN=0b, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=08, G_MIN=02, B_MIN=01, A_MIN=03
+Recieved: R_MIN=08, G_MIN=02, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=05, A_MIN=08
+Recieved: R_MIN=03, G_MIN=01, B_MIN=05, A_MIN=08
+
+Expected: R_MIN=0b, G_MIN=10, B_MIN=06, A_MIN=04
+Recieved: R_MIN=0b, G_MIN=10, B_MIN=06, A_MIN=04
+
+Expected: R_MIN=11, G_MIN=00, B_MIN=04, A_MIN=07
+Recieved: R_MIN=11, G_MIN=00, B_MIN=04, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=10, B_MIN=04, A_MIN=1c
+Recieved: R_MIN=00, G_MIN=10, B_MIN=04, A_MIN=1c
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=14, A_MIN=00
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=14, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=06, B_MIN=00, A_MIN=0f
+Recieved: R_MIN=02, G_MIN=06, B_MIN=00, A_MIN=0f
+
+Expected: R_MIN=00, G_MIN=0a, B_MIN=07, A_MIN=09
+Recieved: R_MIN=00, G_MIN=0a, B_MIN=07, A_MIN=09
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=03, A_MIN=04
+Recieved: R_MIN=02, G_MIN=01, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=0d, G_MIN=00, B_MIN=06, A_MIN=0e
+Recieved: R_MIN=0d, G_MIN=00, B_MIN=06, A_MIN=0e
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=02, A_MIN=0e
+Recieved: R_MIN=05, G_MIN=00, B_MIN=02, A_MIN=0e
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=0b, A_MIN=09
+Recieved: R_MIN=05, G_MIN=03, B_MIN=0b, A_MIN=09
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=03, A_MIN=05
+Recieved: R_MIN=01, G_MIN=02, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=01, A_MIN=03
+Recieved: R_MIN=02, G_MIN=03, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=09, G_MIN=07, B_MIN=05, A_MIN=04
+Recieved: R_MIN=09, G_MIN=07, B_MIN=05, A_MIN=04
+
+Expected: R_MIN=18, G_MIN=04, B_MIN=01, A_MIN=17
+Recieved: R_MIN=18, G_MIN=04, B_MIN=01, A_MIN=17
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=06
+Recieved: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=0f, G_MIN=04, B_MIN=06, A_MIN=03
+Recieved: R_MIN=0f, G_MIN=04, B_MIN=06, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=00, A_MIN=03
+Recieved: R_MIN=01, G_MIN=00, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=02
+Recieved: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=04, G_MIN=03, B_MIN=04, A_MIN=00
+Recieved: R_MIN=04, G_MIN=03, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=19, B_MIN=03, A_MIN=00
+Recieved: R_MIN=03, G_MIN=19, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=09, G_MIN=04, B_MIN=02, A_MIN=00
+Recieved: R_MIN=09, G_MIN=04, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=11, A_MIN=1a
+Recieved: R_MIN=00, G_MIN=02, B_MIN=11, A_MIN=1a
+
+Expected: R_MIN=09, G_MIN=07, B_MIN=05, A_MIN=02
+Recieved: R_MIN=09, G_MIN=07, B_MIN=05, A_MIN=02
+
+Expected: R_MIN=09, G_MIN=0e, B_MIN=06, A_MIN=17
+Recieved: R_MIN=09, G_MIN=0e, B_MIN=06, A_MIN=17
+
+Expected: R_MIN=1e, G_MIN=01, B_MIN=0f, A_MIN=08
+Recieved: R_MIN=1e, G_MIN=01, B_MIN=0f, A_MIN=08
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=07, A_MIN=10
+Recieved: R_MIN=06, G_MIN=03, B_MIN=07, A_MIN=10
+
+Expected: R_MIN=04, G_MIN=09, B_MIN=00, A_MIN=00
+Recieved: R_MIN=04, G_MIN=09, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=12, A_MIN=05
+Recieved: R_MIN=02, G_MIN=01, B_MIN=12, A_MIN=05
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=0e, A_MIN=06
+Recieved: R_MIN=07, G_MIN=06, B_MIN=0e, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=0c, B_MIN=08, A_MIN=01
+Recieved: R_MIN=01, G_MIN=0c, B_MIN=08, A_MIN=01
+
+Expected: R_MIN=0a, G_MIN=01, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=0a, G_MIN=01, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=08, G_MIN=0f, B_MIN=01, A_MIN=05
+Recieved: R_MIN=08, G_MIN=0f, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=03
+Recieved: R_MIN=00, G_MIN=04, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=01
+Recieved: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=25, G_MIN=10, B_MIN=00, A_MIN=26
+Recieved: R_MIN=25, G_MIN=10, B_MIN=00, A_MIN=26
+
+Expected: R_MIN=15, G_MIN=01, B_MIN=03, A_MIN=05
+Recieved: R_MIN=15, G_MIN=01, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=0b, B_MIN=11, A_MIN=07
+Recieved: R_MIN=02, G_MIN=0b, B_MIN=11, A_MIN=07
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=0b, A_MIN=04
+Recieved: R_MIN=03, G_MIN=02, B_MIN=0b, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=09, B_MIN=17, A_MIN=09
+Recieved: R_MIN=09, G_MIN=09, B_MIN=17, A_MIN=09
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=02, A_MIN=06
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=02, A_MIN=03
+Recieved: R_MIN=03, G_MIN=01, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=06, B_MIN=04, A_MIN=06
+Recieved: R_MIN=04, G_MIN=06, B_MIN=04, A_MIN=06
+
+Expected: R_MIN=08, G_MIN=08, B_MIN=07, A_MIN=0f
+Recieved: R_MIN=08, G_MIN=08, B_MIN=07, A_MIN=0f
+
+Expected: R_MIN=0c, G_MIN=02, B_MIN=08, A_MIN=1a
+Recieved: R_MIN=0c, G_MIN=02, B_MIN=08, A_MIN=1a
+
+Expected: R_MIN=06, G_MIN=0b, B_MIN=03, A_MIN=03
+Recieved: R_MIN=06, G_MIN=0b, B_MIN=03, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=09, B_MIN=08, A_MIN=04
+Recieved: R_MIN=04, G_MIN=09, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=03, A_MIN=03
+Recieved: R_MIN=05, G_MIN=00, B_MIN=03, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=06, A_MIN=00
+Recieved: R_MIN=02, G_MIN=01, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=0e, G_MIN=17, B_MIN=0f, A_MIN=08
+Recieved: R_MIN=0e, G_MIN=17, B_MIN=0f, A_MIN=08
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=00, A_MIN=08
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=11, G_MIN=11, B_MIN=02, A_MIN=02
+Recieved: R_MIN=11, G_MIN=11, B_MIN=02, A_MIN=02
+
+Expected: R_MIN=0c, G_MIN=12, B_MIN=07, A_MIN=0a
+Recieved: R_MIN=0c, G_MIN=12, B_MIN=07, A_MIN=0a
+
+Expected: R_MIN=08, G_MIN=10, B_MIN=10, A_MIN=04
+Recieved: R_MIN=08, G_MIN=10, B_MIN=10, A_MIN=04
+
+Expected: R_MIN=04, G_MIN=07, B_MIN=00, A_MIN=08
+Recieved: R_MIN=04, G_MIN=07, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=08, G_MIN=04, B_MIN=04, A_MIN=08
+Recieved: R_MIN=08, G_MIN=04, B_MIN=04, A_MIN=08
+
+Expected: R_MIN=04, G_MIN=20, B_MIN=07, A_MIN=09
+Recieved: R_MIN=04, G_MIN=20, B_MIN=07, A_MIN=09
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=08, A_MIN=04
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=02, B_MIN=05, A_MIN=09
+Recieved: R_MIN=05, G_MIN=02, B_MIN=05, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=10, B_MIN=04, A_MIN=01
+Recieved: R_MIN=00, G_MIN=10, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=06, A_MIN=04
+Recieved: R_MIN=00, G_MIN=03, B_MIN=06, A_MIN=04
+
+Expected: R_MIN=09, G_MIN=00, B_MIN=06, A_MIN=08
+Recieved: R_MIN=09, G_MIN=00, B_MIN=06, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=02, A_MIN=01
+Recieved: R_MIN=02, G_MIN=05, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=12, G_MIN=05, B_MIN=0b, A_MIN=0c
+Recieved: R_MIN=12, G_MIN=05, B_MIN=0b, A_MIN=0c
+
+Expected: R_MIN=10, G_MIN=01, B_MIN=10, A_MIN=03
+Recieved: R_MIN=10, G_MIN=01, B_MIN=10, A_MIN=03
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=01
+Recieved: R_MIN=05, G_MIN=03, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=05
+Recieved: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=08, G_MIN=08, B_MIN=0f, A_MIN=02
+Recieved: R_MIN=08, G_MIN=08, B_MIN=0f, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=08, B_MIN=07, A_MIN=00
+Recieved: R_MIN=07, G_MIN=08, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=17, G_MIN=00, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=17, G_MIN=00, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=09, G_MIN=0e, B_MIN=01, A_MIN=05
+Recieved: R_MIN=09, G_MIN=0e, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=02, G_MIN=02, B_MIN=16, A_MIN=00
+Recieved: R_MIN=02, G_MIN=02, B_MIN=16, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=10, B_MIN=20, A_MIN=11
+Recieved: R_MIN=01, G_MIN=10, B_MIN=20, A_MIN=11
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=2f, A_MIN=00
+Recieved: R_MIN=00, G_MIN=02, B_MIN=2f, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=00, A_MIN=06
+Recieved: R_MIN=06, G_MIN=03, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=04, A_MIN=01
+Recieved: R_MIN=00, G_MIN=04, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=0e, A_MIN=08
+Recieved: R_MIN=03, G_MIN=03, B_MIN=0e, A_MIN=08
+
+Expected: R_MIN=0a, G_MIN=0d, B_MIN=0e, A_MIN=21
+Recieved: R_MIN=0a, G_MIN=0d, B_MIN=0e, A_MIN=21
+
+Expected: R_MIN=00, G_MIN=08, B_MIN=04, A_MIN=1f
+Recieved: R_MIN=00, G_MIN=08, B_MIN=04, A_MIN=1f
+
+Expected: R_MIN=0e, G_MIN=1e, B_MIN=09, A_MIN=10
+Recieved: R_MIN=0e, G_MIN=1e, B_MIN=09, A_MIN=10
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=04, A_MIN=01
+Recieved: R_MIN=08, G_MIN=05, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=0f, G_MIN=00, B_MIN=00, A_MIN=12
+Recieved: R_MIN=0f, G_MIN=00, B_MIN=00, A_MIN=12
+
+Expected: R_MIN=06, G_MIN=06, B_MIN=00, A_MIN=14
+Recieved: R_MIN=06, G_MIN=06, B_MIN=00, A_MIN=14
+
+Expected: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=01
+Recieved: R_MIN=03, G_MIN=0d, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=1c, A_MIN=07
+Recieved: R_MIN=03, G_MIN=01, B_MIN=1c, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=04, A_MIN=02
+Recieved: R_MIN=00, G_MIN=03, B_MIN=04, A_MIN=02
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=06, A_MIN=00
+Recieved: R_MIN=03, G_MIN=04, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=05, B_MIN=0a, A_MIN=01
+Recieved: R_MIN=01, G_MIN=05, B_MIN=0a, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=16, A_MIN=02
+Recieved: R_MIN=00, G_MIN=02, B_MIN=16, A_MIN=02
+
+Expected: R_MIN=0b, G_MIN=02, B_MIN=18, A_MIN=20
+Recieved: R_MIN=0b, G_MIN=02, B_MIN=18, A_MIN=20
+
+Expected: R_MIN=05, G_MIN=0d, B_MIN=06, A_MIN=02
+Recieved: R_MIN=05, G_MIN=0d, B_MIN=06, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=02
+Recieved: R_MIN=00, G_MIN=02, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=27, G_MIN=00, B_MIN=1d, A_MIN=06
+Recieved: R_MIN=27, G_MIN=00, B_MIN=1d, A_MIN=06
+
+Expected: R_MIN=03, G_MIN=08, B_MIN=09, A_MIN=03
+Recieved: R_MIN=03, G_MIN=08, B_MIN=09, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=06, B_MIN=0f, A_MIN=14
+Recieved: R_MIN=0a, G_MIN=06, B_MIN=0f, A_MIN=14
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=1b, A_MIN=0f
+Recieved: R_MIN=01, G_MIN=00, B_MIN=1b, A_MIN=0f
+
+Expected: R_MIN=08, G_MIN=06, B_MIN=1a, A_MIN=03
+Recieved: R_MIN=08, G_MIN=06, B_MIN=1a, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=0e, B_MIN=04, A_MIN=07
+Recieved: R_MIN=00, G_MIN=0e, B_MIN=04, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=08, B_MIN=07, A_MIN=01
+Recieved: R_MIN=00, G_MIN=08, B_MIN=07, A_MIN=01
+
+Expected: R_MIN=09, G_MIN=09, B_MIN=0b, A_MIN=12
+Recieved: R_MIN=09, G_MIN=09, B_MIN=0b, A_MIN=12
+
+Expected: R_MIN=0a, G_MIN=06, B_MIN=04, A_MIN=03
+Recieved: R_MIN=0a, G_MIN=06, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=1b, G_MIN=19, B_MIN=0d, A_MIN=07
+Recieved: R_MIN=1b, G_MIN=19, B_MIN=0d, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=25, B_MIN=01, A_MIN=06
+Recieved: R_MIN=01, G_MIN=25, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=06, A_MIN=08
+Recieved: R_MIN=00, G_MIN=05, B_MIN=06, A_MIN=08
+
+Expected: R_MIN=06, G_MIN=1b, B_MIN=15, A_MIN=02
+Recieved: R_MIN=06, G_MIN=1b, B_MIN=15, A_MIN=02
+
+Expected: R_MIN=0f, G_MIN=00, B_MIN=06, A_MIN=00
+Recieved: R_MIN=0f, G_MIN=00, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=08, B_MIN=09, A_MIN=00
+Recieved: R_MIN=06, G_MIN=08, B_MIN=09, A_MIN=00
+
+Expected: R_MIN=0d, G_MIN=03, B_MIN=14, A_MIN=0c
+Recieved: R_MIN=0d, G_MIN=03, B_MIN=14, A_MIN=0c
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=02, A_MIN=00
+Recieved: R_MIN=03, G_MIN=02, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=16, G_MIN=01, B_MIN=0a, A_MIN=1b
+Recieved: R_MIN=16, G_MIN=01, B_MIN=0a, A_MIN=1b
+
+Expected: R_MIN=05, G_MIN=01, B_MIN=00, A_MIN=0e
+Recieved: R_MIN=05, G_MIN=01, B_MIN=00, A_MIN=0e
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=01, A_MIN=0c
+Recieved: R_MIN=06, G_MIN=01, B_MIN=01, A_MIN=0c
+
+Expected: R_MIN=0d, G_MIN=03, B_MIN=0b, A_MIN=06
+Recieved: R_MIN=0d, G_MIN=03, B_MIN=0b, A_MIN=06
+
+Expected: R_MIN=24, G_MIN=01, B_MIN=06, A_MIN=00
+Recieved: R_MIN=24, G_MIN=01, B_MIN=06, A_MIN=00
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=09
+Recieved: R_MIN=04, G_MIN=01, B_MIN=02, A_MIN=09
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=0c, A_MIN=17
+Recieved: R_MIN=05, G_MIN=04, B_MIN=0c, A_MIN=17
+
+Expected: R_MIN=06, G_MIN=13, B_MIN=00, A_MIN=08
+Recieved: R_MIN=06, G_MIN=13, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=05
+Recieved: R_MIN=00, G_MIN=06, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=13, G_MIN=0a, B_MIN=33, A_MIN=07
+Recieved: R_MIN=13, G_MIN=0a, B_MIN=33, A_MIN=07
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=01
+Recieved: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=0c, B_MIN=0d, A_MIN=0a
+Recieved: R_MIN=06, G_MIN=0c, B_MIN=0d, A_MIN=0a
+
+Expected: R_MIN=0c, G_MIN=03, B_MIN=03, A_MIN=05
+Recieved: R_MIN=0c, G_MIN=03, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=0b, G_MIN=03, B_MIN=00, A_MIN=05
+Recieved: R_MIN=0b, G_MIN=03, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=04, G_MIN=0a, B_MIN=07, A_MIN=0f
+Recieved: R_MIN=04, G_MIN=0a, B_MIN=07, A_MIN=0f
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=04, A_MIN=09
+Recieved: R_MIN=04, G_MIN=01, B_MIN=04, A_MIN=09
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=0c, A_MIN=04
+Recieved: R_MIN=09, G_MIN=03, B_MIN=0c, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=10, A_MIN=01
+Recieved: R_MIN=07, G_MIN=00, B_MIN=10, A_MIN=01
+
+Expected: R_MIN=0d, G_MIN=0a, B_MIN=0a, A_MIN=01
+Recieved: R_MIN=0d, G_MIN=0a, B_MIN=0a, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=13, B_MIN=01, A_MIN=04
+Recieved: R_MIN=02, G_MIN=13, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=06, G_MIN=0e, B_MIN=06, A_MIN=0d
+Recieved: R_MIN=06, G_MIN=0e, B_MIN=06, A_MIN=0d
+
+Expected: R_MIN=13, G_MIN=0a, B_MIN=03, A_MIN=04
+Recieved: R_MIN=13, G_MIN=0a, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=19, A_MIN=0e
+Recieved: R_MIN=07, G_MIN=06, B_MIN=19, A_MIN=0e
+
+Expected: R_MIN=09, G_MIN=03, B_MIN=01, A_MIN=06
+Recieved: R_MIN=09, G_MIN=03, B_MIN=01, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=09, B_MIN=16, A_MIN=0d
+Recieved: R_MIN=02, G_MIN=09, B_MIN=16, A_MIN=0d
+
+Expected: R_MIN=0f, G_MIN=01, B_MIN=02, A_MIN=02
+Recieved: R_MIN=0f, G_MIN=01, B_MIN=02, A_MIN=02
+
+Expected: R_MIN=04, G_MIN=0a, B_MIN=03, A_MIN=09
+Recieved: R_MIN=04, G_MIN=0a, B_MIN=03, A_MIN=09
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=1a, A_MIN=03
+Recieved: R_MIN=00, G_MIN=01, B_MIN=1a, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=04, B_MIN=04, A_MIN=01
+Recieved: R_MIN=02, G_MIN=04, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=05, G_MIN=02, B_MIN=01, A_MIN=03
+Recieved: R_MIN=05, G_MIN=02, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=04, G_MIN=02, B_MIN=1f, A_MIN=00
+Recieved: R_MIN=04, G_MIN=02, B_MIN=1f, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=00, A_MIN=10
+Recieved: R_MIN=05, G_MIN=04, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=05, G_MIN=1a, B_MIN=00, A_MIN=05
+Recieved: R_MIN=05, G_MIN=1a, B_MIN=00, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=00, A_MIN=02
+Recieved: R_MIN=00, G_MIN=01, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=03, A_MIN=05
+Recieved: R_MIN=00, G_MIN=02, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=04, G_MIN=04, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=01, G_MIN=11, B_MIN=0a, A_MIN=09
+Recieved: R_MIN=01, G_MIN=11, B_MIN=0a, A_MIN=09
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=04, A_MIN=0b
+Recieved: R_MIN=07, G_MIN=01, B_MIN=04, A_MIN=0b
+
+Expected: R_MIN=0e, G_MIN=25, B_MIN=05, A_MIN=01
+Recieved: R_MIN=0e, G_MIN=25, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=0b, B_MIN=09, A_MIN=07
+Recieved: R_MIN=00, G_MIN=0b, B_MIN=09, A_MIN=07
+
+Expected: R_MIN=12, G_MIN=01, B_MIN=09, A_MIN=01
+Recieved: R_MIN=12, G_MIN=01, B_MIN=09, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=0f
+Recieved: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=0f
+
+Expected: R_MIN=12, G_MIN=13, B_MIN=17, A_MIN=00
+Recieved: R_MIN=12, G_MIN=13, B_MIN=17, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=02, A_MIN=1d
+Recieved: R_MIN=02, G_MIN=05, B_MIN=02, A_MIN=1d
+
+Expected: R_MIN=09, G_MIN=02, B_MIN=02, A_MIN=06
+Recieved: R_MIN=09, G_MIN=02, B_MIN=02, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=0a, B_MIN=0a, A_MIN=00
+Recieved: R_MIN=02, G_MIN=0a, B_MIN=0a, A_MIN=00
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=0e
+Recieved: R_MIN=00, G_MIN=00, B_MIN=00, A_MIN=0e
+
+Expected: R_MIN=11, G_MIN=18, B_MIN=02, A_MIN=01
+Recieved: R_MIN=11, G_MIN=18, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=1f, A_MIN=01
+Recieved: R_MIN=01, G_MIN=00, B_MIN=1f, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=07, B_MIN=0b, A_MIN=07
+Recieved: R_MIN=02, G_MIN=07, B_MIN=0b, A_MIN=07
+
+Expected: R_MIN=11, G_MIN=09, B_MIN=0a, A_MIN=00
+Recieved: R_MIN=11, G_MIN=09, B_MIN=0a, A_MIN=00
+
+Expected: R_MIN=0b, G_MIN=13, B_MIN=00, A_MIN=01
+Recieved: R_MIN=0b, G_MIN=13, B_MIN=00, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=13, B_MIN=07, A_MIN=00
+Recieved: R_MIN=01, G_MIN=13, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=17, G_MIN=17, B_MIN=0c, A_MIN=10
+Recieved: R_MIN=17, G_MIN=17, B_MIN=0c, A_MIN=10
+
+Expected: R_MIN=08, G_MIN=03, B_MIN=01, A_MIN=04
+Recieved: R_MIN=08, G_MIN=03, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=02, A_MIN=03
+Recieved: R_MIN=03, G_MIN=01, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=07, A_MIN=04
+Recieved: R_MIN=07, G_MIN=02, B_MIN=07, A_MIN=04
+
+Expected: R_MIN=0b, G_MIN=11, B_MIN=0a, A_MIN=04
+Recieved: R_MIN=0b, G_MIN=11, B_MIN=0a, A_MIN=04
+
+Expected: R_MIN=16, G_MIN=0d, B_MIN=01, A_MIN=12
+Recieved: R_MIN=16, G_MIN=0d, B_MIN=01, A_MIN=12
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=05, A_MIN=01
+Recieved: R_MIN=00, G_MIN=01, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=00, A_MIN=03
+Recieved: R_MIN=02, G_MIN=01, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=00, A_MIN=11
+Recieved: R_MIN=03, G_MIN=01, B_MIN=00, A_MIN=11
+
+Expected: R_MIN=02, G_MIN=03, B_MIN=08, A_MIN=07
+Recieved: R_MIN=02, G_MIN=03, B_MIN=08, A_MIN=07
+
+Expected: R_MIN=09, G_MIN=07, B_MIN=13, A_MIN=0e
+Recieved: R_MIN=09, G_MIN=07, B_MIN=13, A_MIN=0e
+
+Expected: R_MIN=0f, G_MIN=00, B_MIN=0a, A_MIN=00
+Recieved: R_MIN=0f, G_MIN=00, B_MIN=0a, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=0f, B_MIN=02, A_MIN=08
+Recieved: R_MIN=03, G_MIN=0f, B_MIN=02, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=0a, B_MIN=01, A_MIN=07
+Recieved: R_MIN=02, G_MIN=0a, B_MIN=01, A_MIN=07
+
+Expected: R_MIN=0d, G_MIN=00, B_MIN=09, A_MIN=0c
+Recieved: R_MIN=0d, G_MIN=00, B_MIN=09, A_MIN=0c
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=02, A_MIN=05
+Recieved: R_MIN=06, G_MIN=02, B_MIN=02, A_MIN=05
+
+Expected: R_MIN=06, G_MIN=03, B_MIN=05, A_MIN=1f
+Recieved: R_MIN=06, G_MIN=03, B_MIN=05, A_MIN=1f
+
+Expected: R_MIN=18, G_MIN=04, B_MIN=03, A_MIN=05
+Recieved: R_MIN=18, G_MIN=04, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=17, G_MIN=0c, B_MIN=03, A_MIN=01
+Recieved: R_MIN=17, G_MIN=0c, B_MIN=03, A_MIN=01
+
+Expected: R_MIN=04, G_MIN=02, B_MIN=05, A_MIN=07
+Recieved: R_MIN=04, G_MIN=02, B_MIN=05, A_MIN=07
+
+Expected: R_MIN=11, G_MIN=10, B_MIN=1c, A_MIN=0c
+Recieved: R_MIN=11, G_MIN=10, B_MIN=1c, A_MIN=0c
+
+Expected: R_MIN=01, G_MIN=0a, B_MIN=02, A_MIN=03
+Recieved: R_MIN=01, G_MIN=0a, B_MIN=02, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=0e, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=0e, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=03, B_MIN=0b, A_MIN=02
+Recieved: R_MIN=08, G_MIN=03, B_MIN=0b, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=0f, A_MIN=05
+Recieved: R_MIN=01, G_MIN=00, B_MIN=0f, A_MIN=05
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=01, A_MIN=03
+Recieved: R_MIN=03, G_MIN=00, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=0c, A_MIN=01
+Recieved: R_MIN=00, G_MIN=01, B_MIN=0c, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=03, B_MIN=0d, A_MIN=0d
+Recieved: R_MIN=01, G_MIN=03, B_MIN=0d, A_MIN=0d
+
+Expected: R_MIN=18, G_MIN=03, B_MIN=05, A_MIN=03
+Recieved: R_MIN=18, G_MIN=03, B_MIN=05, A_MIN=03
+
+Expected: R_MIN=13, G_MIN=00, B_MIN=06, A_MIN=0a
+Recieved: R_MIN=13, G_MIN=00, B_MIN=06, A_MIN=0a
+
+Expected: R_MIN=1b, G_MIN=0f, B_MIN=00, A_MIN=04
+Recieved: R_MIN=1b, G_MIN=0f, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=04, B_MIN=0c, A_MIN=05
+Recieved: R_MIN=00, G_MIN=04, B_MIN=0c, A_MIN=05
+
+Expected: R_MIN=07, G_MIN=05, B_MIN=08, A_MIN=06
+Recieved: R_MIN=07, G_MIN=05, B_MIN=08, A_MIN=06
+
+Expected: R_MIN=10, G_MIN=08, B_MIN=04, A_MIN=04
+Recieved: R_MIN=10, G_MIN=08, B_MIN=04, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=11, A_MIN=02
+Recieved: R_MIN=00, G_MIN=03, B_MIN=11, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=0a, B_MIN=00, A_MIN=0d
+Recieved: R_MIN=01, G_MIN=0a, B_MIN=00, A_MIN=0d
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=0e, A_MIN=06
+Recieved: R_MIN=02, G_MIN=00, B_MIN=0e, A_MIN=06
+
+Expected: R_MIN=01, G_MIN=04, B_MIN=06, A_MIN=01
+Recieved: R_MIN=01, G_MIN=04, B_MIN=06, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=01, B_MIN=00, A_MIN=08
+Recieved: R_MIN=03, G_MIN=01, B_MIN=00, A_MIN=08
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=04
+Recieved: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=0c, G_MIN=02, B_MIN=01, A_MIN=05
+Recieved: R_MIN=0c, G_MIN=02, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=02
+Recieved: R_MIN=01, G_MIN=06, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=0a, G_MIN=0a, B_MIN=01, A_MIN=08
+Recieved: R_MIN=0a, G_MIN=0a, B_MIN=01, A_MIN=08
+
+Expected: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=05
+Recieved: R_MIN=00, G_MIN=00, B_MIN=05, A_MIN=05
+
+Expected: R_MIN=13, G_MIN=03, B_MIN=02, A_MIN=01
+Recieved: R_MIN=13, G_MIN=03, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=00, B_MIN=0e, A_MIN=08
+Recieved: R_MIN=02, G_MIN=00, B_MIN=0e, A_MIN=08
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=03, A_MIN=00
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=03, A_MIN=00
+
+Expected: R_MIN=18, G_MIN=03, B_MIN=09, A_MIN=02
+Recieved: R_MIN=18, G_MIN=03, B_MIN=09, A_MIN=02
+
+Expected: R_MIN=0c, G_MIN=12, B_MIN=00, A_MIN=00
+Recieved: R_MIN=0c, G_MIN=12, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=06, B_MIN=0d, A_MIN=03
+Recieved: R_MIN=05, G_MIN=06, B_MIN=0d, A_MIN=03
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=0b, A_MIN=00
+Recieved: R_MIN=02, G_MIN=05, B_MIN=0b, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=01, B_MIN=02, A_MIN=1c
+Recieved: R_MIN=08, G_MIN=01, B_MIN=02, A_MIN=1c
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=14, A_MIN=03
+Recieved: R_MIN=04, G_MIN=01, B_MIN=14, A_MIN=03
+
+Expected: R_MIN=08, G_MIN=06, B_MIN=00, A_MIN=04
+Recieved: R_MIN=08, G_MIN=06, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=06, G_MIN=07, B_MIN=10, A_MIN=04
+Recieved: R_MIN=06, G_MIN=07, B_MIN=10, A_MIN=04
+
+Expected: R_MIN=00, G_MIN=09, B_MIN=02, A_MIN=04
+Recieved: R_MIN=00, G_MIN=09, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=04, A_MIN=06
+Recieved: R_MIN=02, G_MIN=01, B_MIN=04, A_MIN=06
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=03, A_MIN=05
+Recieved: R_MIN=04, G_MIN=01, B_MIN=03, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=03, B_MIN=00, A_MIN=03
+Recieved: R_MIN=01, G_MIN=03, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=00, A_MIN=0a
+Recieved: R_MIN=03, G_MIN=00, B_MIN=00, A_MIN=0a
+
+Expected: R_MIN=05, G_MIN=0a, B_MIN=0b, A_MIN=00
+Recieved: R_MIN=05, G_MIN=0a, B_MIN=0b, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=01, B_MIN=06, A_MIN=01
+Recieved: R_MIN=02, G_MIN=01, B_MIN=06, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=04, B_MIN=05, A_MIN=01
+Recieved: R_MIN=03, G_MIN=04, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=05, B_MIN=00, A_MIN=10
+Recieved: R_MIN=00, G_MIN=05, B_MIN=00, A_MIN=10
+
+Expected: R_MIN=07, G_MIN=03, B_MIN=0e, A_MIN=03
+Recieved: R_MIN=07, G_MIN=03, B_MIN=0e, A_MIN=03
+
+Expected: R_MIN=10, G_MIN=01, B_MIN=04, A_MIN=01
+Recieved: R_MIN=10, G_MIN=01, B_MIN=04, A_MIN=01
+
+Expected: R_MIN=0b, G_MIN=01, B_MIN=36, A_MIN=01
+Recieved: R_MIN=0b, G_MIN=01, B_MIN=36, A_MIN=01
+
+Expected: R_MIN=09, G_MIN=04, B_MIN=16, A_MIN=05
+Recieved: R_MIN=09, G_MIN=04, B_MIN=16, A_MIN=05
+
+Expected: R_MIN=1b, G_MIN=0a, B_MIN=01, A_MIN=03
+Recieved: R_MIN=1b, G_MIN=0a, B_MIN=01, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=06, B_MIN=07, A_MIN=00
+Recieved: R_MIN=00, G_MIN=06, B_MIN=07, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=25, A_MIN=01
+Recieved: R_MIN=03, G_MIN=00, B_MIN=25, A_MIN=01
+
+Expected: R_MIN=14, G_MIN=04, B_MIN=0c, A_MIN=0c
+Recieved: R_MIN=14, G_MIN=04, B_MIN=0c, A_MIN=0c
+
+Expected: R_MIN=00, G_MIN=0a, B_MIN=04, A_MIN=02
+Recieved: R_MIN=00, G_MIN=0a, B_MIN=04, A_MIN=02
+
+Expected: R_MIN=02, G_MIN=02, B_MIN=00, A_MIN=00
+Recieved: R_MIN=02, G_MIN=02, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=09, B_MIN=02, A_MIN=0e
+Recieved: R_MIN=06, G_MIN=09, B_MIN=02, A_MIN=0e
+
+Expected: R_MIN=04, G_MIN=00, B_MIN=06, A_MIN=18
+Recieved: R_MIN=04, G_MIN=00, B_MIN=06, A_MIN=18
+
+Expected: R_MIN=04, G_MIN=02, B_MIN=0b, A_MIN=0d
+Recieved: R_MIN=04, G_MIN=02, B_MIN=0b, A_MIN=0d
+
+Expected: R_MIN=09, G_MIN=0c, B_MIN=07, A_MIN=08
+Recieved: R_MIN=09, G_MIN=0c, B_MIN=07, A_MIN=08
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=01, A_MIN=01
+Recieved: R_MIN=05, G_MIN=03, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=07, B_MIN=09, A_MIN=03
+Recieved: R_MIN=02, G_MIN=07, B_MIN=09, A_MIN=03
+
+Expected: R_MIN=0d, G_MIN=0a, B_MIN=09, A_MIN=10
+Recieved: R_MIN=0d, G_MIN=0a, B_MIN=09, A_MIN=10
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=06, A_MIN=08
+Recieved: R_MIN=04, G_MIN=01, B_MIN=06, A_MIN=08
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=01, A_MIN=05
+Recieved: R_MIN=01, G_MIN=02, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=17, G_MIN=02, B_MIN=10, A_MIN=03
+Recieved: R_MIN=17, G_MIN=02, B_MIN=10, A_MIN=03
+
+Expected: R_MIN=0a, G_MIN=05, B_MIN=08, A_MIN=06
+Recieved: R_MIN=0a, G_MIN=05, B_MIN=08, A_MIN=06
+
+Expected: R_MIN=07, G_MIN=01, B_MIN=00, A_MIN=00
+Recieved: R_MIN=07, G_MIN=01, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=02, G_MIN=0d, B_MIN=00, A_MIN=06
+Recieved: R_MIN=02, G_MIN=0d, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=08, B_MIN=06, A_MIN=09
+Recieved: R_MIN=02, G_MIN=08, B_MIN=06, A_MIN=09
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=05, A_MIN=02
+Recieved: R_MIN=06, G_MIN=01, B_MIN=05, A_MIN=02
+
+Expected: R_MIN=01, G_MIN=04, B_MIN=08, A_MIN=04
+Recieved: R_MIN=01, G_MIN=04, B_MIN=08, A_MIN=04
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=01
+Recieved: R_MIN=06, G_MIN=02, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=06, G_MIN=04, B_MIN=01, A_MIN=05
+Recieved: R_MIN=06, G_MIN=04, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=03, A_MIN=01
+Recieved: R_MIN=00, G_MIN=01, B_MIN=03, A_MIN=01
+
+Expected: R_MIN=05, G_MIN=04, B_MIN=07, A_MIN=08
+Recieved: R_MIN=05, G_MIN=04, B_MIN=07, A_MIN=08
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=03, A_MIN=02
+Recieved: R_MIN=06, G_MIN=00, B_MIN=03, A_MIN=02
+
+Expected: R_MIN=0b, G_MIN=05, B_MIN=02, A_MIN=01
+Recieved: R_MIN=0b, G_MIN=05, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=06, B_MIN=01, A_MIN=01
+Recieved: R_MIN=03, G_MIN=06, B_MIN=01, A_MIN=01
+
+Expected: R_MIN=08, G_MIN=13, B_MIN=02, A_MIN=04
+Recieved: R_MIN=08, G_MIN=13, B_MIN=02, A_MIN=04
+
+Expected: R_MIN=03, G_MIN=05, B_MIN=14, A_MIN=0e
+Recieved: R_MIN=03, G_MIN=05, B_MIN=14, A_MIN=0e
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=04, A_MIN=03
+Recieved: R_MIN=02, G_MIN=05, B_MIN=04, A_MIN=03
+
+Expected: R_MIN=03, G_MIN=0b, B_MIN=02, A_MIN=09
+Recieved: R_MIN=03, G_MIN=0b, B_MIN=02, A_MIN=09
+
+Expected: R_MIN=04, G_MIN=06, B_MIN=0f, A_MIN=07
+Recieved: R_MIN=04, G_MIN=06, B_MIN=0f, A_MIN=07
+
+Expected: R_MIN=0e, G_MIN=04, B_MIN=03, A_MIN=04
+Recieved: R_MIN=0e, G_MIN=04, B_MIN=03, A_MIN=04
+
+Expected: R_MIN=16, G_MIN=14, B_MIN=00, A_MIN=04
+Recieved: R_MIN=16, G_MIN=14, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=0f, B_MIN=00, A_MIN=00
+Recieved: R_MIN=01, G_MIN=0f, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=0d, G_MIN=0f, B_MIN=01, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=0f, B_MIN=01, A_MIN=00
+
+Expected: R_MIN=08, G_MIN=06, B_MIN=02, A_MIN=08
+Recieved: R_MIN=08, G_MIN=06, B_MIN=02, A_MIN=08
+
+Expected: R_MIN=11, G_MIN=02, B_MIN=18, A_MIN=01
+Recieved: R_MIN=11, G_MIN=02, B_MIN=18, A_MIN=01
+
+Expected: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=06
+Recieved: R_MIN=07, G_MIN=00, B_MIN=00, A_MIN=06
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=02, G_MIN=05, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=1a, A_MIN=08
+Recieved: R_MIN=02, G_MIN=05, B_MIN=1a, A_MIN=08
+
+Expected: R_MIN=06, G_MIN=08, B_MIN=00, A_MIN=03
+Recieved: R_MIN=06, G_MIN=08, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=16, G_MIN=03, B_MIN=19, A_MIN=13
+Recieved: R_MIN=16, G_MIN=03, B_MIN=19, A_MIN=13
+
+Expected: R_MIN=01, G_MIN=08, B_MIN=00, A_MIN=0b
+Recieved: R_MIN=01, G_MIN=08, B_MIN=00, A_MIN=0b
+
+Expected: R_MIN=02, G_MIN=07, B_MIN=14, A_MIN=0b
+Recieved: R_MIN=02, G_MIN=07, B_MIN=14, A_MIN=0b
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=0e, A_MIN=04
+Recieved: R_MIN=06, G_MIN=02, B_MIN=0e, A_MIN=04
+
+Expected: R_MIN=07, G_MIN=06, B_MIN=12, A_MIN=0b
+Recieved: R_MIN=07, G_MIN=06, B_MIN=12, A_MIN=0b
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=08, A_MIN=07
+Recieved: R_MIN=05, G_MIN=03, B_MIN=08, A_MIN=07
+
+Expected: R_MIN=23, G_MIN=06, B_MIN=19, A_MIN=14
+Recieved: R_MIN=23, G_MIN=06, B_MIN=19, A_MIN=14
+
+Expected: R_MIN=00, G_MIN=02, B_MIN=06, A_MIN=02
+Recieved: R_MIN=00, G_MIN=02, B_MIN=06, A_MIN=02
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=07, A_MIN=01
+Recieved: R_MIN=06, G_MIN=01, B_MIN=07, A_MIN=01
+
+Expected: R_MIN=01, G_MIN=09, B_MIN=00, A_MIN=04
+Recieved: R_MIN=01, G_MIN=09, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=02, G_MIN=16, B_MIN=05, A_MIN=0f
+Recieved: R_MIN=02, G_MIN=16, B_MIN=05, A_MIN=0f
+
+Expected: R_MIN=05, G_MIN=09, B_MIN=06, A_MIN=04
+Recieved: R_MIN=05, G_MIN=09, B_MIN=06, A_MIN=04
+
+Expected: R_MIN=06, G_MIN=01, B_MIN=10, A_MIN=13
+Recieved: R_MIN=06, G_MIN=01, B_MIN=10, A_MIN=13
+
+Expected: R_MIN=09, G_MIN=02, B_MIN=05, A_MIN=0e
+Recieved: R_MIN=09, G_MIN=02, B_MIN=05, A_MIN=0e
+
+Expected: R_MIN=00, G_MIN=0c, B_MIN=09, A_MIN=03
+Recieved: R_MIN=00, G_MIN=0c, B_MIN=09, A_MIN=03
+
+Expected: R_MIN=07, G_MIN=0d, B_MIN=1e, A_MIN=04
+Recieved: R_MIN=07, G_MIN=0d, B_MIN=1e, A_MIN=04
+
+Expected: R_MIN=05, G_MIN=03, B_MIN=09, A_MIN=0d
+Recieved: R_MIN=05, G_MIN=03, B_MIN=09, A_MIN=0d
+
+Expected: R_MIN=0b, G_MIN=0a, B_MIN=02, A_MIN=05
+Recieved: R_MIN=0b, G_MIN=0a, B_MIN=02, A_MIN=05
+
+Expected: R_MIN=04, G_MIN=04, B_MIN=05, A_MIN=07
+Recieved: R_MIN=04, G_MIN=04, B_MIN=05, A_MIN=07
+
+Expected: R_MIN=01, G_MIN=0e, B_MIN=09, A_MIN=01
+Recieved: R_MIN=01, G_MIN=0e, B_MIN=09, A_MIN=01
+
+Expected: R_MIN=04, G_MIN=01, B_MIN=07, A_MIN=08
+Recieved: R_MIN=04, G_MIN=01, B_MIN=07, A_MIN=08
+
+Expected: R_MIN=02, G_MIN=10, B_MIN=00, A_MIN=0d
+Recieved: R_MIN=02, G_MIN=10, B_MIN=00, A_MIN=0d
+
+Expected: R_MIN=29, G_MIN=03, B_MIN=02, A_MIN=0a
+Recieved: R_MIN=29, G_MIN=03, B_MIN=02, A_MIN=0a
+
+Expected: R_MIN=0c, G_MIN=02, B_MIN=06, A_MIN=09
+Recieved: R_MIN=0c, G_MIN=02, B_MIN=06, A_MIN=09
+
+Expected: R_MIN=0a, G_MIN=04, B_MIN=01, A_MIN=05
+Recieved: R_MIN=0a, G_MIN=04, B_MIN=01, A_MIN=05
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=01
+Recieved: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=03, G_MIN=19, B_MIN=04, A_MIN=11
+Recieved: R_MIN=03, G_MIN=19, B_MIN=04, A_MIN=11
+
+Expected: R_MIN=00, G_MIN=0e, B_MIN=07, A_MIN=03
+Recieved: R_MIN=00, G_MIN=0e, B_MIN=07, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=02, B_MIN=01, A_MIN=23
+Recieved: R_MIN=01, G_MIN=02, B_MIN=01, A_MIN=23
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=01
+Recieved: R_MIN=01, G_MIN=00, B_MIN=02, A_MIN=01
+
+Expected: R_MIN=02, G_MIN=05, B_MIN=04, A_MIN=0f
+Recieved: R_MIN=02, G_MIN=05, B_MIN=04, A_MIN=0f
+
+Expected: R_MIN=07, G_MIN=05, B_MIN=05, A_MIN=09
+Recieved: R_MIN=07, G_MIN=05, B_MIN=05, A_MIN=09
+
+Expected: R_MIN=0a, G_MIN=07, B_MIN=00, A_MIN=02
+Recieved: R_MIN=0a, G_MIN=07, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=0e, A_MIN=04
+Recieved: R_MIN=00, G_MIN=03, B_MIN=0e, A_MIN=04
+
+Expected: R_MIN=01, G_MIN=22, B_MIN=09, A_MIN=0a
+Recieved: R_MIN=01, G_MIN=22, B_MIN=09, A_MIN=0a
+
+Expected: R_MIN=0a, G_MIN=00, B_MIN=04, A_MIN=09
+Recieved: R_MIN=0a, G_MIN=00, B_MIN=04, A_MIN=09
+
+Expected: R_MIN=0d, G_MIN=02, B_MIN=0d, A_MIN=00
+Recieved: R_MIN=0d, G_MIN=02, B_MIN=0d, A_MIN=00
+
+Expected: R_MIN=09, G_MIN=10, B_MIN=00, A_MIN=17
+Recieved: R_MIN=09, G_MIN=10, B_MIN=00, A_MIN=17
+
+Expected: R_MIN=09, G_MIN=0b, B_MIN=04, A_MIN=07
+Recieved: R_MIN=09, G_MIN=0b, B_MIN=04, A_MIN=07
+
+Expected: R_MIN=04, G_MIN=09, B_MIN=01, A_MIN=02
+Recieved: R_MIN=04, G_MIN=09, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=06, A_MIN=03
+Recieved: R_MIN=07, G_MIN=02, B_MIN=06, A_MIN=03
+
+Expected: R_MIN=00, G_MIN=01, B_MIN=07, A_MIN=20
+Recieved: R_MIN=00, G_MIN=01, B_MIN=07, A_MIN=20
+
+Expected: R_MIN=07, G_MIN=02, B_MIN=0b, A_MIN=09
+Recieved: R_MIN=07, G_MIN=02, B_MIN=0b, A_MIN=09
+
+Expected: R_MIN=06, G_MIN=00, B_MIN=02, A_MIN=00
+Recieved: R_MIN=06, G_MIN=00, B_MIN=02, A_MIN=00
+
+Expected: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=02
+Recieved: R_MIN=01, G_MIN=00, B_MIN=01, A_MIN=02
+
+Expected: R_MIN=08, G_MIN=05, B_MIN=01, A_MIN=04
+Recieved: R_MIN=08, G_MIN=05, B_MIN=01, A_MIN=04
+
+Expected: R_MIN=0e, G_MIN=0c, B_MIN=09, A_MIN=05
+Recieved: R_MIN=0e, G_MIN=0c, B_MIN=09, A_MIN=05
+
+Expected: R_MIN=12, G_MIN=02, B_MIN=02, A_MIN=0c
+Recieved: R_MIN=12, G_MIN=02, B_MIN=02, A_MIN=0c
+
+Expected: R_MIN=03, G_MIN=00, B_MIN=0d, A_MIN=00
+Recieved: R_MIN=03, G_MIN=00, B_MIN=0d, A_MIN=00
+
+Expected: R_MIN=06, G_MIN=02, B_MIN=00, A_MIN=1c
+Recieved: R_MIN=06, G_MIN=02, B_MIN=00, A_MIN=1c
+
+Expected: R_MIN=07, G_MIN=04, B_MIN=00, A_MIN=00
+Recieved: R_MIN=07, G_MIN=04, B_MIN=00, A_MIN=00
+
+Expected: R_MIN=03, G_MIN=03, B_MIN=06, A_MIN=03
+Recieved: R_MIN=03, G_MIN=03, B_MIN=06, A_MIN=03
+
+Expected: R_MIN=01, G_MIN=07, B_MIN=00, A_MIN=03
+Recieved: R_MIN=01, G_MIN=07, B_MIN=00, A_MIN=03
+
+Expected: R_MIN=06, G_MIN=11, B_MIN=17, A_MIN=0c
+Recieved: R_MIN=06, G_MIN=11, B_MIN=17, A_MIN=0c
+
+Expected: R_MIN=03, G_MIN=02, B_MIN=07, A_MIN=05
+Recieved: R_MIN=03, G_MIN=02, B_MIN=07, A_MIN=05
+
+Expected: R_MIN=06, G_MIN=05, B_MIN=09, A_MIN=08
+Recieved: R_MIN=06, G_MIN=05, B_MIN=09, A_MIN=08
+
+Expected: R_MIN=19, G_MIN=0b, B_MIN=05, A_MIN=01
+Recieved: R_MIN=19, G_MIN=0b, B_MIN=05, A_MIN=01
+
+Expected: R_MIN=00, G_MIN=03, B_MIN=05, A_MIN=07
+Recieved: R_MIN=00, G_MIN=03, B_MIN=05, A_MIN=07
+
+Expected: R_MIN=05, G_MIN=09, B_MIN=01, A_MIN=0c
+Recieved: R_MIN=05, G_MIN=09, B_MIN=01, A_MIN=0c
+
+Expected: R_MIN=00, G_MIN=08, B_MIN=04, A_MIN=00
+Recieved: R_MIN=00, G_MIN=08, B_MIN=04, A_MIN=00
+
+Expected: R_MIN=05, G_MIN=00, B_MIN=1d, A_MIN=06
+Recieved: R_MIN=05, G_MIN=00, B_MIN=1d, A_MIN=06
+
+Expected: R_MIN=0f, G_MIN=03, B_MIN=03, A_MIN=09
+Recieved: R_MIN=0f, G_MIN=03, B_MIN=03, A_MIN=09
+
+Expected: R_MIN=08, G_MIN=02, B_MIN=00, A_MIN=02
+Recieved: R_MIN=08, G_MIN=02, B_MIN=00, A_MIN=02
+
+Expected: R_MIN=03, G_MIN=0e, B_MIN=00, A_MIN=04
+Recieved: R_MIN=03, G_MIN=0e, B_MIN=00, A_MIN=04
+
+Expected: R_MIN=06, G_MIN=08, B_MIN=0c, A_MIN=11
+Recieved: R_MIN=06, G_MIN=08, B_MIN=0c, A_MIN=11
+
+Expected: R_MIN=02, G_MIN=07, B_MIN=02, A_MIN=07
+Recieved: R_MIN=02, G_MIN=07, B_MIN=02, A_MIN=07
+
+Expected: R_MIN=06, G_MIN=15, B_MIN=11, A_MIN=01
+Recieved: R_MIN=06, G_MIN=15, B_MIN=11, A_MIN=01
+

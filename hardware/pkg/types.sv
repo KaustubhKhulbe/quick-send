@@ -64,7 +64,6 @@ package types;
     logic [1:0] flag;
     struct packed {
       line_t l1;
-      line_t l2;
     } lines;
   } compress_commit_reg;
 

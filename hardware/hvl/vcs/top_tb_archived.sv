@@ -1,4 +1,4 @@
-module top_tb;
+module top_tb_archived;
 
   timeunit 1ms;
   timeprecision 1ps;
@@ -13,7 +13,7 @@ module top_tb;
   logic [7:0] r_min, g_min, b_min, a_min;
   logic [7:0] r_max, g_max, b_max, a_max;
 
-  cpu dut(.clk(clk), .rst(rst), .pixels(pixels), .lines(lines), .flag(flag));
+  igpu dut(.clk(clk), .rst(rst), .pixels(pixels), .lines(lines), .flag(flag));
 
   initial begin
     rst = 1'b1;

@@ -1,8 +1,6 @@
 module residual
 import types::*;
 (
-  input logic clk,
-  input logic rst,
   input types::header_residual_reg hr_reg,
   output types::residual_compress_reg cr_reg
  );

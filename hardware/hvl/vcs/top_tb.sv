@@ -7,12 +7,13 @@ module top_tb;
   bit clk;
   bit rst;
   types::pixels_t pixels;
-  logic [1:0] [511:0] lines;
+  logic [511:0] lines;
   logic [1:0] flag;
   logic [1:0] [511:0] expected_lines;
   logic [1:0] expected_flag;
+  int res;
 
-  cpu dut(.clk(clk), .rst(rst), .pixels(pixels), .lines(lines), .flag(flag));
+  igpu dut(.clk(clk), .rst(rst), .pixels(pixels), .lines(lines), .flag(flag));
 
   // Read pixels from a file
   task read_pixels_from_file(string filename);
@@ -54,7 +55,7 @@ module top_tb;
 
   // read two 512-bit binary values for lines[0] and lines[1]
   for (int i = 0; i < 2; i++) begin
-    $fgets(line_data, fd);
+    res = $fgets(line_data, fd);
     expected_lines[i] = '0;
 
     // convert each character ('0' or '1') into a 512-bit logic vector
@@ -64,7 +65,7 @@ module top_tb;
   end
 
   // read flag values
-  $fscanf(fd, "%d %d\n", expected_flag[1], expected_flag[0]);
+  res = $fscanf(fd, "%d %d\n", expected_flag[1], expected_flag[0]);
 
   $fclose(fd);
 endtask
@@ -80,7 +81,7 @@ endtask
     // for (int i = 0; i < 32; i++) begin
     //   $display("Pixel %0d: Line: %014b", i, dut.cc_reg.lines.l1.l.pix[i]);
     // end
-    $display("===================================");
+    $display("==============================================================");
     if (flag !== expected_flag) begin
       $display("ERROR: Output flag does not match expected output.");
       $display("Expected: %b", expected_flag);
@@ -91,22 +92,22 @@ endtask
 
     if (flag === 2'b00) begin
       $display("Skipping comparison for flag == 2'b00");
-      $display("===================================");
+      $display("==============================================================");
       return;
     end
 
-    if (lines[0][511:464] == expected_lines[0][511:464]) begin
+    if (lines[511:464] == expected_lines[0][511:464]) begin
       $display("********** Header computation matches. **********");
     end
 
-    if (lines[0][511:0] == expected_lines[0][511:0]) begin
+    if (lines[511:0] == expected_lines[0][511:0]) begin
       $display("********** Output lines match expected output. **********");
     end else begin
      $display("ERROR: Output lines do not match expected output.");
       $display("Expected: %b", expected_lines[0][511:0]);
-      $display("Got:      %b", lines[0][511:0]);
+      $display("Got:      %b", lines[511:0]);
     end
-    $display("===================================");
+    $display("==============================================================");
 
   endtask
 

@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : igpu
+Version: W-2024.09
+Date   : Sun Mar 23 12:02:34 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /class/ece411/freepdk-45nm/stdcells.db)
+
+Number of ports:                         7435
+Number of nets:                         36154
+Number of cells:                        28497
+Number of combinational cells:          23122
+Number of sequential cells:              2658
+Number of macros/black boxes:               0
+Number of buf/inv:                       6829
+Number of references:                      11
+
+Combinational area:              26283.194257
+Buf/Inv area:                     3816.302022
+Noncombinational area:           16291.436085
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 42574.630342
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+igpu                              42574.6303    100.0   1565.1440  16291.4361  0.0000  igpu
+compress_inst                      9802.8982     23.0   9802.8982      0.0000  0.0000  compress
+header_inst                       10654.8960     25.0  10654.8960      0.0000  0.0000  header
+residual_inst                      4260.2560     10.0   4260.2560      0.0000  0.0000  residual
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+Total                                                  26283.1943  16291.4361  0.0000
+
+1
