@@ -31,7 +31,7 @@ class Aut:
     def formal_validate(self):
         print(f"Begining formal validation of AUT: {self.name}")
         for i in tqdm(range(len(self.dataset))):
-            self.validate(dataset[i], dataset.shape[2], dataset.shape[3])
+            self.validate(self.dataset[i], self.dataset[i].shape[1], self.dataset[i].shape[2])
         print(f"AUT ({self.name}) formally validated")
 
 def identity_compress(image):
@@ -265,29 +265,31 @@ def intel_iGPU_random_cr_benchmark(samples, cr):
         total += bytes_transferred
     return total / len(samples)
 
-random_list = [(random.randint(0, 128), random.randint(0, 64)) for _ in range(1000)]
 
-# dataset = np.random.randint(0, 10, (10, 4, 4, 8), dtype=np.uint8)
-cr = {}
+if __name__ == '__main__':
+    random_list = [(random.randint(0, 128), random.randint(0, 64)) for _ in range(1000)]
 
-from PIL import Image
+    # dataset = np.random.randint(0, 10, (10, 4, 4, 8), dtype=np.uint8)
+    cr = {}
 
-width, height = 512, 512
+    from PIL import Image
 
-r = np.tile(((np.linspace(0, 255, width) ** 6 / (255 / 6)) ** 0.5).astype(np.uint8), (height, 1))  # Exponential Red scaling
-g = np.tile((np.sin(np.linspace(0, np.pi, height)) * 200).astype(np.uint8).reshape(height, 1), (1, width))  # Sinusoidal Green
-b = np.tile((np.linspace(0, 255, width) ** 0.5 / 255 ** 0.5 * 255).astype(np.uint8), (height, 1))  # Log-like Blue scaling
-a = np.tile((np.cos(np.linspace(0, np.pi, height)) * 255).astype(np.uint8).reshape(height, 1), (1, width))  # Cosine Alpha fading
+    width, height = 512, 512
 
-gradient_image = np.stack([r, g, b, a], axis=0)  # (4, 512, 512)
+    r = np.tile(((np.linspace(0, 255, width) ** 6 / (255 / 6)) ** 0.5).astype(np.uint8), (height, 1))  # Exponential Red scaling
+    g = np.tile((np.sin(np.linspace(0, np.pi, height)) * 200).astype(np.uint8).reshape(height, 1), (1, width))  # Sinusoidal Green
+    b = np.tile((np.linspace(0, 255, width) ** 0.5 / 255 ** 0.5 * 255).astype(np.uint8), (height, 1))  # Log-like Blue scaling
+    a = np.tile((np.cos(np.linspace(0, np.pi, height)) * 255).astype(np.uint8).reshape(height, 1), (1, width))  # Cosine Alpha fading
 
-image = Image.fromarray(np.moveaxis(gradient_image, 0, -1), mode="RGBA")
-image.save("gradient_alpha_fixed.png")
+    gradient_image = np.stack([r, g, b, a], axis=0)  # (4, 512, 512)
 
-dataset = np.array([gradient_image])
-igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, intel_iGPU_random_access, name="intel iGPU")
+    image = Image.fromarray(np.moveaxis(gradient_image, 0, -1), mode="RGBA")
+    image.save("gradient_alpha_fixed.png")
 
-igpu.compress(dataset[0], 512, 512)
-print(intel_iGPU_random_cr_benchmark(random_list, cr))
+    dataset = np.array([gradient_image])
+    igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, intel_iGPU_random_access, name="intel iGPU")
 
-image.show()
+    igpu.compress(dataset[0], 512, 512)
+    print(intel_iGPU_random_cr_benchmark(random_list, cr))
+
+    image.show()

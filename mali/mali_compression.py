@@ -1,7 +1,6 @@
 import numpy as np 
 import random
 
-# TODO RGBA to YUVA conversions 
 num_channels = 4
 CHAN_Y = 0
 CHAN_U = 1
@@ -147,8 +146,9 @@ def compress_pane(pane):
             if(bitlength_delta < -2):
                 bitlength_delta = -2 
             elif(bitlength_delta > 1): # TODO unsure about this case, I think if this happens we disable compression 
-                print("ERROR, THIS SHOULDN'T HAPPEN") 
+                # print("ERROR, THIS SHOULDN'T HAPPEN") 
                 # exit(1)
+                pass
             chan_bitlength_tree[quad_idx] = bitlength_delta 
             header_bits += 2 
             if(quad_bit_length >= 2):
@@ -260,37 +260,30 @@ def mali_decompression(compressed_data, width, height):
 
 
 if __name__ == "__main__":
-    # rgba_orig = (20, 23, 100, 255)
-    # yuva = rgba_to_yuva(rgba_orig)
-    # rgba = yuva_to_rgba(yuva)
-    # print(rgba_orig)
-    # print(yuva)
-    # print(rgba)
 
     # Gradient + uniform image
-    # gradient = np.linspace(0, 64, num=4*4, dtype=np.uint8).reshape(4, 4)
-    # z = np.zeros((4, 4), dtype=np.uint8)
-
-    # alpha_channel = np.full((4, 4), 255, dtype=np.uint8)  # (4,4)
-
+    gradient = np.linspace(0, 64, num=4*4, dtype=np.uint8).reshape(4, 4)
+    z = np.zeros((4, 4), dtype=np.uint8)
+    alpha_channel = np.full((4, 4), 255, dtype=np.uint8)  # (4,4)
     # grayscale_rgba_panes = np.stack([gradient + 20, gradient + 23, z + 100, alpha_channel], axis=0)  # (4,4,4)
+    grayscale_rgba_panes = np.stack([z+2, z+1, z + 100, alpha_channel], axis=0)  # (4,4,4)
 
     # Random image 
-    grayscale_rgba_panes = np.zeros((4, 64, 64)) 
-    for chan in range(4):
-        for x in range(64):
-            for y in range(64):
-                grayscale_rgba_panes[chan, y, x] = random.randint(0, 255)
+    # grayscale_rgba_panes = np.zeros((4, 64, 64)) 
+    # for chan in range(4):
+    #     for x in range(64):
+    #         for y in range(64):
+    #             grayscale_rgba_panes[chan, y, x] = random.randint(0, 255)
 
 
     print(grayscale_rgba_panes)
     print()
 
-    compressed_data = mali_compression(grayscale_rgba_panes, 64, 64) 
+    compressed_data = mali_compression(grayscale_rgba_panes, 4, 4) 
     print(compressed_data) 
     print() 
 
-    rgba_image = mali_decompression(compressed_data, 64, 64) 
+    rgba_image = mali_decompression(compressed_data, 4, 4) 
 
     print(rgba_image)
     print() 
