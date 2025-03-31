@@ -1,4 +1,3 @@
-
 import numpy as np
 
 
@@ -13,11 +12,11 @@ def compress_block(block):
     
     # Process each channel (R, G, B, A) separately
     for c in range(4):
-        min_values[c] = np.min(block[:, :, c])
-        residuals[:, :, c] = block[:, :, c] - min_values[c]
-        max_residual = np.max(residuals[:, :, c])
+        min_values[c] = np.min(block[c, :, :])
+        residuals[c, :, :] = block[c, :, :] - min_values[c]
+        max_residual = np.max(residuals[c, :, :])
         safe_max_residual = max(max_residual, 1)
-        bit_lengths[c] = int(np.ceil(np.log2(safe_max_residual + 1)))
+        bit_lengths[c] = int(np.ceil(np.log2(safe_max_residual + 1))) if safe_max_residual > 0 and not np.isinf(safe_max_residual) else 0
     
     total_bits = np.sum(bit_lengths)
     if total_bits > 14:
@@ -26,7 +25,7 @@ def compress_block(block):
     reserved_bits = np.zeros(8, dtype=int)
     for i in range(0, 4, 2):
         for j in range(0, 8, 2):
-            sub_block = block[i:i+2, j:j+2]
+            sub_block = block[:, i:i+2, j:j+2]
             index = (i // 2) * 4 + (j // 2)
             if check_uniform_2x2(sub_block):
                 reserved_bits[index] = 1
@@ -51,13 +50,11 @@ def compress_block(block):
     return {"flag": 1, "compressed_data": compressed_data}
 
 
-def compress_image(image):
-    H, W, C = image.shape
-    assert C == 4
+def compress_image(image, H, W):
     compressed_blocks = []
     for i in range(0, H, 4):
         for j in range(0, W, 8):
-            block = image[i:i+4, j:j+8]
+            block = image[:, i:i+4, j:j+8]
             compressed_blocks.append(compress_block(block))
     return compressed_blocks
 
@@ -68,16 +65,16 @@ def decompress_block(compressed_block):
     
     header = compressed_block["compressed_data"]["header"]
     residuals = np.array(compressed_block["compressed_data"]["residuals"], dtype=np.uint8)
-    min_values = np.array(header["min_values"], dtype=np.uint8)
+    min_values = np.array(header["min_values"], dtype=np.uint8).reshape(4, 1, 1)
     return residuals + min_values
 
 
 def decompress_image(compressed_data, H, W):
-    decompressed_image = np.zeros((H, W, 4), dtype=np.uint8)
+    decompressed_image = np.zeros((4, H, W), dtype=np.uint8)
     index = 0
     for i in range(0, H, 4):
         for j in range(0, W, 8):
-            decompressed_image[i:i+4, j:j+8] = decompress_block(compressed_data[index])
+            decompressed_image[:, i:i+4, j:j+8] = decompress_block(compressed_data[index])
             index += 1
     return decompressed_image
 
@@ -90,11 +87,11 @@ def test_compression():
     g = np.tile((np.sin(np.linspace(0, np.pi, H)) * 200).astype(np.uint8).reshape(H, 1), (1, W))
     b = np.tile((np.linspace(0, 255, W) ** 0.5 / 255 ** 0.5 * 255).astype(np.uint8), (H, 1))
     a = np.tile((np.cos(np.linspace(0, np.pi, H)) * 255).astype(np.uint8).reshape(H, 1), (1, W))
-    image = np.stack([r, g, b, a], axis=-1)
-    img = Image.fromarray(image, mode="RGBA")
+    image = np.stack([r, g, b, a], axis=0)
+    img = Image.fromarray(image.transpose(1, 2, 0), mode="RGBA")
     img.save("gradient_alpha_fixed.png")
     
-    compressed_data = compress_image(image)
+    compressed_data = compress_image(image, H, W)
     decompressed_image = decompress_image(compressed_data, H, W)
     
     compressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 1)
