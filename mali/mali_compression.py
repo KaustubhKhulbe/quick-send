@@ -226,7 +226,9 @@ def mali_compression(image, height, width):
             # TODO need to translate the compressed format into a bitstream 
             compressed_data.append(compressed_format)
 
-    return compressed_data
+    print("Compressed data size:", len(compressed_data))
+    # return compressed_data
+    return len(compressed_data)
 
 '''
     Takes a compressed form of the image using the mali compression and returns the original image 

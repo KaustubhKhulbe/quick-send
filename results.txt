@@ -1,0 +1,6 @@
+1000
+Total bytes sent: 110976, Total bytes communicated: 128000
+1000
+Total bytes sent: 113216, Total bytes communicated: 128000
+1000
+Total bytes sent: 112256, Total bytes communicated: 128000

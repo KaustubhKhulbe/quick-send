@@ -108,4 +108,4 @@ def test_compression():
     print(f"Compression Ratio: {compression_ratio:.2f}")
     print(f"Decompression Lossless: {np.array_equal(image, decompressed_image)}")
 
-test_compression()
+# test_compression()
