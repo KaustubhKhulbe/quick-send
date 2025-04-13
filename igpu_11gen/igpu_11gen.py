@@ -1,4 +1,33 @@
 import numpy as np
+import random
+import math
+import matplotlib.pyplot as plt
+from PIL import Image
+
+def sample(N, func, H, W):
+    if func == "random":
+        return [(random.randint(0, W-8), random.randint(0, H-4)) for _ in range(N)]
+    
+    elif func == "gradient":
+        return [(int((i / N) * (W-8)), int((i / N) * (H-4))) for i in range(N)]
+    
+    elif func == "periodic":
+        period = max(1, N // 10)
+        return [( (i % period) * W // period, (i % period) * H // period ) for i in range(N)]
+    
+    elif func == "blurred":
+        center_x, center_y = W // 2, H // 2
+        return [(int(random.gauss(center_x, W//8)), int(random.gauss(center_y, H//8))) 
+                for _ in range(N)]
+    
+    elif func == "skew":
+        return [(int((random.random() ** 2) * (W-8)), int((random.random() ** 0.5) * (H-4))) 
+                for _ in range(N)]
+
+    
+    else:
+        raise ValueError(f"Unknown pattern: {func}")
+
 
 
 def check_uniform_2x2(block):
@@ -50,12 +79,13 @@ def compress_block(block):
     return {"flag": 1, "compressed_data": compressed_data}
 
 
-def compress_image(image, H, W):
+def compress_image(image, H, W, points):
     compressed_blocks = []
-    for i in range(0, H, 4):
-        for j in range(0, W, 8):
-            block = image[:, i:i+4, j:j+8]
-            compressed_blocks.append(compress_block(block))
+    for x, y in points:
+        # Ensure that the block stays within bounds
+        # if x + 4 <= H and y + 8 <= W:
+        block = image[:, x:x+4, y:y+8]
+        compressed_blocks.append(compress_block(block))
     return compressed_blocks
 
 
@@ -69,17 +99,16 @@ def decompress_block(compressed_block):
     return residuals + min_values
 
 
-def decompress_image(compressed_data, H, W):
+def decompress_image(compressed_data, H, W, points):
     decompressed_image = np.zeros((4, H, W), dtype=np.uint8)
     index = 0
-    for i in range(0, H, 4):
-        for j in range(0, W, 8):
-            decompressed_image[:, i:i+4, j:j+8] = decompress_block(compressed_data[index])
-            index += 1
+    for x, y in points:
+        # Ensure that the block stays within bounds
+        # if x + 4 <= H and y + 8 <= W:
+        decompressed_image[:, x:x+4, y:y+8] = decompress_block(compressed_data[index])
+        index += 1
     return decompressed_image
 
-
-from PIL import Image
 
 def test_compression():
     H, W = 512, 512
@@ -91,21 +120,30 @@ def test_compression():
     img = Image.fromarray(image.transpose(1, 2, 0), mode="RGBA")
     img.save("gradient_alpha_fixed.png")
     
-    compressed_data = compress_image(image, H, W)
-    decompressed_image = decompress_image(compressed_data, H, W)
+    N = 1000
+    points = sample(N, "skew", H, W)
+    print(len(points))
+    compressed_data = compress_image(image, H, W, points)
+    decompressed_image = decompress_image(compressed_data, H, W, points)
     
+    # Count compressed and uncompressed blocks
     compressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 1)
-    uncompressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 0)
-    total_blocks = len(compressed_data)
     
+    uncompressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 0)
+    total_blocks = (compressed_blocks_count+uncompressed_blocks_count)
+    
+    # Original block size (128 bytes per block)
     original_size = total_blocks * 128
+    
+    # Compressed block size (64 bytes for compressed, 128 bytes for uncompressed)
     compressed_size = (compressed_blocks_count * 64) + (uncompressed_blocks_count * 128)
+    
+    # Compression ratio
     compression_ratio = original_size / compressed_size if compressed_size > 0 else 1.0
     
     print(f"Total blocks: {total_blocks}")
     print(f"Compressed blocks: {compressed_blocks_count}")
     print(f"Uncompressed blocks: {uncompressed_blocks_count}")
     print(f"Compression Ratio: {compression_ratio:.2f}")
-    print(f"Decompression Lossless: {np.array_equal(image, decompressed_image)}")
 
-test_compression()
+# test_compression()
