@@ -2,14 +2,14 @@ import numpy as np
 import random
 import math
 import matplotlib.pyplot as plt
-from PIL import Image
 
-def sample(N, func, H, W):
+def sample(N, func, W, H):
     if func == "random":
-        return [(random.randint(0, W-8), random.randint(0, H-4)) for _ in range(N)]
+        return [(random.randint(0, W-1), random.randint(0, H-1)) for _ in range(N)]
     
     elif func == "gradient":
-        return [(int((i / N) * (W-8)), int((i / N) * (H-4))) for i in range(N)]
+        return [(int((i / N) * (W-1)), int((i / N) * (H-1))) for i in range(N)]
+    
     
     elif func == "periodic":
         period = max(1, N // 10)
@@ -21,13 +21,11 @@ def sample(N, func, H, W):
                 for _ in range(N)]
     
     elif func == "skew":
-        return [(int((random.random() ** 2) * (W-8)), int((random.random() ** 0.5) * (H-4))) 
+        return [(int((random.random() ** 2) * (W-1)), int((random.random() ** 0.5) * (H-1))) 
                 for _ in range(N)]
-
     
     else:
         raise ValueError(f"Unknown pattern: {func}")
-
 
 
 def check_uniform_2x2(block):
@@ -76,18 +74,55 @@ def compress_block(block):
         raise AssertionError("Residual bits mismatch: Expected 12 bits")
     
     compressed_data = {"header": header, "residuals": residuals.tolist()}
+
+    
     return {"flag": 1, "compressed_data": compressed_data}
 
 
-def compress_image(image, H, W, points):
-    compressed_blocks = []
-    for x, y in points:
-        # Ensure that the block stays within bounds
-        # if x + 4 <= H and y + 8 <= W:
-        block = image[:, x:x+4, y:y+8]
-        compressed_blocks.append(compress_block(block))
-    return compressed_blocks
+def compress_image(image, H, W ):
 
+    assert image.shape[0] == 4, "Expected input image with 4 channels (RGBA)"
+
+    # Ensure dimensions are multiples of 32
+    H = math.ceil(image.shape[1] / 32) * 32
+    W = math.ceil(image.shape[2] / 32) * 32
+
+    # Pad image to (4, height, width)
+    image_pad = np.zeros((4, H, W), dtype=np.uint8)
+    image_pad[:, :image.shape[1], :image.shape[2]] = image
+
+    compressed_blocks = []
+    
+    
+    for i in range(0, H, 4):
+        for j in range(0, W, 8):
+            block = image_pad[:, i:i+4, j:j+8]
+            compressed_block = compress_block(block)
+            compressed_blocks.append(compressed_block)
+            cr[i // 4, j // 8] = compressed_block["flag"]
+    return compressed_blocks 
+
+def intel_iGPU_random_access(x, y, cr):
+    # print(len(cr))
+    # print(x, y)
+    flag = cr[(y // 4, x // 8)]
+    if flag == 0: return 128
+    else: return 64
+
+def get_compressability_igpu_11gen(image, x, y):
+    # Ensure the image is in (C, H, W) format where C=4 (RGBA)
+    assert image.shape[0] == 4, "Expected input image with 4 channels (RGBA)"
+    global cr
+
+    H = image.shape[1]
+    W = image.shape[2]
+
+    cr = {}
+    
+    # print(dataset.shape)
+    compress_image(image, H, W)
+    
+    return intel_iGPU_random_access(x, y, cr)
 
 def decompress_block(compressed_block):
     if compressed_block["flag"] == 0:
@@ -99,16 +134,17 @@ def decompress_block(compressed_block):
     return residuals + min_values
 
 
-def decompress_image(compressed_data, H, W, points):
+def decompress_image(compressed_data, H, W):
     decompressed_image = np.zeros((4, H, W), dtype=np.uint8)
     index = 0
-    for x, y in points:
-        # Ensure that the block stays within bounds
-        # if x + 4 <= H and y + 8 <= W:
-        decompressed_image[:, x:x+4, y:y+8] = decompress_block(compressed_data[index])
-        index += 1
+    for i in range(0, H, 4):
+        for j in range(0, W, 8):
+            decompressed_image[:, i:i+4, j:j+8] = decompress_block(compressed_data[index])
+            index += 1
     return decompressed_image
 
+
+from PIL import Image
 
 def test_compression():
     H, W = 512, 512
@@ -120,30 +156,26 @@ def test_compression():
     img = Image.fromarray(image.transpose(1, 2, 0), mode="RGBA")
     img.save("gradient_alpha_fixed.png")
     
-    N = 1000
-    points = sample(N, "skew", H, W)
-    print(len(points))
-    compressed_data = compress_image(image, H, W, points)
-    decompressed_image = decompress_image(compressed_data, H, W, points)
+
+    N=1000
+    points = sample(N, "random", W, H)
+    x= points[0]
+    y= points[1]
+    compressed_data = compress_image(image, H, W)
+    decompressed_image = decompress_image(compressed_data, H, W)
     
-    # Count compressed and uncompressed blocks
     compressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 1)
-    
     uncompressed_blocks_count = sum(1 for block in compressed_data if block["flag"] == 0)
-    total_blocks = (compressed_blocks_count+uncompressed_blocks_count)
+    total_blocks = len(compressed_data)
     
-    # Original block size (128 bytes per block)
     original_size = total_blocks * 128
-    
-    # Compressed block size (64 bytes for compressed, 128 bytes for uncompressed)
     compressed_size = (compressed_blocks_count * 64) + (uncompressed_blocks_count * 128)
-    
-    # Compression ratio
     compression_ratio = original_size / compressed_size if compressed_size > 0 else 1.0
     
     print(f"Total blocks: {total_blocks}")
     print(f"Compressed blocks: {compressed_blocks_count}")
     print(f"Uncompressed blocks: {uncompressed_blocks_count}")
     print(f"Compression Ratio: {compression_ratio:.2f}")
+    print(f"Decompression Lossless: {np.array_equal(image, decompressed_image)}")
 
 # test_compression()
