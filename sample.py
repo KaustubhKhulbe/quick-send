@@ -1,30 +1,53 @@
 import random
 import math
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 
 def sample(N, func, H, W):
     if func == "random":
-        return [(random.randint(0, W-8), random.randint(0, H-4)) for _ in range(N)]
-    
-    elif func == "gradient":
-        return [(int((i / N) * (W-8)), int((i / N) * (H-4))) for i in range(N)]
-    
+        return [(random.randint(0, W - 8), random.randint(0, H - 4)) for _ in range(N)]
+
     elif func == "periodic":
-        period = max(1, N // 10)
-        return [( (i % period) * W // period, (i % period) * H // period ) for i in range(N)]
-    
+        stride = 3
+        points = []
+
+        for i in range(0, H, 10):
+            for j in range(0, W, 2):
+                new_x = j
+                new_y = (j % stride) + (i - (i % stride)) 
+                points.append((new_x, new_y))
+
+        return points[:N]
+        
+    elif func == "strided":
+        rows = int(math.sqrt(N * H / W))  # Maintain aspect ratio
+        cols = max(1, N // rows)
+        xs = [int((i / (cols - 1)) * (W - 8)) for i in range(cols)]
+        ys = [int((j / (rows - 1)) * (H - 4)) for j in range(rows)]
+        points = [(x, y) for y in ys for x in xs]
+        return points[:N]  # Trim to N if oversampled
+
     elif func == "blurred":
-        center_x, center_y = W // 2, H // 2
-        return [(int(random.gauss(center_x, W//8)), int(random.gauss(center_y, H//8))) 
-                for _ in range(N)]
-    
+        center_x1, center_y1 = W // 4, H // 4
+        center_x2, center_y1 = W // (4/3), H // 4
+        center_x1, center_y2 = W // 4, H // (4/3)
+        center_x2, center_y2 = W // (4/3), H // (4/3)
+
+        def helper(c1, c2, num):
+            return [(int(random.gauss(c1, W // 10)), int(random.gauss(c2, H // 10)))
+                for _ in range(num)]
+
+        a = np.array(helper(center_x1, center_y1, N // 4))
+        b = np.array(helper(center_x2, center_y1, N // 4))
+        c = np.array(helper(center_x1, center_y2, N // 4))
+        d = np.array(helper(center_x2, center_y2, N // 4))
+        return np.concatenate((a,b,c,d))
+
     elif func == "skew":
-        return [(int((random.random() ** 2) * (W-8)), int((random.random() ** 0.5) * (H-4))) 
+        return [(int((random.random() ** 2) * (W - 8)), int((random.random() ** 0.5) * (H - 4)))
                 for _ in range(N)]
 
-    
     else:
         raise ValueError(f"Unknown pattern: {func}")
 
@@ -32,9 +55,9 @@ def sample(N, func, H, W):
 
 
 
-patterns = ["random", "gradient", "periodic", "blurred", "skew"]
+patterns = ["random", "periodic", "strided", "blurred", "skew"]
 W, H = 64, 64
-N = 200
+N = 500
 
 fig, axes = plt.subplots(2, 3, figsize=(15, 10))
 axes = axes.flatten()
