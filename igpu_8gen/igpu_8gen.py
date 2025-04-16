@@ -258,6 +258,8 @@ def intel_iGPU_decompress(compressed_data, height, width):
 def intel_iGPU_random_access(x, y, cr):
     # print(len(cr))
     # print(x, y)
+    if (y // 4, x // 8) not in cr:
+        return 64
     flag = cr[(y // 4, x // 8)]
     if flag == 0: return 128
     else: return 64

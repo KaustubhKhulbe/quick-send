@@ -9,14 +9,28 @@ import random
 from mali import mali_compression
 from igpu_11gen import igpu_11gen
 from igpu_8gen import igpu_8gen
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor
+
+IMAGE = "4.2.07.tiff"
+
+cache_stats = {}
 
 def sample(N, func, W, H):
     if func == "random":
         return [(random.randint(0, W-1), random.randint(0, H-1)) for _ in range(N)]
     
     elif func == "gradient":
-        return [(int((i / N) * (W-1)), int((i / N) * (H-1))) for i in range(N)]
-    
+        if N == 1:
+            return [(0, 0)]  # or center if preferred
+        return [
+            (
+                int(((i / (N - 1)) ** 2) * (W - 1)),
+                int(((i / (N - 1)) ** 2) * (H - 1))
+            )
+            for i in range(N)
+        ]
     elif func == "periodic":
         period = max(1, N // 10)
         return [( (i % period) * W // period, (i % period) * H // period ) for i in range(N)]
@@ -27,8 +41,16 @@ def sample(N, func, W, H):
                 for _ in range(N)]
     
     elif func == "skew":
-        return [(int((random.random() ** 2) * (W-1)), int((random.random() ** 0.5) * (H-1))) 
-                for _ in range(N)]
+        def clamp(val, limit):
+            return max(0, min(val, limit - 1))
+        
+        return [
+            (
+                clamp(int((random.random() ** 2) * W), W),
+                clamp(int((random.random() ** 0.5) * H), H)
+            )
+            for _ in range(N)
+        ]
     
     else:
         raise ValueError(f"Unknown pattern: {func}")
@@ -58,6 +80,8 @@ def insert_into_cache(cache, cache_size, new_item):
 '''
 def item_in_cache(cache, item): 
     if(item in cache):
+        mru_time = max(cache.values(), default=-1)
+        cache[item] = mru_time + 1
         return True
     else:
         return False
@@ -93,10 +117,12 @@ class Eval:
 
         # Cache (use LRU)
         cache = {}
-        N=1000
+        hits = 0
+        misses = 0
+        N=500
         points = sample(N, access_pattern, width, height)
         # Simulate 
-        print(len(points))
+        # print(len(points))
         for access in points: 
             total_bytes_communicated += self.block_size[0] * self.block_size[1] * 4 # 4 bytes per pixel 
 
@@ -116,14 +142,16 @@ class Eval:
 
             # Determine if cached? 
             if(item_in_cache(cache, (block_start_x, block_start_y))):
+                hits += 1
                 continue # send 0 bytes 
             else:
+                misses += 1
                 # total_bytes_sent += compression_algo(image[:, block_start_x:(block_start_x+self.block_size[0]), block_start_y:(block_start_y+self.block_size[1])], height, width)
                 total_bytes_sent += compression_algo(image, x, y)
-                insert_into_cache(cache, cache_size, (block_start_x, block_start_y))
+                cache = insert_into_cache(cache, cache_size, (block_start_x, block_start_y))
 
-        print(f"Total bytes sent: {total_bytes_sent}, Total bytes communicated: {total_bytes_communicated}")
-        return (total_bytes_sent, total_bytes_communicated, total_bytes_communicated / total_bytes_sent)
+        # print(f"Total bytes sent: {total_bytes_sent}, Total bytes communicated: {total_bytes_communicated}")
+        return (total_bytes_sent, total_bytes_communicated, total_bytes_communicated / total_bytes_sent, hits, misses)
  
     # TODO: Go through all the possible configurations here
 
@@ -145,10 +173,21 @@ algorithms = {
 patterns = ["random", "gradient", "periodic", "blurred", "skew"]
 cache_sizes = [4, 8, 16, 32]
 
-# dataset = np.random.randint(0, 3, (1, 4, 4, 8), dtype=np.uint8)
-image = tifffile.imread('dataset/4.2.07.tiff')
-image = np.transpose(np.array(image, dtype=np.uint8))
-image = np.concatenate((image, np.full((1, image.shape[1], image.shape[2]), 255, dtype=np.uint8)), axis=0)
+image = tifffile.imread(f'dataset/{IMAGE}')
+image = np.array(image, dtype=np.uint8)
+
+# If grayscale (2D or single-channel), broadcast to RGB
+if image.ndim == 2:
+    # Shape (H, W) → (3, H, W)
+    image = np.stack([image] * 3, axis=0)
+    alpha = np.full((1, image.shape[1], image.shape[2]), 255, dtype=np.uint8)
+    image = np.concatenate((image, alpha), axis=0)
+else:
+    image = tifffile.imread(f'dataset/{IMAGE}')
+    image = np.transpose(np.array(image, dtype=np.uint8))
+    image = np.concatenate((image, np.full((1, image.shape[1], image.shape[2]), 255, dtype=np.uint8)), axis=0)
+    temp = Image.fromarray(np.moveaxis(image, 0, -1), mode="RGBA")
+
 temp = Image.fromarray(np.moveaxis(image, 0, -1), mode="RGBA")
 temp.save("test.png")
 
@@ -157,28 +196,54 @@ temp.save("test.png")
 dataset = np.array([image])
 eval = Eval(dataset, block_size=(4, 8), compress_algos=algorithms["Intel_8gen"], access_patterns=patterns, cache_sizes=cache_sizes)
 
+start_time = time.time()
 results = {}
 compressions = {}
 
+# Helper function to calculate compressibility
+def process_image(args):
+    algo_name, algo_func, pattern, cache_size, idx, image = args
+    sent, total, ratio, hits, misses = eval.calculate_compressability(image, algo_func, pattern, cache_size)
+    return (algo_name, pattern, cache_size, idx, sent, total, ratio, hits, misses)
+
+# Prepare all jobs ahead of time
+jobs = []
 for algo_name, algo_func in algorithms.items():
     for pattern in patterns:
         for cache_size in cache_sizes:
-            # for image in tqdm(dataset, desc=f"{algo_name} - {pattern} - Cache {cache_size}"):
-            for idx, image in enumerate(tqdm(dataset, desc=f"{algo_name} - {pattern} - Cache {cache_size}")):
-                sent, total, ratio = eval.calculate_compressability(image, algo_func, pattern, cache_size)
-                results[(algo_name, pattern, cache_size)] = results.get((algo_name, pattern, cache_size), [0, 0])
-                results[(algo_name, pattern, cache_size)][0] += sent
-                results[(algo_name, pattern, cache_size)][1] += total
-                # compressions[(algo_name, idx)] += ratio
-                if idx not in compressions:
-                    compressions[(algo_name, idx)] = ratio
-                compressions[(algo_name, idx)] += ratio
-            
-for key, value in compressions.items():
-    compressions[key] = compressions[key] / len(algorithms) / len(patterns) / len(cache_sizes)
-            
+            for idx, image in enumerate(dataset):
+                jobs.append((algo_name, algo_func, pattern, cache_size, idx, image))
+
+# Run in parallel
+with ProcessPoolExecutor() as executor:
+    futures = [executor.submit(process_image, job) for job in jobs]
+    
+    for future in tqdm(as_completed(futures), total=len(futures), desc="Processing"):
+        algo_name, pattern, cache_size, idx, sent, total, ratio, hits, misses = future.result()
+
+        key = (algo_name, pattern, cache_size)
+        if key not in results:
+            results[key] = [0, 0, 0, 0]
+        results[key][0] += sent
+        results[key][1] += total
+        results[key][2] += hits
+        results[key][3] += misses
+
+        if (algo_name, idx) not in compressions:
+            compressions[(algo_name, idx)] = 0
+        compressions[(algo_name, idx)] += ratio
+
+# Normalize compression values
+scale = len(patterns) * len(cache_sizes)
+for key in compressions:
+    compressions[key] = compressions[key] / scale
+
+end_time = time.time()
 
 # Print Results
-for key, value in results.items():
-    print(f"Algorithm: {key[0]}, Pattern: {key[1]}, Cache Size: {key[2]} => Bytes Sent: {value[0]}, Total Communicated: {value[1]}")
-    print(f"Compression Ratio: {value[1] / value[0] if value[0] != 0 else 0}")
+with open(f"results_{IMAGE}.csv", "w") as file:
+    file.write("Algorithm,Pattern,Cache Size,Bytes Sent,Total Bytes,Compression Ratio,Hits,Misses\n")
+    for key, value in results.items():
+        file.write(f"{key[0]},{key[1]},{key[2]},{value[0]},{value[1]},{value[1] / value[0] if value[0] != 0 else 0},{value[2]},{value[3]}\n")
+
+print(f"Total Time Taken: {end_time - start_time:.2f} seconds")
