@@ -48,6 +48,10 @@ def sample(N, func, H, W):
         return [(int((random.random() ** 2) * (W - 8)), int((random.random() ** 0.5) * (H - 4)))
                 for _ in range(N)]
 
+    elif func == "normal":
+        points = [(x, y) for y in range(H) for x in range(W)] 
+        return points[:N]
+
     else:
         raise ValueError(f"Unknown pattern: {func}")
 
@@ -55,7 +59,7 @@ def sample(N, func, H, W):
 
 
 
-patterns = ["random", "periodic", "strided", "blurred", "skew"]
+patterns = ["random", "periodic", "strided", "blurred", "skew", "normal"]
 W, H = 64, 64
 N = 500
 
