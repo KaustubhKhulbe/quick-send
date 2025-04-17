@@ -13,7 +13,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from concurrent.futures import ProcessPoolExecutor
 
-IMAGE = "4.2.07.tiff"
+IMAGE = "5.2.08.tiff"
 
 cache_stats = {}
 
@@ -42,20 +42,13 @@ def sample(N, func, H, W):
         return points[:N]  # Trim to N if oversampled
 
     elif func == "blurred":
-        center_x1, center_y1 = W // 4, H // 4
-        center_x2, center_y1 = W // (4/3), H // 4
-        center_x1, center_y2 = W // 4, H // (4/3)
-        center_x2, center_y2 = W // (4/3), H // (4/3)
+        center_x, center_y = W // 2, H // 2
 
         def helper(c1, c2, num):
-            return [(int(random.gauss(c1, W // 10)), int(random.gauss(c2, H // 10)))
-                for _ in range(num)]
+            return [(int(random.gauss(c1, W // 20)), int(random.gauss(c2, H // 20)))
+            for _ in range(num)]
 
-        a = np.array(helper(center_x1, center_y1, N // 4))
-        b = np.array(helper(center_x2, center_y1, N // 4))
-        c = np.array(helper(center_x1, center_y2, N // 4))
-        d = np.array(helper(center_x2, center_y2, N // 4))
-        return np.concatenate((a,b,c,d))
+        return helper(center_x, center_y, N)
 
     elif func == "skew":
         return [(int((random.random() ** 2) * (W - 8)), int((random.random() ** 0.5) * (H - 4)))
@@ -128,7 +121,7 @@ class Eval:
         cache = {}
         hits = 0
         misses = 0
-        N=500
+        N=50000
         points = sample(N, access_pattern, width, height)
         # Simulate 
         # print(len(points))
@@ -139,25 +132,31 @@ class Eval:
             y = access[1]
 
             if (x >= width or y >= height):
-                print(f"Access out of bounds: {x}, {y}")
-                continue
+                # print(f"Access out of bounds: {x}, {y}")
+                x = min(x, width - 1)
+                y = min(y, height - 1)
             elif (x < 0 or y < 0):
-                print(f"Access out of bounds: {x}, {y}")
-                continue
+                # print(f"Access out of bounds: {x}, {y}")
+                x = max(x, 0)
+                y = max(y, 0)
 
             # Fetch that part of the image (convert coordinates to start of the compression block)
             block_start_x = x - (x % self.block_size[0]) 
             block_start_y = y - (y % self.block_size[1])
 
             # Determine if cached? 
-            if(item_in_cache(cache, (block_start_x, block_start_y))):
-                hits += 1
-                continue # send 0 bytes 
+            if cache_size != 0:
+                if(item_in_cache(cache, (block_start_x, block_start_y))):
+                    hits += 1
+                    continue # send 0 bytes 
+                else:
+                    misses += 1
+                    total_bytes_sent += compression_algo(image, x, y)
+                    cache = insert_into_cache(cache, cache_size, (block_start_x, block_start_y))
             else:
                 misses += 1
-                # total_bytes_sent += compression_algo(image[:, block_start_x:(block_start_x+self.block_size[0]), block_start_y:(block_start_y+self.block_size[1])], height, width)
                 total_bytes_sent += compression_algo(image, x, y)
-                cache = insert_into_cache(cache, cache_size, (block_start_x, block_start_y))
+                # print(f"sent: {compression_algo(image, x, y)}, total: {self.block_size[0] * self.block_size[1] * 4}, total sent: {total_bytes_sent}, total comm: {total_bytes_communicated}")
 
         # print(f"Total bytes sent: {total_bytes_sent}, Total bytes communicated: {total_bytes_communicated}")
         return (total_bytes_sent, total_bytes_communicated, total_bytes_communicated / total_bytes_sent, hits, misses)
@@ -170,17 +169,21 @@ class Eval:
     #         self.validate(self.images[i], self.images[i].shape[1], self.images[i].shape[2])
     #     print(f"AUT ({self.name}) formally validated")
 
+def uncompressed(image, x, y):
+    # Uncompressed size is always the same
+    return 4 * 8 * 4  # 4 bytes per pixel * 8 pixels
 
 # Configurations
 algorithms = {
-    # 'Uncompressed': uncompressed,   # Yet to be defined
+    'Uncompressed': uncompressed,   # Yet to be defined
     'Intel_8gen': igpu_8gen.get_compressability_igpu_8gen,
-    # 'Intel_11gen': igpu_11gen.compress_image,
-    # 'Mali': mali_compression.mali_compression
+    # 'Intel_11gen': igpu_11gen.get_compressability_igpu_11gen,
+    'Mali': mali_compression.mali_compression_xy
 }
 
 patterns = ["random", "periodic", "strided", "blurred", "skew"]
-cache_sizes = [4, 8, 16, 32]
+# patterns = ["periodic"]
+cache_sizes = [0, 1, 4, 8, 16, 32, 64, 128, 256]
 
 image = tifffile.imread(f'dataset/{IMAGE}')
 image = np.array(image, dtype=np.uint8)
@@ -203,7 +206,7 @@ temp.save("test.png")
 # print(image.shape)
 
 dataset = np.array([image])
-eval = Eval(dataset, block_size=(4, 8), compress_algos=algorithms["Intel_8gen"], access_patterns=patterns, cache_sizes=cache_sizes)
+eval = Eval(dataset, block_size=(4, 8), compress_algos=algorithms, access_patterns=patterns, cache_sizes=cache_sizes)
 
 start_time = time.time()
 results = {}

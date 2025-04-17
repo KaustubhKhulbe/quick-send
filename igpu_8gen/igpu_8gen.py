@@ -279,12 +279,11 @@ def get_compressability_igpu_8gen(image, x, y):
     height = image.shape[1]
     width = image.shape[2]
 
-    cr = {}
-    dataset = np.array([image])
-    # print(dataset.shape)
-    igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, intel_iGPU_random_access, name="intel iGPU")
-    igpu.compress(image, height, width)
-    
+    if cr == {}:
+        dataset = np.array([image])
+        # print(dataset.shape)
+        igpu = Aut(dataset, intel_iGPU_compress, intel_iGPU_decompress, intel_iGPU_random_access, name="intel iGPU")
+        igpu.compress(image, height, width)
     return intel_iGPU_random_access(x, y, cr)
 
 
