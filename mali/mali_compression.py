@@ -212,7 +212,7 @@ def mali_compression_xy(image, x, y):
             yuva_image[3, i, j] = a 
 
     compressed_format = compress_pane(yuva_image)
-    return compressed_format[0] # returns size in bytes 
+    return min(compressed_format[0], 64) # returns size in bytes 
 
 '''
     Returns a compressed image format which is just a list of blocks in row major order of the panes used by mali compression. 
@@ -297,14 +297,15 @@ if __name__ == "__main__":
     z = np.zeros((4, 4), dtype=np.uint8)
     alpha_channel = np.full((4, 4), 255, dtype=np.uint8)  # (4,4)
     # grayscale_rgba_panes = np.stack([gradient + 20, gradient + 23, z + 100, alpha_channel], axis=0)  # (4,4,4)
-    grayscale_rgba_panes = np.stack([z+2, z+1, z + 100, alpha_channel], axis=0)  # (4,4,4)
+    # grayscale_rgba_panes = np.stack([gradient + 20, gradient + 23, gradient + 100, gradient+50], axis=0)  # (4,4,4)
+    # grayscale_rgba_panes = np.stack([z+2, z+1, z + 100, alpha_channel], axis=0)  # (4,4,4)
 
     # Random image 
-    # grayscale_rgba_panes = np.zeros((4, 64, 64)) 
-    # for chan in range(4):
-    #     for x in range(64):
-    #         for y in range(64):
-    #             grayscale_rgba_panes[chan, y, x] = random.randint(0, 255)
+    grayscale_rgba_panes = np.zeros((4, 4, 4))
+    for chan in range(4):
+        for x in range(4):
+            for y in range(4):
+                grayscale_rgba_panes[chan, y, x] = random.randint(0, 255)
 
 
     print(grayscale_rgba_panes)
