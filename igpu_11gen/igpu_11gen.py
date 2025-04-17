@@ -103,7 +103,7 @@ from PIL import Image
 #             cr[i // 4, j // 8] = compressed_block["flag"]
 #     return compressed_blocks 
 
-
+cr={}
 def check_uniform_2x2(block):
     return np.all(block == block[:, 0:1, 0:1])
 
@@ -290,10 +290,10 @@ def get_compressability_igpu_11gen(image, x, y):
     H = image.shape[1]
     W = image.shape[2]
 
-    cr = {}
+    if cr == {}:
     
     # print(dataset.shape)
-    compress_image(image, H, W)
+        compress_image(image, H, W)
     
     return intel_iGPU_random_access(x, y, cr)
 
