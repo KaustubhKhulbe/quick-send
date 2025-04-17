@@ -183,6 +183,37 @@ def decompress_pane(compressed_data):
 
     return decompressed_yuva_pane
 
+
+'''
+    Compress a single pane and returns compressed bytes
+'''
+def mali_compression_xy(image, x, y):
+    # Ensure the image is in (C, H, W) format where C=4 (RGBA)
+    assert image.shape[0] == 4, "Expected input image with 4 channels (RGBA)"
+    assert image.shape[1] > y, "Input height too large"
+    assert image.shape[2] > x, "Input width too large"
+
+    clipped_x = x - (x % 4)
+    clipped_y = y - (y % 4)
+
+    image_pad = image[:, clipped_y:clipped_y+4, clipped_x:clipped_x+4]
+    print(image_pad)
+    yuva_image = np.zeros_like(image_pad, dtype=int)
+    for i in range(4):
+        for j in range(4):
+            r = image_pad[0, i, j]
+            g = image_pad[1, i, j]
+            b = image_pad[2, i, j]
+            a = image_pad[3, i, j]
+            t, u, v, a = rgba_to_yuva((r, g, b, a))
+            yuva_image[0, i, j] = t
+            yuva_image[1, i, j] = u 
+            yuva_image[2, i, j] = v 
+            yuva_image[3, i, j] = a 
+
+    compressed_format = compress_pane(yuva_image)
+    return compressed_format[0] # returns size in bytes 
+
 '''
     Returns a compressed image format which is just a list of blocks in row major order of the panes used by mali compression. 
     Each pane in the compressed format is represented by the (val_tree, bit count tree, and the pane size in the header)
@@ -279,13 +310,14 @@ if __name__ == "__main__":
     print(grayscale_rgba_panes)
     print()
 
-    compressed_data = mali_compression(grayscale_rgba_panes, 4, 4) 
+    # compressed_data = mali_compression(grayscale_rgba_panes, 4, 4) 
+    compressed_data = mali_compression_xy(grayscale_rgba_panes, 1, 3)
     print(compressed_data) 
     print() 
 
-    rgba_image = mali_decompression(compressed_data, 4, 4) 
+    # rgba_image = mali_decompression(compressed_data, 4, 4) 
 
-    print(rgba_image)
-    print() 
+    # print(rgba_image)
+    # print() 
 
-    assert((rgba_image == grayscale_rgba_panes).all())
+    # assert((rgba_image == grayscale_rgba_panes).all())
