@@ -212,7 +212,7 @@ def mali_compression_xy(image, x, y):
             yuva_image[3, i, j] = a 
 
     compressed_format = compress_pane(yuva_image)
-    return compressed_format[0] # returns size in bytes 
+    return min(compressed_format[0], 64) # returns size in bytes 
 
 '''
     Returns a compressed image format which is just a list of blocks in row major order of the panes used by mali compression. 
